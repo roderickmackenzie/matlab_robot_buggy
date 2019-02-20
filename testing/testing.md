@@ -5,8 +5,9 @@ Open the terminal.
 
 Testing the background script is running
 ----------------------------------------
+type
 ~~~~
-type ps aux |grep python
+ps aux |grep python
 ~~~~
 If you see a line with /home/pi/lib/boot.py then the back end software is working.
 If you do not see this line then the camera is not plugged in.
