@@ -11,6 +11,18 @@ If you do not see this line then the camera is not plugged in.
 If the voltage is below 1.25 V THROW THEM AWAY and get new ones.
 
 3. type 'cd io'
-type cat echo.dat
+'type cat echo.dat'
 
 The value should not be 10000, if it is then fix the echo sensor.
+
+4. Test the motors
+in the directory 'io'
+type 'echo "100 100" >motors.dat' to start the motors.
+
+If they do not start fix the circuitry.
+
+Then type:
+
+echo "0 0" >motors.dat'
+
+to stop the motors.
