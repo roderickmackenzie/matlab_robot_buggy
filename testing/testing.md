@@ -17,7 +17,11 @@ The value should not be 10000, if it is then fix the echo sensor.
 
 4. Test the motors
 in the directory 'io'
-type 'echo "100 100" >motors.dat' to start the motors.
+type
+~~~~
+echo "100 100" >motors.dat
+~~~~
+to start the motors.
 
 If they do not start fix the circuitry.
 
