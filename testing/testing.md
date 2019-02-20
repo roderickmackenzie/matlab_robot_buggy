@@ -53,6 +53,5 @@ Basic linux commands cheat sheet
 |Command| Description					 |
 |----|-------------------------------------------|
 |pwd | Shows current directory                   |
-|----|-------------------------------------------|
 |ls  | Shows the content of the current directory|
 
