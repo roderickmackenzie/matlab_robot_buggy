@@ -33,7 +33,7 @@ Question 2
 **Step 1:** We are now going to write a function to calculate the average color of a image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as get_color.m.  In this file we are going to make a function, copy and paste the following code into your file:
 
 ~~~~
-function [r g b] = get_color(x)
+function [r g b] = get_color(data)
 r=1;
 g=2;
 b=3;
@@ -71,21 +71,67 @@ get_color(1)
 get_color(a)
 ~~~~
 
-Now in your *get_color()* function use the command imshow, so that the function will display any image which is passed to it.
+Now in your *get_color()* function use the command *imshow*, so that the function will display any image which is passed to it.
 
 
-**Step 3:** Inside the function get_color, define two nested for loops, one which counts using the variable x from 1 to 100 and one which counts using the variable y from 1 to 100.
+**Step 3:** We now need to define two nested loops to itterate over every pixel in our image.  For now we are going to pretend our image is 100x100 pixels big.  Inside the function get_color, underneath your *imshow* command define two nested for loops, one which counts using the variable x from 1 to 100 and one which counts using the variable y from 1 to 100.
 
-**step 4**:  Using the sprintf and the disp commands print out all the values of x and y, over which the loops count.
+**step 4**:  Using the *sprintf* and the *disp* commands print out all the values of x and y, over which the loops count.
 
+**step 5**:  We know that this image is bigger than 100x100 pixels.  Use the size command to store the *x* and *y* size of the image in the variables *x_len* and *y_len*.  Change your for loops so rather than counting to 100, they count to x_len and y_len.
 
-Make the x loop count from x_start to x_start+width, and make the y loop count from y_start to y_start+height. To test if this works, use the sprintf command to print out the values of x and y.  When you execute get_color(a,200,200,20,20), again, the function should print out all the x,y values over which the loop counnts.
+**Step 6**:  In the coursework we played with a black and white image of the science museum.  We learnt that images are stored in a 2D matrix, a values between 0-255, with 0 being black and 255 being white, and all values between being shades of grey.  If one wanted to extract the intensity at 50,50 pixel, we would use the code:
 
-Step 5: If you have done the example sheet on image processing, you will know all about how images are stored as red green and blue values in a matrix. [This is the example sheet with the cat with different colored eyes.] If you have not done this example sheet, I suggest you go and revise it, it will explain basic image processing to you.  In there I explain about how colored images are stored in detail.  I will now quickly revise the topic….  Black and white images are stored in a 2D matrix, a value of 255 stored in the matrix, represents white pixel, while a value of 0 represents a black pixel, values in between represent different grey colours.  Coloured images, work in the same way, except instead of using a 2D array, they use a 3D array, where the last dimension selects the colour.  If for example you had a coloured image stored in the variable ‘a’ and wanted to access the red pixel at 50,50 you would write a(50,50,1), if you wanted to access the green value stored in the same location you would type a(50,50,2), and finally the blue value would be accessed by typing, a(50,50,3).  Edit your sprtinf statement to display the red, green and blue values of the pixels at every x,y value your nested for loops count over.
-Step 6: We are now going to edit the function so that it sums, all the values of the red pixels in the box defined, by the inputs to the function.  At the top of your function define the counter r=0.0, in the loop add the line r=r+int32(a(x,y,1)).  By writing int32 before the a, we are just telling MATLAB/Octave to use an int32 type variable to store the sum of all the red pixels.  An int32, is a special type of variable which can store very big numbers, we are using this as we expect the value of r to get very big.  The technical term for this is type casting, I won’t go into it in detail now, but you can google it if you are interested.  Now add corresponding lies for the blue, and green colours, just as we did for the red colour.  Now test out the function again on the command line.  You should get some large values for r,g and b returned. (In step one you set r,g,b to 50, if you have not already done this take out those liens of code.)
-Step 7: Returning the sum of red,green and blue, pixels is not so useful. What we want really is the function to return the average values of the red, green and blue pixels.  So add to your function a variable (called count) which adds up the number of pixels over which the r,g,b values are summed.  Then at the end of your function, divide r,g and b values by count.  Test your function out again on the command line.  It should now return the average pixel intensity, for the region defined in figure 1.
+~~~~~
+data(50,50)
+~~~~~
 
-Step 8: Try to load desk.jpg and object.jpg and run them through your function.  What values do you get out?  Are they different for each object?  If so how different?
+However our image is not gray scale it is a color image.  In Color images as I mentioned above we store red, green and blue pixels.  Therefore at each position in the image there is a red green and blue value stored.  To access the red value at 50,50 we would use the command
+
+~~~~~
+data(50,50,1)
+~~~~~
+
+To access the green value we would use the command:
+
+~~~~~
+data(50,50,2)
+~~~~~
+
+and to access the blue value we would use the command:
+
+~~~~~
+data(50,50,3)
+~~~~~
+Edit your sprtinf statement to display the red, green and blue values of the pixels at every x,y value your nested for loops count over.
+
+Question 4
+----------
+**Step 1:** We are now going to edit the function so that it sums, all the values of the red pixels in the the image. First delete the lines:
+~~~~
+r=1;
+g=2;
+b=3;
+~~~~
+from your function.  At the top of your function define the counter r=0.0, in the loop add the line 
+~~~~
+r=r+int32(a(x,y,1));
+~~~~
+
+By writing int32 before the a, we are just telling MATLAB/Octave to use an int32 type variable to store the sum of all the red pixels.  An int32, is a special type of variable which can store very big numbers, we are using this as we expect the value of r to get very big.  The technical term for this is type casting.  Now add corresponding lies for the blue, and green colors, just as we did for the red color.  After your loop add the commands:
+
+~~~~
+r
+g
+b
+~~~~
+
+To show you the totals of the red green and blue in the images.
+Now test out the function again on the command line.  You should get some large values for r,g and b returned.
+
+**Step 2:** Returning the sum of red, green and blue, pixels is not so useful. What we want really is the function to return the average values of the red, green and blue pixels.  So add to your function a variable (called count) which adds up the number of pixels over which the r,g,b values are summed.  Then at the end of your function, divide r,g and b values by count.  [An alternative way of doing this is to divide the totals by y_len*x_len] Test your function again by running the script, detect.m.  It should now return the average pixel intensity, for the region defined in figure 1.
+
+**Step 3:** Change your script Try to load yellow.jpg and smarties.jpg.  What values do you get out?  Are they different for each object?  If so how different?
 
 Question 2:
 -----------
