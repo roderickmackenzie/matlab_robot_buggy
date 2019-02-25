@@ -1,21 +1,31 @@
 Worksheet 4
 ===========
 
-Your buggy is trapped in a valley, infested by a rather large rabbit which likes to eat buggies.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  There are also some rocks (smarties) scattered around the valley which your buggy must avoid as they can get trapped in the wheels.  The exit is denoted by a white chalk road (in this case an A3 sheet of white paper.)  As a group, edit your buggy code so that your buggy will search for and find the white road as quickly as possible without bumping into the rabbit or running over the smarties. This task is worth 25% of the project mark.  50% will be given if you attempt the exercise with a reasonable answer.  The other 25% of the marks will be given, for finding the white piece of paper.  And the remaining 25% will be given depending on how well your buggy performs, and any cool your answer is(!)  Rules of the game:
+The buggy challenge
+-------------------
+Your buggy is trapped in a valley, infested by a rather large rabbit who likes to eat buggies.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  The rabbit lives in an area marked off by *black masking tape*, if the buggy enters the area where the bunny lives it will get eaten, and the game will be over.
 
--The buggy must find the white piece of paper to win the game.
--If it bumps into the bunny, the game is over and you can only get a maximum of 75% for this task.
--Your buggy must avoid mountains (plastic boxes) and valley walls (detonated by the barrier).  If it hits these object the game will not end but it will waste time.
--Avoid the smarties so that the buggy does not get stuck.
+There are also some rocks (smarties) scattered around the valley which your buggy must avoid as they can get trapped in the wheels.  The exit is denoted by a white chalk road (in this case an A3 sheet of white paper.)
+
+As a group, edit your buggy code so that your buggy will search for and find the white road as quickly as possible without bumping into the rabbit or running over the smarties.  50% will be given if you attempt the exercise with a reasonable answer.  Another 25% will be given for for finding the white piece of paper and the remaining 25% will be given depending on how well your buggy performs, and any cool your answer is(!)  Rules of the game:
+
+- The buggy must find the white piece of paper to win the game.
+- If it bumps into the bunny, the game is over and you can only get a maximum of 75% for this task.
+- Your buggy must avoid mountains (plastic boxes) and valley walls (detonated by the barrier).  If it hits these object the game will not end but it will waste time.
+- Avoid the smarties so that the buggy does not get stuck.
 
 How you achieve this aim is up to you. Here are some ideas of how to solve the problem.
--Use your answers to WS3 to detect the problem 
 
+- Use your answers to WS3 to detect the smarties and the bunny (note the bunny will never leave the area surrounded by the black tape.
 
-        ◦ Move the buggy randomly, until it sees the white piece of paper (The easy option).
-        ◦ Do a systematic search for the piece of paper.
-        ◦ Try to store where the buggy has been and search based on the past history of the moments.
-    • Your buggy has enough hardware to accomplish this task, but if you fancy adding extra motors and or acoustic sensors we do have some spare. But you have to figure out how to use them :)
+- Use the echo sensor to avoid the objects.
+
+- Move the buggy randomly, until it sees the white piece of paper.
+- Do a systematic search for the exit.
+
+Mod your buggy
+--------------
+Your buggy has enough hardware to accomplish this task, but if you fancy adding extra motors and or acoustic sensors we do have some spare. But you have to figure out how to use them :wink:
 
 
 Question 6:
