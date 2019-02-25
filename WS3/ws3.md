@@ -11,14 +11,18 @@ Question 0
 
 **Step 3:** Next lab session your buggy will have to navigate an obstetrical course, see figure 1.  Your buggy will have to find the exit (marked by a white piece of paper), avoid being eaten by the rabbit, which is lives in an area surrounded by yellow tape, avoid bumping into the walls, and ideally find the patch of smarties before exiting the course.  These tasks can be accomplished by using a combination of the camera and the ultrasonic sensor.
 
-![Alt text](./images.pen.svg)
-<img src="./images/pen.svg">
+<center>
+<img src="./images/pen.png">
+</center>
+<center>
+Figure 1: An example of the buggy course.
+</center>
 
 However to do this task we need sample images of the yellow tape, smarties and the white piece of paper.  Ask Rod (or a demonstrator ) for these objects.  Take pictures of each of the objects with the buggy camera naming them yellow_tape.jpg, smarties.jpg and exit.jpg.  [Hint: I would not eat the smarties… they have spent quite a long time kicking around my office!]
 
 **Step 4:** Insert a USB stick into the PI, and copy off the images to a USB stick.  If you  can’t work out how to do this, ask a demonstrator.  We will be using these images in the rest of the questions.
 
-The rest of the work sheet will be individual work, not group work, done on the PCs in the computer room, on your laptop or at home.  (Usual plagiarism rules apply… sorry) When you finished the programming your code, we will copy your files back to the PI, and test them.
+The rest of the work sheet will be individual work, not group work, done on the PCs in the computer room, on your laptop or at home.  (Usual plagiarism rules apply... sorry) When you finished the programming your code, we will copy your files back to the PI, and test them.
 
 Question 1
 ----------
@@ -26,7 +30,7 @@ Start up MATLAB on your PC.  We are now going to write some simple code to do so
 
 Question 2
 ----------
-**Step 1:** We are now going to write a function to calculate the average color of a image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as get_color.m.  In this file we are going to make a function, copy and paste the following code into your file:
+- **Step 1:** We are now going to write a function to calculate the average color of a image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as get_color.m.  In this file we are going to make a function, copy and paste the following code into your file:
 
 ~~~~
 function [r g b] = get_color(x)
@@ -44,31 +48,24 @@ Save your file get_color.m then from then on the command line type
 
 What values does this function return?
 
-**Step 2:** Color images are made up of pixels, each pixel has a red, green and blue component, the values of the red green and blue components can range form 0 to 255.  So for example a very red pixel would be represented by the three numbers 255,0,0 or a very green pixel would be represented by the three numbers 0,255,0 and a blue pixel would be represented by the values 0,0,255.  What value would a black and grey pixel be represented by?
+- **Step 2:** Color images are made up of pixels, each pixel has a red, green and blue component, the values of the red green and blue components can range form 0 to 255.  So for example, a very red pixel would be represented by the three numbers 255,0,0 or a very green pixel would be represented by the three numbers 0,255,0 and a blue pixel would be represented by the values 0,0,255.  What value would a black and gray pixel be represented by?
 
 Have a play with this web page to understand this a bit better:
 [web page](https://www.w3schools.com/colors/colors_converter.asp)  What are the RGB values of your favourite color?
 
-**Setp 3**: By looking at the color components of any image 
-we can guess what could be in the image.  For example if the image is of the floor in the L3 lab, it will consist of lots of grey pixels.  If the image is full of smarties, it will have a wide range of colors etc...
+- **Setp 3**: By looking at the color components of any image 
+we can guess what could be in the image.  For example if the image is of the floor in the L3 lab, it will consist of lots of gray pixels.  If the image is full of smarties, it will have a wide range of colors etc...
 
-Therefore ideally we would like to 
-What we really want is Three outputs:
-r: the average value of the intensity red pixels within the image.
+We would like our function get_color(x) to return the average color of the pixels.
 
-g: the average value of the intensity green pixels within the image.
+Question 3
+----------
+**step 1:** Rather than calling your get_color(x) function from the command line, make a new script called  *detect.m*, and in that script call you function by adding the line of code:
+~~~~
+get_color(1)
+~~~~
 
-b: the average value of the intensity blue pixels within the image.
-
-
-The function will be called like this:
-[r, g, b]=get_color(a)
- We will use the values of r, g and b to identify the object in front of the camera.  For example the blue carpet may have lots of blue in it, so if the function returns the value of 0,0,200 we could guess we are looking at the carpet.  If the function returned a value with lots of red in it i.e. 200,0,0 we could guess that we were looking at something red, like an apple.  This type of image recognition is good for object detection and identifying green apples from oranges, but not for complex tasks such as number plate recognition.
- 
-Step 1: Make a new script called get_color.m (note US spelling, as it is common in computing), and define the function get_color within the script.  If you can’t remember how to make functions (or never knew because you missed the lecture….. :) ), go and revise this from the lecture material.  If you get stuck with this ask a demonstrator.  Just for now and to test your function, make your function return the values of 50,50,50.
-
-Step 2: In the command window, load your image into variable a, using the imread command.
-
+**step 2**: Currently we are passing the get_color function the value of 1,  we don't want to do this we would like to pass it an image from the camera.  
 Step 3: Test your function by typing [r,g,b]=get_color(a,200,200,20,20) into the command line, this should return 50,50,50, if you set up your function correctly.
 Step 4: Inside the function get_color, define two nested for loops, one which counts using the variable x and one which counts using the variable y. Make the x loop count from x_start to x_start+width, and make the y loop count from y_start to y_start+height. To test if this works, use the sprintf command to print out the values of x and y.  When you execute get_color(a,200,200,20,20), again, the function should print out all the x,y values over which the loop counnts.
 
