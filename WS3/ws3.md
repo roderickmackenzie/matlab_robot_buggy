@@ -11,6 +11,9 @@ Question 0
 
 **Step 3:** Next lab session your buggy will have to navigate an obstetrical course, see figure 1.  Your buggy will have to find the exit (marked by a white piece of paper), avoid being eaten by the rabbit, which is lives in an area surrounded by yellow tape, avoid bumping into the walls, and ideally find the patch of smarties before exiting the course.  These tasks can be accomplished by using a combination of the camera and the ultrasonic sensor.
 
+![Alt text](./images.pen.svg)
+<img src="./images/pen.svg">
+
 However to do this task we need sample images of the yellow tape, smarties and the white piece of paper.  Ask Rod (or a demonstrator ) for these objects.  Take pictures of each of the objects with the buggy camera naming them yellow_tape.jpg, smarties.jpg and exit.jpg.  [Hint: I would not eat the smarties… they have spent quite a long time kicking around my office!]
 
 **Step 4:** Insert a USB stick into the PI, and copy off the images to a USB stick.  If you  can’t work out how to do this, ask a demonstrator.  We will be using these images in the rest of the questions.
