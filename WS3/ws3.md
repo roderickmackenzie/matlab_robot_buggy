@@ -12,7 +12,7 @@ Question 0
 **Step 3:** Next lab session your buggy will have to navigate an obstetrical course, see figure 1.  Your buggy will have to find the exit (marked by a white piece of paper), avoid being eaten by the rabbit, which is lives in an area surrounded by yellow tape, avoid bumping into the walls, and ideally find the patch of smarties before exiting the course.  These tasks can be accomplished by using a combination of the camera and the ultrasonic sensor.
 
 <center>
-<img src="./images/pen.png">
+<img src="./images/pen.svg">
 </center>
 <center>
 Figure 1: An example of the buggy course.
