@@ -5,11 +5,8 @@ Question 0: You will have noticed that your buggy has a camera.  In this workshe
 
 
 
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+> Most of you have not finished work sheet 2 yet, so my suggestion is to first do question 0, get the images then have a go at this work sheet during the week.  The demonstrators will be able to help you next week.
 
-::: warning
-*here be dragons*
-:::
 Question 0
 ----------
 **Step 1:** Make a new octave (MATLAB) script, add the addpath(‘/home/pi/lib’) command as usual. Then add the command camera() to the script. Save and run the script and you will see that an image has been written to /home/pi/image.jpg .  To open this image, click on the folder icon in the top left of the screen (it is the third icon from the left, next to the raspberry).  If you now double click on image.jpg you will see a picture of what the camera was looking at.
