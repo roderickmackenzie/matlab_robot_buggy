@@ -2,6 +2,7 @@ Worksheet 4
 ===========
 
 Your buggy is trapped in a valley, infested by a rather large rabbit which likes to eat buggies.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  There are also some rocks (smarties) scattered around the valley which your buggy must avoid as they can get trapped in the wheels.  The exit is denoted by a white chalk road (in this case an A3 sheet of white paper.)  As a group, edit your buggy code so that your buggy will search for and find the white road as quickly as possible without bumping into the rabbit or running over the smarties. This task is worth 25% of the project mark.  50% will be given if you attempt the exercise with a reasonable answer.  The other 25% of the marks will be given, for finding the white piece of paper.  And the remaining 25% will be given depending on how well your buggy performs, and any cool your answer is(!)  Rules of the game:
+
 -The buggy must find the white piece of paper to win the game.
 -If it bumps into the bunny, the game is over and you can only get a maximum of 75% for this task.
 -Your buggy must avoid mountains (plastic boxes) and valley walls (detonated by the barrier).  If it hits these object the game will not end but it will waste time.
