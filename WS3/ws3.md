@@ -30,7 +30,7 @@ Start up MATLAB on your PC.  We are now going to write some simple code to do so
 
 Question 2
 ----------
-- **Step 1:** We are now going to write a function to calculate the average color of a image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as get_color.m.  In this file we are going to make a function, copy and paste the following code into your file:
+**Step 1:** We are now going to write a function to calculate the average color of a image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as get_color.m.  In this file we are going to make a function, copy and paste the following code into your file:
 
 ~~~~
 function [r g b] = get_color(x)
@@ -48,12 +48,12 @@ Save your file get_color.m then from then on the command line type
 
 What values does this function return?
 
-- **Step 2:** Color images are made up of pixels, each pixel has a red, green and blue component, the values of the red green and blue components can range form 0 to 255.  So for example, a very red pixel would be represented by the three numbers 255,0,0 or a very green pixel would be represented by the three numbers 0,255,0 and a blue pixel would be represented by the values 0,0,255.  What value would a black and gray pixel be represented by?
+**Step 2:** Color images are made up of pixels, each pixel has a red, green and blue component, the values of the red green and blue components can range form 0 to 255.  So for example, a very red pixel would be represented by the three numbers 255,0,0 or a very green pixel would be represented by the three numbers 0,255,0 and a blue pixel would be represented by the values 0,0,255.  What value would a black and gray pixel be represented by?
 
 Have a play with this web page to understand this a bit better:
 [web page](https://www.w3schools.com/colors/colors_converter.asp)  What are the RGB values of your favourite color?
 
-- **Setp 3**: By looking at the color components of any image 
+**Setp 3**: By looking at the color components of any image 
 we can guess what could be in the image.  For example if the image is of the floor in the L3 lab, it will consist of lots of gray pixels.  If the image is full of smarties, it will have a wide range of colors etc...
 
 We would like our function get_color(x) to return the average color of the pixels.
@@ -65,9 +65,21 @@ Question 3
 get_color(1)
 ~~~~
 
-**step 2**: Currently we are passing the get_color function the value of 1,  we don't want to do this we would like to pass it an image from the camera.  
-Step 3: Test your function by typing [r,g,b]=get_color(a,200,200,20,20) into the command line, this should return 50,50,50, if you set up your function correctly.
-Step 4: Inside the function get_color, define two nested for loops, one which counts using the variable x and one which counts using the variable y. Make the x loop count from x_start to x_start+width, and make the y loop count from y_start to y_start+height. To test if this works, use the sprintf command to print out the values of x and y.  When you execute get_color(a,200,200,20,20), again, the function should print out all the x,y values over which the loop counnts.
+**step 2**: Currently we are passing the get_color function the value of 1,  we don't want to do this we would like to pass it an image from the camera.  So using imread in the script *detect.m*, read the image *floor.jpb* into a variable *a* and pass it to your function by using the code
+
+~~~~
+get_color(a)
+~~~~
+
+Now in your *get_color()* function use the command imshow, so that the function will display any image which is passed to it.
+
+
+**Step 3:** Inside the function get_color, define two nested for loops, one which counts using the variable x from 1 to 100 and one which counts using the variable y from 1 to 100.
+
+**step 4**:  Using the sprintf and the disp commands print out all the values of x and y, over which the loops count.
+
+
+Make the x loop count from x_start to x_start+width, and make the y loop count from y_start to y_start+height. To test if this works, use the sprintf command to print out the values of x and y.  When you execute get_color(a,200,200,20,20), again, the function should print out all the x,y values over which the loop counnts.
 
 Step 5: If you have done the example sheet on image processing, you will know all about how images are stored as red green and blue values in a matrix. [This is the example sheet with the cat with different colored eyes.] If you have not done this example sheet, I suggest you go and revise it, it will explain basic image processing to you.  In there I explain about how colored images are stored in detail.  I will now quickly revise the topic….  Black and white images are stored in a 2D matrix, a value of 255 stored in the matrix, represents white pixel, while a value of 0 represents a black pixel, values in between represent different grey colours.  Coloured images, work in the same way, except instead of using a 2D array, they use a 3D array, where the last dimension selects the colour.  If for example you had a coloured image stored in the variable ‘a’ and wanted to access the red pixel at 50,50 you would write a(50,50,1), if you wanted to access the green value stored in the same location you would type a(50,50,2), and finally the blue value would be accessed by typing, a(50,50,3).  Edit your sprtinf statement to display the red, green and blue values of the pixels at every x,y value your nested for loops count over.
 Step 6: We are now going to edit the function so that it sums, all the values of the red pixels in the box defined, by the inputs to the function.  At the top of your function define the counter r=0.0, in the loop add the line r=r+int32(a(x,y,1)).  By writing int32 before the a, we are just telling MATLAB/Octave to use an int32 type variable to store the sum of all the red pixels.  An int32, is a special type of variable which can store very big numbers, we are using this as we expect the value of r to get very big.  The technical term for this is type casting, I won’t go into it in detail now, but you can google it if you are interested.  Now add corresponding lies for the blue, and green colours, just as we did for the red colour.  Now test out the function again on the command line.  You should get some large values for r,g and b returned. (In step one you set r,g,b to 50, if you have not already done this take out those liens of code.)
