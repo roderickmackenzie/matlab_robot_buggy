@@ -27,6 +27,10 @@ Mod your buggy
 - Your buggy has enough hardware to accomplish this task, but if you fancy adding extra motors and or acoustic sensors we do have some spare. But you have to figure out how to use them.  I think 4 motors might be a fun thing to try, I do have some spare motors for a few groups.   :wink:
 - Try making the LEDs flash a set code depending on what the buggy is doing.
 
+How to get your marks....
+-------------------------
+Take your buggy to the arena, demonstrate it works, then after you have completed the challenge, take your buggy to bits and place it back in the tool box  **The tool box must look exactly how it was when it was given to you.**  Once this has been signed off by a demonstrator, you may go!
+
 ---
 Appendix
 --------
