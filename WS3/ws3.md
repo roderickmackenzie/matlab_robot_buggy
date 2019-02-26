@@ -35,7 +35,7 @@ Start up MATLAB on your PC.  We are now going to write some simple code to do so
 
 Question 3
 ----------
-**Step 1:** We are now going to write a function to calculate the average color of a image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as *get_color.m*.  In this file we are going to make a function, copy and paste the following code, which will define a function into the file:
+**Step 1:** We are now going to write a function to calculate the average color of a image, and use the average color the camera sees to identify objects.  Think how placing an orange and then an apple in an image would affect the average color of the image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as *get_color.m*.  In this file we are going to make a function, copy and paste the following code, which will define a function into the file:
 
 ~~~~
 function [r g b] = get_color(data)
@@ -121,12 +121,15 @@ g=2;
 b=3;
 ~~~~
 
-from your function.  At the top of your function define the counter r=0.0, in the loop add the line 
+from your function.  At the top of your function (but still in your function) define the counter r=0.0. Within the nested loop add the line of code
+
 ~~~~
 r=r+int32(a(x,y,1));
 ~~~~
 
-By writing int32 before the a, we are just telling MATLAB/Octave to use an int32 type variable to store the sum of all the red pixels.  An int32, is a special type of variable which can store very big numbers, we are using this as we expect the value of r to get very big.  The technical term for this is type casting.  Now add corresponding lies for the blue, and green colors, just as we did for the red color.  After your loop add the commands:
+>What is this line of code doing?  Write your answer as a comment in your script.
+
+By writing *int32* before the a, we are just telling MATLAB/Octave to use an *int32* type variable to store the sum of all the red pixels.  An *int32*, is a special type of variable which can store very big numbers, we are using this as we expect the value of *r* to get very big.  The technical term for this is *type casting*.  Now add corresponding lines for the blue, and green colors, just as we did for the red color.  After your nested loops add the commands:
 
 ~~~~
 r
@@ -137,13 +140,13 @@ b
 To show you the totals of the red green and blue in the images.
 Now test out the function again on the command line.  You should get some large values for r,g and b returned.
 
-**Step 2:** Returning the sum of red, green and blue, pixels is not so useful. What we want really is the function to return the average values of the red, green and blue pixels.  So add to your function a variable (called count) which adds up the number of pixels over which the r,g,b values are summed.  Then at the end of your function, divide r,g and b values by count.  [An alternative way of doing this is to divide the totals by y_len*x_len] Test your function again by running the script, detect.m.  It should now return the average pixel intensity, for the region defined in figure 1.
+**Step 2:** Returning the sum of red, green and blue, pixels is not so useful. What we want really is the function to return the average values of the red, green and blue pixels.  So add to your function a variable (called count) which adds up the number of pixels over which the r,g,b values are summed.  Then at the end of your function, divide r,g and b values by count.  [An alternative way of doing this is to divide the totals by y_len*x_len] Test your function again by running the script, *detect.m*.  It should now return the average pixel intensity, for the region defined in figure 1.
 
-**Step 3:** Change your script *detect.m* to load *black.jpg* and *smarties.jpg*.  What values do you get out?  Are they different for each object?  If so how different?
+**Step 3:** Change your script *detect.m* to load *black.jpg* and *eggs.jpg*.  What values do you get out?  Are they different for each object?  If so how different?
 
 Question 6
 ----------
-**Step 1:** We have now written a function to detect the color of an object.  All we need now it to change our program to figure out which color relates to which object.  Depending on the light the exact values from the camera may change so rather than saying the average color from a section of black tape is 0,0,0 we could say that black tape has values of red<50 and green<50, blue<50.  I would use this code to check if an object is black or not:
+**Step 1:** We have now written a function to detect the color of an object.  All we need now it to change our program to figure out which color relates to which object.  Depending on the light in the room the exact values from the camera may change so rather than saying the average color from a section of black tape is 0,0,0 we could say that black tape has values of red<50 and green<50, blue<50.  I would use this code to check if an object is black or not:
 
 ~~~~
 if (r<50)
@@ -155,9 +158,8 @@ if (r<50)
 end
 ~~~~
 
-copy and paste this code into *detect.m*.  Does it work?  Copy and paste this code, while changing the values to detect the color white representing the exit.  Does it work?
+copy and paste this code into *detect.m*.  Does it work?  Copy and paste this code, while changing the values to detect the color white representing the exit.  Does it work or does it get confused?
 
-Question 6 (bonus question):
+Question 7 (bonus question):
 ----------------------------
-Can you detect the image with the smarties in it.  Can you think of original strategies for doing this?
-
+Now try to adjust your script to identify the picture of the Easter eggs. 
