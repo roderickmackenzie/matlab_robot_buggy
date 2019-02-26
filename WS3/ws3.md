@@ -1,19 +1,20 @@
 Worksheet 3
 ===========
-Wile group work is fun, it’s also fun to do your own thing.  So for this worksheet, all parts are to be done individually, except Question 0 which you will have to do in a group. The usual plagiarism rules will apply for all but question 0. As ever, the demonstrators in the lab are here to help you.  For all questions but number 0, you can use matlab on the computers in C19/C20, you don’t need the buggy.
-Question 0: You will have noticed that your buggy has a camera.  In this worksheet we will be using the camera to detect objects and ultimately, to help the buggy avoid objects (although that will be in the next lab).
+Wile group work is fun, it’s also fun to do your own thing.  So for this worksheet, all parts are to be done individually, except Question 1 which you will have to do in a group. The usual plagiarism rules will apply for all but question 1. As ever, the demonstrators in the lab are here to help you.  For all questions but number 1, you can use matlab on the computers in C19/C20, you don’t need the buggy.
 
-
-
-> Most of you have not finished work sheet 2 yet, so my suggestion is to first do question 0, get the images then have a go at this work sheet during the week.  The demonstrators will be able to help you next week.
-
-Question 0
+Question 1
 ----------
+You will have noticed that your buggy has a camera.  In this worksheet we will be using the camera to detect objects and ultimately, to help the buggy avoid objects (although that will be in the next lab).
+
+
+
+> Note: Most of you have not finished work sheet 2 yet, so my suggestion is to first do question 1, get the images then have a go at this work sheet during the week.  The demonstrators will be able to help you next week.
+
 **Step 1:** Make a new octave (MATLAB) script, add the addpath(‘/home/pi/lib’) command as usual. Then add the command camera() to the script. Save and run the script and you will see that an image has been written to /home/pi/image.jpg .  To open this image, click on the folder icon in the top left of the screen (it is the third icon from the left, next to the raspberry).  If you now double click on image.jpg you will see a picture of what the camera was looking at.
 
 **Step 2:** Now, put the buggy on the floor, with all the wires still plugged in. Make sure the buggy has a clear view of the floor, with no wires, cables, bags books etc.. in the way. Then take another image using  your script.  Rename the image by right clicking on it, and call it ‘floor.jpg’.
 
-**Step 3:** Next lab session your buggy will have to navigate an obstetrical course, see figure 1.  Your buggy will have to find the exit (marked by a white piece of paper), avoid being eaten by the rabbit, which is lives in an area surrounded by black tape, avoid bumping into the walls, and ideally find the patch of smarties before exiting the course.  These tasks can be accomplished by using a combination of the camera and the ultrasonic sensor.
+**Step 3:** Next lab session your buggy will have to navigate an obstacle course, see figure 1.  Your buggy will have to find the exit (marked by a white piece of paper), avoid being eaten by the rabbit, which is lives in an area surrounded by black tape, avoid bumping into the walls, and ideally avoid the patch of Easter eggs before exiting the course.  These tasks can be accomplished by using a combination of the camera and the ultrasonic sensor.
 
 <center>
 <img src="./images/pen.png">
