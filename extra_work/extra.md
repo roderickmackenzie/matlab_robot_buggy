@@ -3,7 +3,7 @@ An extra work sheet
 
 Who is this work sheet for?
 ---------------------------
-This work sheet is for people who missed the first lab session who were ill and did not have an EC form.  If you complete this exercise sheet you will get compensated for the lab.  The lab sheet focuses on the last couple of lectures.
+This work sheet is for people who missed the first lab session and DO NOT HAVE AN EC FORM.  If you were ill then you should apply for an EC form.  If you complete this exercise sheet you will get compensated for the lab and the marks you missed.  The lab sheet focuses on the last couple of lectures.
 
 Question 1 - files
 ------------------
@@ -31,7 +31,7 @@ f(x)=(5x^3+15x^2+x+10)
 ~~~~
 between the values of -10.0 and 10.0.
 
-**b)** Use while loops and Newtons method to solve the above  equation.  What answer does your script give you for an initial guess of x=10. [Hint you can basically copy the answer out of the notes.]
+**b)** Use while loops and Newtons method to solve the above equation.  What answer does your script give you for an initial guess of x=10. [Hint you can basically copy the answer out of the notes.]
 
 **c)**  Write an algorithm to integrate the function from -10 to +10.
 
