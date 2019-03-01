@@ -63,7 +63,7 @@ Have a play with this web page to understand this a bit better:
 **Setp 3**: By looking at the color components of any image 
 we can guess what could be in the image.  For example if the image is of the floor in the L3 lab, it will consist of lots of gray pixels.  If the image is full of colorful Easter eggs, it will have a wide range of colors etc...
 
-We would like our function get_color(x) to return the average color of the pixels.
+In the next part of the example sheet we are going to edit the the function *get_color(x)* return the average intensity of red, green and blue pixels in our image.  By following the steps you will be able to do this.
 
 Question 4
 ----------
