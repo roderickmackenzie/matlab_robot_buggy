@@ -11,3 +11,5 @@ The project is at 1st undergrad level.
 - *Work sheet 4* : The buggy challenge, an obstetrical course for the buggies.
 
 Do with it what you will, I release everything under CC-BY.
+
+Roderick MacKenzie 1/3/2019
