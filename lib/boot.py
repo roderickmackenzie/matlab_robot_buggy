@@ -15,7 +15,13 @@ from test_auto_run import test_auto_run
 import picamera
 import sys
 
-camera = picamera.PiCamera()
+while(1):
+	try:
+		camera = picamera.PiCamera()
+		break
+	except:
+		os.system("zenity --error --title=\"Oh dear\" --text=\"No camera check the cable, it may be around the wrong way.  Also remember to be careful with the cable it is very delicate.  ;) Rod\"")
+		
 camera.resolution=(640,480)
 camera.framerate=90
 
