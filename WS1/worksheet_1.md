@@ -25,14 +25,20 @@ The component list:
 
 |  Item              |  Number  |
 | ------------------ | -------- |
+|  M3 nuts           |  x18      |
+|  M3 plastic screws |  x3       |
+|  Motor supports    |  x8       |
+|  Plastic screws    |  x3       |
+|  Long metal screws |  x8       |
+|  Short M3 screws   |  x2       |
+|  M3 plastic nuts       |  x5       |
+|  Plastic hex supports   |  x6      |
+
+|  Item              |  Number  |
+| ------------------ | -------- |
 |  Acoustic sensor   |  x1      |
 |  Wires             |  lots    |
-
-
-| Item  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|  Wheels            |  x4       |
 
 It should contain the following items:
 1. , 1. Red bank of switches, 1. 5v Voltage regulator, 1. Bank of LEDs, Many Batteries,1. SD card, 1. Raspberry PI, 1.  Raspberry PI holder, 4. Buggy wheels, 4. Metal supports, 1. USB cable, 8. motor brackets, lots of wires, 1. screwdriver, 1. 3D printed camera holder, lots of resistors, 1. x4 AA battery holder, 1 x8 AA battery holder, 1. battery clip, 1. on/off switch, 1. Raspberry PI camera, lots of junction boxes.
