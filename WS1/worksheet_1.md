@@ -28,6 +28,10 @@ The component list:
 |  Wires             |  lots    |
 
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 It should contain the following items:
 1. , 1. Red bank of switches, 1. 5v Voltage regulator, 1. Bank of LEDs, Many Batteries,1. SD card, 1. Raspberry PI, 1.  Raspberry PI holder, 4. Buggy wheels, 4. Metal supports, 1. USB cable, 8. motor brackets, lots of wires, 1. screwdriver, 1. 3D printed camera holder, lots of resistors, 1. x4 AA battery holder, 1 x8 AA battery holder, 1. battery clip, 1. on/off switch, 1. Raspberry PI camera, lots of junction boxes.
