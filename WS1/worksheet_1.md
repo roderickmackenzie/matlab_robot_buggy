@@ -30,7 +30,8 @@ The component list:
 |  Motor supports    |  x8       |
 |  Plastic screws    |  x3       |
 |  Long metal screws |  x8       |
-|  Short M3 screws   |  x2       |
+|  Short M3 screws short  |  x2       |
+|  Short M3 screws long  |  x3       |
 |  M3 plastic nuts       |  x5       |
 |  Plastic hex supports   |  x6      |
 
