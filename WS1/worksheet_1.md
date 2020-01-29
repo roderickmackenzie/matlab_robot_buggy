@@ -25,7 +25,6 @@ The component list:
 
 |  Item              |  Number  |
 | ------------------ | -------- |
-
 |  Motor supports    |  x8       |
 |  Long metal screws |  x8       |
 |  Plastic screws M3 short  |  x2       |
