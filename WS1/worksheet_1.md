@@ -29,7 +29,7 @@ The component list:
 |  Wires             |  lots    |
 
 
-| First Header  | Second Header |
+| Item  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
