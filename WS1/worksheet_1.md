@@ -15,7 +15,7 @@ Figure 1: The robot buggy kit in it's box
 </center>
 
 <center>
-<img src="./images_small/all.png">
+<img src="./images_small/all.png"  width=50% >
 </center>
 <center>
 Figure 2: The robot buggy kit spread out on a table.
