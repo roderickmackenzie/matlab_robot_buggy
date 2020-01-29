@@ -22,10 +22,10 @@ Figure 2: The robot buggy kit spread out on a table.
 </center>
 
 The component list:
-| Item             | Number |
-|------------------|--------|
-| Acoustic sensor  | x1     |
-| Wires            | lots   |
+|  Item              |  Number  |
+| ------------------ | -------- |
+|  Acoustic sensor   |  x1      |
+|  Wires             |  lots    |
 
 
 
