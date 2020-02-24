@@ -46,13 +46,12 @@ It should also contain the following number of bolts and nuts:
 |  Motor supports screws   |  x8    |  |  |
 |  Long metal screws |  x8       	|  |  |
 |  Plastic screws M3 short  |  x2   |  |  |
-|  Plastic screws M3 long  |  x3    | RS | 527-987 |
 |  M3 plastic nuts       |  x5      |  |  |
 |  M3 nuts           |  x18      	|  |  |
-|  Plastic hex supports long  |  x2 | Rapid | 33-2044 |
+|  Plastic hex supports long (15mm) |  x2 | Rapid/RS | 33-2044/102-6520 |
 |  Plastic hex supports short |  x4 |  |  |
-|  M4 nuts 					  |  x1 | RS | 525-896 |
-|  M4 bolts 					  |  x1 | RS | 278-708 |
+|  Plastic screws M3 long  |  x3    | RS | 527-987 |
+|  Long metal M3 screw for sensor |  x1 | RS |  560-647*     |
 
 
 
