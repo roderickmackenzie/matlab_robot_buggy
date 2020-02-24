@@ -14,9 +14,10 @@ The robot buggy kit is sown in figures 1 and 2.  Figure 1, shows how the compone
 Figure 1: The robot buggy kit in it's box
 </center>
 
-<center>
+<p align="center">
 <img src="./images_small/all.png"  width=50% >
-</center>
+</p>
+
 <center>
 Figure 2: The robot buggy kit spread out on a table, including larger components which will not fit in the box.
 </center>
