@@ -57,7 +57,7 @@ Getting to grips with the Raspberry Pi
 
 *Step 1*:
 <p align="center">
-<img src="./images_small/top_plate_case.jpg"  width=25% >
+<img src="./images_small/top_plate_case.jpg"  width=40% >
 
 Figure 2: The robot buggy kit spread out on a table, including larger components which will not fit in the box.
 </p>
