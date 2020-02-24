@@ -37,6 +37,7 @@ Your box should contain:
 |  Acoustic sensor interface | x1  |
 |  Camera holder | x1  |
 |  Camera+ribbon cable | x1  |
+|  Raspberry PI enclosure | x1  |
 
 It should also contain the following number of bolts and nuts:
 
@@ -51,17 +52,17 @@ It should also contain the following number of bolts and nuts:
 |  Plastic hex supports   |  x6      |
 
 
-Raspberry Pi set-up
-----------
-Step 1: Fist go and find the Raspberry PI (PI) in your kit.  It should look like the image shown in figure 1.  Also in your buggy kit there should be a box labelled “Premium Raspberry Pi Enclosure”.  This is just a plastic box to protect the Raspberry PI.  Place the PI in the enclosure, before you do anything else.  Circuit boards can be damaged by static electricity, grease from your hands and liquids.
+Getting to grips with the Raspberry Pi
+--------------------------------------
 
+*Step 1*:
+<p align="center">
+<img src="./images_small/top_plate_case.jpg"  width=25% >
 
-Before we can turn it on, we need to install some software on to the PI to make it work, currently there is no software on it at all, not even an operating system. Once we have installed the software onto the PI, it will be able to interact with the various sensors and motors. Lets install the software onto the PI.  Note: For the 2019 class, we have already installed the software for you, so you can skip to step 6.  If you want to buy your own raspberry PI to play with at home (or use it in your 3/4th year projects, steps 2-5 will be useful to you later)… skip to step 6.
+Figure 2: The robot buggy kit spread out on a table, including larger components which will not fit in the box.
+</p>
 
-Step 2: Download the software Win32DiskImager to a PC from https://sourceforge.net/projects/win32diskimager/ 
-Step 3: We have bundled all the software you will need to run the PI, in a single file called image.iso.  You will be able to find this on Moodle, it’s about 1Gb in size, so you may have to wait a moment while it donwloads.  This will contain the operating system of the PI, as well as all the relevant code needed to control the motors, ultra-sound distance sensor and the camera.
-Step 4: Go and find the SD card and SD card reader from your buggy kit.  If they are in packing, unpack them and insert the SD card into the SD card reader.  Then insert the SD card reader into the PC in the computer room.
-Step 5: Using win32diskimager, write the .iso file you downloaded from moodle to the SD  card.  You will have to double click on win32diskimager to start it.  Ensure you select the image you have downloaded and the SD card using the boxes shown in figure 2. Once you press “Write”, it will take around 30 minutes to write the image to the SD card, this is because it’s  big file and the USB ports are slow. At this point you can beging the next section and return once the image write is complete.  Don’t wait for it to finish writing – you don’t have time!
+*Step 1:* Locate the (raspberry PI)[https://en.wikipedia.org/wiki/Raspberry_Pi] in your toolbox, also locate the plastic raspberry PI enclosure.  When handling the raspberry pi, it is important to note that you are directly handling the circuit board of a computer.  Circuit boards are very delicate, and can be damaged by moisture form your hands and static electricity from your body.  It is also important to note that all the metallic bits on the back of the board will have electricity running through them, (so I would not recommend licking them!), so it is important you don't place the raspberry PI on any metallic objects such as metal pens, rulers, coins etc...
 
 
 
