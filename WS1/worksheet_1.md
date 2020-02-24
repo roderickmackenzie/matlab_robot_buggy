@@ -55,7 +55,7 @@ It should also contain the following number of bolts and nuts:
 Getting to grips with the Raspberry Pi
 --------------------------------------
 
-*Step 1*: Locate the top plate to the buggy (if you do not have one go and ask a demonstrator for one), the case for the raspberry PI, and a long <span style="color:blue">PLASTIC</span> screw and a <span style="color:blue">PLASTIC</span> washer.
+*Step 1*: Locate the top plate to the buggy (if you do not have one go and ask a demonstrator for one), the case for the raspberry PI, and a long ![#f03c15](*PLASTIC*) screw and a <span style="color:blue">PLASTIC</span> washer.
 <p align="center">
 <img src="./images_small/top_plate_case.jpg"  width=40% >
 
