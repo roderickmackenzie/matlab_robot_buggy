@@ -55,15 +55,29 @@ It should also contain the following number of bolts and nuts:
 Getting to grips with the Raspberry Pi
 --------------------------------------
 
-*Step 1*: Locate the top plate to the buggy, the case for the raspberry PI, and a long *PLASTIC* screw and a *PLASTIC* washer.  These components are shown in figure 3.   If you do not have any of these components go and ask a demonstrator for them.  Do not use a metal screw this will short the PI and destroy it.
+*Step 1*: Locate:
+* The top plate to the buggy, this is a brown piece of acrylic with a white thing stuck to it (this white thing is called a bread board).
+* The case for the raspberry PI, this is clear acrylic box, which comes in 2/3 parts
+* A long *PLASTIC* screw and a *PLASTIC* washer.
+
+These components are shown in figure 3.   If you do not have any of these components go and ask a demonstrator for them.  *Do not use a metal screw this will short the PI and destroy it.*
+
 <p align="center">
 <img src="./images_small/top_plate_case.jpg"  width=40% >
 
 Figure 3: The top bottom half of the PI case, fixed to the top of the buggy.
 </p>
 
-*Step 1:* Locate the (raspberry PI)[https://en.wikipedia.org/wiki/Raspberry_Pi] in your toolbox, also locate the plastic raspberry PI enclosure.  When handling the raspberry pi, it is important to note that you are directly handling the circuit board of a computer.  Circuit boards are very delicate, and can be damaged by moisture form your hands and static electricity from your body.  It is also important to note that all the metallic bits on the back of the board will have electricity running through them, (so I would not recommend licking them!), so it is important you don't place the raspberry PI on any metallic objects such as metal pens, rulers, coins etc...
+Hold the top plate to the buggy in your hands, and notice that the breadboard is slightly offset from the center of the board, arrange the bottom of the PI case and the top of the buggy so that it looks like Figure 3.  Then take the long screw and pass it though one of the large holes in the PI case, until it pokes out the other side.  Then pass the screw though a hole in the top plate to the buggy and fasten it in place with the nut.  The result should look like Figure 3, if something does not fit, don't force it ask a demonstrator for help.
 
+
+*Step 2:* Locate the (raspberry PI)[https://en.wikipedia.org/wiki/Raspberry_Pi] in your toolbox.  When handling the raspberry pi, it is important to note that you are directly handling the circuit board of a computer.  Circuit boards are very delicate, and can be damaged by moisture form your hands and static electricity from your body.  It is also important to note that all the metallic bits on the back of the board will have electricity running through them, (so I would not recommend licking them!), so it is important you don't place the raspberry PI on any metallic objects such as metal pens, rulers, coins etc... Locate the SD card in your kit (the demonstrators may will have these), and insert the SD card into the PI as shown in figure 4.  The SD card acts as the internal hard disk for the PI, it contains both the operating system ((Raspbian which is a version of Linux)[https://www.raspberrypi.org/downloads/raspbian/]), and acts a place to store your work.
+
+<p align="center">
+<img src="./images_small/pi_and_card.jpg"  width=40% >
+
+Figure 4: Inserting the SD card into the PI.
+</p>
 
 
 
