@@ -121,8 +121,23 @@ Figure 8: Building the ultrasonic sensor holder.
 <p align="center">
 <img src="./images_small/ultrasonic_attach.jpg"  width=40% >
 
-Figure 8: Attaching the ultrasonic sensor to the buggy.
+Figure 8: Attaching the ultrasonic sensor to the buggy, with two long plastic screws.
 </p>
+
+**Step 7:** Find the PI camera and it's 3D printed holder in your tool box, also find two short M3 metal bolts, and two M3 nuts.  Build the camera holder as shown in figure 9, and then attach it to the buggy as shown in figure 10.  Do note that the ribbon cable attached to the camera is very delicate, if you bend it so there is a kink in it, then it will break all the connections within the cable.  It is the same type of cable as used in mobile phones, treat it with care.
+
+<p align="center">
+<img src="./images_small/camera_holder.jpg"  width=40% >
+
+Figure 9: Building camera holder.
+</p>
+
+<p align="center">
+<img src="./images_small/camera_attach.jpg"  width=40% >
+
+Figure 10: Attaching the camera holder to the buggy.
+</p>
+
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
 
 Step 7: Once the power is connected, the PI should begin to boot up. After a minute or so, you should be able to see the desktop of the raspberry pi and be able to interact with its installed programs as shown in figure 3. If this doesn’t happen, ensure the SD card is correctly inserted, and ask for help!
