@@ -23,7 +23,7 @@ Your box should contain:
 | ------------------ | -------- |
 |  Wheels            |  x4       |
 |  Screwdriver       |  x1       |
-|  Posts 			 |  >=x4     |
+|  Posts 			 |  x4     |
 |  Yellow motors 	 |  x4      |
 |  Black USB wire 	 |  x1      |
 |  Pre-made motor wire |  x1      |
