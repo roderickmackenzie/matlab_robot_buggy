@@ -7,21 +7,17 @@ This series of four labs will take you through the process of building a compute
 Your robot buggy kit
 -----------------
 The robot buggy kit is sown in figures 1 and 2.  Figure 1, shows how the components should be stored in the toolbox, and figure 2 includes the larger components which will not fit in the box.  When you return your buggy at the end of the buggy building sessions, all the components should be placed into the toolbox exactly as you found them.
-<center>
+<p align="center">
 <img src="./images_small/kit.png">
-</center>
-<center>
+
 Figure 1: The robot buggy kit in it's box
-</center>
+</p>
 
 <p align="center">
 <img src="./images_small/all.png"  width=50% >
-</p>
 
-<center>
 Figure 2: The robot buggy kit spread out on a table, including larger components which will not fit in the box.
-</center>
-
+</p>
 The component list:
 
 |  Item              |  Number  |
