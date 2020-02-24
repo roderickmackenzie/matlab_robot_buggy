@@ -21,23 +21,23 @@ Figure 2: The robot buggy kit spread out on a table, including larger components
 Your box should contain:
 |  Item              |  Number  	| Provider  |  Order code |
 | ------------------ | -------- 	| --------  | -------- |
-|  Wheels            |  x4      	|  |  |
-|  Screwdriver       |  x1      	|  |  |
-|  Posts 			 |  x4      	|  |  |
-|  Yellow motors 	 |  x4      	|  |  |
-|  Black USB wire 	 |  x1      	|  |  |
-|  Pre-made motor wire |  x1    	|  |  |
-|  Raspberry PI |  x1           	|  |  |
-|  Acoustic sensor   |  x1      	|  |  |
-|  Wires             |  lots    	|  |  |
-|  Acoustic sensor holder | x1  	|  |  |
-|  L298 motor driver board | x1  	|  |  |
-|  Red dipswitches | x1  			|  |  |
-|  LED bar graph | x1  				|  |  |
-|  Acoustic sensor interface | x1  	|  |  |
-|  Camera holder | x1  				|  |  |
-|  Camera+ribbon cable | x1 		|  |  |
-|  Raspberry PI enclosure | x1		|  |  |
+|  Wheels            |  x4      	| Amazon |  |
+|  Screwdriver       |  x1      	| RS |  |
+|  Posts 			 |  x4      	| RS |  |
+|  Yellow motors 	 |  x4      	| Amazon |  |
+|  Black USB wire 	 |  x1      	| Amazon |  |
+|  Pre-made motor wire |  x1    	| UoN |  |
+|  Raspberry PI |  x1           	| RS |  |
+|  Acoustic sensor   |  x1      	| Amazon |  |
+|  Wires             |  lots    	| Amazon |  |
+|  Acoustic sensor holder | x1  	| UoN |  |
+|  L298 motor driver board | x1  	| Amazon |  |
+|  Red dipswitches | x1  			| RS |  |
+|  LED bar graph | x1  				| RS |  |
+|  Acoustic sensor interface | x1  	| UoN |  |
+|  Camera holder | x1  				| UoN |  |
+|  Camera+ribbon cable | x1 		| RS |  |
+|  Raspberry PI enclosure | x1		| RS |  |
 
 It should also contain the following number of bolts and nuts:
 
