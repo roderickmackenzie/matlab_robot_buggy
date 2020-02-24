@@ -9,7 +9,6 @@ Your robot buggy kit
 The robot buggy kit is sown in figures 1 and 2.  Figure 1, shows how the components should be stored in the toolbox, and figure 2 includes the larger components which will not fit in the box.  When you return your buggy at the end of the buggy building sessions, all the components should be placed into the toolbox exactly as you found them.
 <p align="center">
 <img src="./images_small/kit.png">
-
 Figure 1: The robot buggy kit in it's box
 </p>
 
