@@ -19,37 +19,39 @@ Figure 2: The robot buggy kit spread out on a table, including larger components
 </p>
 
 Your box should contain:
-|  Item              |  Number  |
-| ------------------ | -------- |
-|  Wheels            |  x4       |
-|  Screwdriver       |  x1       |
-|  Posts 			 |  x4     |
-|  Yellow motors 	 |  x4      |
-|  Black USB wire 	 |  x1      |
-|  Pre-made motor wire |  x1      |
-|  Raspberry PI |  x1      |
-|  Acoustic sensor   |  x1      |
-|  Wires             |  lots    |
-|  Acoustic sensor holder | x1  |
-|  L298 motor driver board | x1  |
-|  Red dipswitches | x1  |
-|  LED bar graph | x1  |
-|  Acoustic sensor interface | x1  |
-|  Camera holder | x1  |
-|  Camera+ribbon cable | x1  |
-|  Raspberry PI enclosure | x1  |
+|  Item              |  Number  	| Provider  |  Order code |
+| ------------------ | -------- 	| --------  | -------- |
+|  Wheels            |  x4      	|  |  |
+|  Screwdriver       |  x1      	|  |  |
+|  Posts 			 |  x4      	|  |  |
+|  Yellow motors 	 |  x4      	|  |  |
+|  Black USB wire 	 |  x1      	|  |  |
+|  Pre-made motor wire |  x1    	|  |  |
+|  Raspberry PI |  x1           	|  |  |
+|  Acoustic sensor   |  x1      	|  |  |
+|  Wires             |  lots    	|  |  |
+|  Acoustic sensor holder | x1  	|  |  |
+|  L298 motor driver board | x1  	|  |  |
+|  Red dipswitches | x1  			|  |  |
+|  LED bar graph | x1  				|  |  |
+|  Acoustic sensor interface | x1  	|  |  |
+|  Camera holder | x1  				|  |  |
+|  Camera+ribbon cable | x1 		|  |  |
+|  Raspberry PI enclosure | x1		|  |  |
 
 It should also contain the following number of bolts and nuts:
 
-|  Item              |  Number  |
-| ------------------ | -------- |
-|  Motor supports screws   |  x8       |
-|  Long metal screws |  x8       |
-|  Plastic screws M3 short  |  x2       |
-|  Plastic screws M3 long  |  x3       |
-|  M3 plastic nuts       |  x5       |
-|  M3 nuts           |  x18      |
-|  Plastic hex supports   |  x6      |
+|  Item              |  Number  	|  	Provider  |  Order code |
+| ------------------ | -------- 	|   --------  | -------- |
+|  Motor supports screws   |  x8    |  |  |
+|  Long metal screws |  x8       	|  |  |
+|  Plastic screws M3 short  |  x2   |  |  |
+|  Plastic screws M3 long  |  x3    |  |  |
+|  M3 plastic nuts       |  x5      |  |  |
+|  M3 nuts           |  x18      	|  |  |
+|  Plastic hex supports long  |  x2 |  |  |
+|  Plastic hex supports short |  x4 |  |  |
+
 
 
 Getting to grips with the Raspberry Pi
