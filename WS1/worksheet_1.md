@@ -46,7 +46,7 @@ It should also contain the following number of bolts and nuts:
 |  Motor supports screws   |  x8    |  |  |
 |  Long metal screws |  x8       	|  |  |
 |  Plastic screws M3 short  |  x2   |  |  |
-|  Plastic screws M3 long  |  x3    |  |  |
+|  Plastic screws M3 long  |  x3    | RS | 527-987 |
 |  M3 plastic nuts       |  x5      |  |  |
 |  M3 nuts           |  x18      	|  |  |
 |  Plastic hex supports long  |  x2 |  |  |
