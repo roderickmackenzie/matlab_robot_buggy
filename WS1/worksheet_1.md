@@ -9,7 +9,7 @@ Your robot buggy kit
 The robot buggy kit is sown in figures 1 and 2.  Figure 1, shows how the components should be stored in the toolbox, and figure 2 includes the larger components which will not fit in the box.  When you return your buggy at the end of the buggy building sessions, all the components should be placed into the toolbox exactly as you found them.
 <p align="center">
 <img src="./images_small/kit.png">
-Figure 1: The robot buggy kit in it's box
+Figure 1: The robot buggy kit in it's toolbox, when you return your buggy kit, it should be set out in exactly the same way as you got it.
 </p>
 
 <p align="center">
@@ -17,11 +17,31 @@ Figure 1: The robot buggy kit in it's box
 
 Figure 2: The robot buggy kit spread out on a table, including larger components which will not fit in the box.
 </p>
-The component list:
+
+Your box should contain:
+|  Item              |  Number  |
+| ------------------ | -------- |
+|  Wheels            |  x4       |
+|  Screwdriver       |  x1       |
+|  Posts 			 |  >=x4     |
+|  Yellow motors 	 |  x4      |
+|  Black USB wire 	 |  x1      |
+|  Pre-made motor wire |  x1      |
+|  Raspberry PI |  x1      |
+|  Acoustic sensor   |  x1      |
+|  Wires             |  lots    |
+|  Acoustic sensor holder | x1  |
+|  L298 motor driver board | x1  |
+|  Red dipswitches | x1  |
+|  LED bar graph | x1  |
+|  Acoustic sensor interface | x1  |
+|  Camera holder | x1  |
+|  Camera+ribbon cable | x1  |
+
 
 |  Item              |  Number  |
 | ------------------ | -------- |
-|  Motor supports    |  x8       |
+|  Motor supports screws   |  x8       |
 |  Long metal screws |  x8       |
 |  Plastic screws M3 short  |  x2       |
 |  Plastic screws M3 long  |  x3       |
@@ -29,11 +49,7 @@ The component list:
 |  M3 nuts           |  x18      |
 |  Plastic hex supports   |  x6      |
 
-|  Item              |  Number  |
-| ------------------ | -------- |
-|  Acoustic sensor   |  x1      |
-|  Wires             |  lots    |
-|  Wheels            |  x4       |
+
 
 It should contain the following items:
 1. , 1. Red bank of switches, 1. 5v Voltage regulator, 1. Bank of LEDs, Many Batteries,1. SD card, 1. Raspberry PI, 1.  Raspberry PI holder, 4. Buggy wheels, 4. Metal supports, 1. USB cable, 8. motor brackets, lots of wires, 1. screwdriver, 1. 3D printed camera holder, lots of resistors, 1. x4 AA battery holder, 1 x8 AA battery holder, 1. battery clip, 1. on/off switch, 1. Raspberry PI camera, lots of junction boxes.
