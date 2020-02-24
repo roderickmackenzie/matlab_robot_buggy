@@ -51,6 +51,8 @@ It should also contain the following number of bolts and nuts:
 |  M3 nuts           |  x18      	|  |  |
 |  Plastic hex supports long  |  x2 | Rapid | 33-2044 |
 |  Plastic hex supports short |  x4 |  |  |
+|  M4 nuts 					  |  x1 | RS | 525-896 |
+|  M4 bolts 					  |  x1 | RS | 278-708 |
 
 
 
@@ -107,7 +109,7 @@ Figure 6: Building the legs for the ultrasonic sensor.
 <img src="./images_small/ultrasonic_legs_attach.jpg"  width=40% >
 
 
-Figure 7: Attaching the legs for the ultrasonic sensor to the buggy.
+Figure 7: Attaching the legs for the ultrasonic sensor to the buggy, using two **plastic** nuts.
 </p>
 
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
