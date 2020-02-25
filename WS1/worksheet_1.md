@@ -154,7 +154,7 @@ Figure 11: The bottom plate of the buggy
 **Step 2:** Now go and find the gear boxes for the buggy,  they are bright yellow and look what is shown in figure 12.  From one pair there should be two with wires coming out of them, and the other pair should not have any wires.  At each corner of the base plate, there are slots to attach each of the four gear boxes, as highlighted in red in figure 11. Using two of the t-shaped plastic pieces shown in figure 12, the mount the motor to the bottom of the base plate by placing one on each side.  Also look at figure 13 to show you how the finished item should look.  Note, in figure 13 the two gear boxes with wires are mounted together, and the ones with no wires are mounted together.   You should do the same.
 
 <p align="center">
-<img src="./images_small/btm_motor.jpg"  width=40% >
+<img src="./images_small/btm_motor.png"  width=40% >
 
 Figure 12: The gear boxes of the buggy, this one has a motor attached to it.
 </p>
