@@ -193,17 +193,32 @@ Section 3: Wiring the motors
 <p align="center">
 <img src="./images_small/wiring_motor_driver.jpg"  width=80% >
 
-Figure 16: Fitting the control cable to the motor driver board, note there is a wrong way and a right way to fit the cable. The metal tabs on the cable should be facing away from you, and towards the board.
+Figure 3.1: Fitting the control cable to the motor driver board, note there is a wrong way and a right way to fit the cable. The metal tabs on the cable should be facing away from you, and towards the board.
 </p>
 
-**Step 3.2:**  Now ask a demonstrator for a power supply module to the buggy.  These consist of four components, and on-off switch, a battery holder, and a USB power converter, they are all joined together in a 3D printed enclosure.  The buggy requires two different voltages to run, a 5V supply which powers the PI, and a 12V supply which drives the motors.  Having a very steady 5V supply is essential to for the PI to run smoothly, the motors can tolerate a voltage between about +15V and +10V.  The red and black wires coming out of the battery pack provide the motors with 10V-15V.  Connect the red and the black wires to the motor controller board as shown in figure 17 .  The red wire should go in the far left hole, and the black wire in the middle hole.  If you put them in the wrong holes, you make see SMOKE!!!  You will have to use the screwdriver to clamp the wires in place.
+**Step 3.2:**  Now ask a demonstrator for a power supply module to the buggy.  These consist of four components, and on-off switch, a battery holder, and a USB power converter, they are all joined together in a 3D printed enclosure.  The buggy requires two different voltages to run, a 5V supply which powers the PI, and a 12V supply which drives the motors.  Having a very steady 5V supply is essential to for the PI to run smoothly, the motors can tolerate a voltage between about +15V and +10V.  The red and black wires coming out of the battery pack provide the motors with 10V-15V.  Connect the red and the black wires to the motor controller board as shown in figure 17 .  The red wire should go in the far left hole, and the black wire in the middle hole.  If you put them in the wrong holes, you make see SMOKE!!!  IF IN DOUBT ASK FOR HELP!! You will have to use the screwdriver to clamp the wires in place.
+
 <p align="center">
 <img src="./images_small/bat_and_motor_driver.jpg"  width=80% >
 
-Figure 17: Attaching the power supply to the motor driver board.
+Figure 3.2: Attaching the power supply to the motor driver board.
 </p>
 
-**Step 3.3:** Fill the battery holder with batteries.  You will be able to get batteries from a demonstrator.  We have a lot of 
+**Step 3.3:** Fill the battery holder with batteries.  You will be able to get batteries from a demonstrator.  We have a lot of left over batteries from last year, I would like to use these up first before opening new boxes of batteries (for environmental reasons).  Use the a voltmeter to test the voltage of second hand batteries, if the voltage is below 1.1V, then they are probably flat.  Put these into the battery recycling bin, and find some more with a higher voltage.  Once you have populated your power supply with batteries flick the switch on the power supply and you should get a red light as shown in figure 3.2.  Now turn the power supply back off.
+
+**Step 3.4:** Once you have wired up the motor driver board, find in your toolbox:
+* Two short plastic hex standoffs.
+* Two plastic nuts.
+* Two plastic screws.
+Then use them to attach the motor driver board to the bottom of the buggy as shown in figure 3.3
+
+<p align="center">
+<img src="./images_small/fasten_motor_board.jpg"  width=80% >
+
+Figure 3.3: Attaching motor controller board to the buggy.
+</p>
+
+
 Old
 ---
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
