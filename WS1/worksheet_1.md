@@ -179,7 +179,7 @@ Figure 14: Threaded post attached to the base plate using a nut on the underside
 </p>
 
 <p align="center">
-<img src="./images_small/post.jpg"  width=40% >
+<img src="./images_small/post_and_nut.jpg"  width=40% >
 
 Figure 15: The posts are attached by placing the threaded end through the hole in the corner of the plates and securing with a nut.
 </p>
