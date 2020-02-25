@@ -213,7 +213,7 @@ Figure 3.2: Attaching the power supply to the motor driver board.
 Then use them to attach the motor driver board to the bottom of the buggy as shown in figure 3.3
 
 <p align="center">
-<img src="./images_small/fasten_motor_board.jpg"  width=80% >
+<img src="./images_small/fasten_motor_board.jpg"  width=50% >
 
 Figure 3.3: Attaching motor controller board to the buggy.
 </p>
