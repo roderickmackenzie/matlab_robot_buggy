@@ -241,9 +241,21 @@ Figure 4.2: Securing the top to the bottom of the buggy.
 <p align="center">
 <img src="./images_small/motor_wiring.jpg"  width=40% >
 
-Figure 4.3: Securing the top to the bottom of the buggy.
+Figure 4.3: Connecting the motor wires
 </p>
-motor_wiring
+
+Section 5: Joining up the camera
+--------------------------------
+**Step 5.1:** It is now time to attach the camera to the PI.  The camera is connect to the PI using a very delicate ribbon cable.  If you kink this cable (i.e. bend it by more than about 50 degrees it) it will break the internal wires.  There is a white socket on your PI, as shown in figure 5.1.  With your screwdriver or your nails very gently loosen the white plastic clip until it is loose.  Then slip the cable into the socket as shown (it's a bit fiddly so be patient and don't bend the cable - if you need demonstrator help ask for it..).  There are two sides to the connector, one side with the metal contacts and one side with a plastic covering.  The cable must be inserted in the orientation shown in the figure or the camera will not work.
+
+
+<p align="center">
+<img src="./images_small/attach_camera.jpg"  width=40% >
+
+Figure 5.1:  Attaching the camera to the PI.
+</p>
+
+attach_camera
 Old
 ---
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
