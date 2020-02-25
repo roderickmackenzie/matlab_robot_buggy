@@ -213,9 +213,27 @@ Figure 3.2: Attaching the power supply to the motor driver board.
 Then use them to attach the motor driver board to the bottom of the buggy as shown in figure 3.3
 
 <p align="center">
-<img src="./images_small/fasten_motor_board.jpg"  width=50% >
+<img src="./images_small/fasten_motor_board.jpg"  width=40% >
 
 Figure 3.3: Attaching motor controller board to the buggy.
+</p>
+
+Section 4: Joining top and bottom of the buggy
+----------------------------------------------
+**Step 4.1:** Now place the top of the buggy on the bottom of the buggy as shown in figure 4.1.
+
+<p align="center">
+<img src="./images_small/join.jpg"  width=40% >
+
+Figure 4.1: Joining the top and bottom of the buggy.
+</p>
+
+**Step 4.2:** Once you have placed the top of the buggy on the bottom, place the battery holder on top of it, then use four metal nuts to secure it, as shown in figure 4.2.
+
+<p align="center">
+<img src="./images_small/fasten_top_to_bottom.jpg"  width=40% >
+
+Figure 4.2: Securing the top to the bottom of the buggy.
 </p>
 
 
