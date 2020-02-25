@@ -193,7 +193,7 @@ The raspberry PI can not deliver enough current to drive things which require a 
 <p align="center">
 <img src="./images_small/wiring_motor_driver.jpg"  width=80% >
 
-Figure 16: Fitting the control cable to the motor driver board. 
+Figure 16: Fitting the control cable to the motor driver board, note there is a wrong way and a right way to fit the cable.
 </p>
 
 Old
