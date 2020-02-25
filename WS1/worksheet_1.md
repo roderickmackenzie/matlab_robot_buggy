@@ -255,7 +255,21 @@ Section 5: Joining up the camera
 Figure 5.1:  Attaching the camera to the PI.
 </p>
 
-attach_camera
+Section 6: Attaching the ultrasonic sensor
+------------------------------------------
+**Step 6.1:** Now find the ultrasonic sensor and the driver board to the sensor in you tool box, these items are depicted in figure 6.1.  Also go and find in the box of wires:
+* Two female-female jumper wires.
+* Two female-male jumper wires.
+Attach the female-male jumpers leads to the sensor driver board, on the far left and far right hand pins.  And attach the female-female wires to the two inside pins.
+
+<p align="center">
+<img src="./images_small/ultrasonic_sensor.jpg"  width=40% >
+
+Figure 6.1:  Building the ultrasonic sensor, and attaching the wires.  The female-male jumpers leads should be on the far left and right pins, while the female-female wires should attach to the two inside pins.
+</p>
+
+
+
 Old
 ---
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
