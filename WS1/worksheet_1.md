@@ -236,7 +236,7 @@ Figure 4.1: Joining the top and bottom of the buggy.
 Figure 4.2: Securing the top to the bottom of the buggy.
 </p>
 
-**Step 4.3:** Now connect the control wires to the PI, from the motor board.  Figure 4.3, shows you how to do this.  Be very careful to connect the wires the correct way around and onto the correct pins.  If you get it wrong you may damage your PI.
+**Step 4.3:** Now connect the control wires to the PI, from the motor board.  Figure 4.3, shows you how to do this.  Be very careful to connect the wires the correct way around and onto the correct pins.  If you get it wrong you may damage your PI.  To figure out the correct way around they should go, you will have to look at the wires going into the motor driver board and compare them to the the wiring diagram.
 
 <p align="center">
 <img src="./images_small/motor_wiring.jpg"  width=40% >
