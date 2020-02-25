@@ -191,7 +191,7 @@ The raspberry PI does can not deliver enough current to drive things which requi
 .  We therefore need some form of current amplifier which will amplify the small signals coming from the PI to larger current signals which can drive the motor.  To do this we will use a motor driver board, the one we are using is an L289N.  
 
 <p align="center">
-<img src="./images_small/wiring_motor_driver.jpg"  width=40% >
+<img src="./images_small/wiring_motor_driver.jpg"  width=80% >
 
 Figure 16: The posts are attached by placing the threaded end through the hole in the corner of the plates and securing with a nut.
 </p>
