@@ -236,7 +236,14 @@ Figure 4.1: Joining the top and bottom of the buggy.
 Figure 4.2: Securing the top to the bottom of the buggy.
 </p>
 
+**Step 4.3:** Now connect the control wires to the PI, from the motor board.  Figure 4.3, shows you how to do this.  Be very careful to connect the wires the correct way around and onto the correct pins.  If you get it wrong you may damage your PI.
 
+<p align="center">
+<img src="./images_small/motor_wiring.jpg"  width=40% >
+
+Figure 4.3: Securing the top to the bottom of the buggy.
+</p>
+motor_wiring
 Old
 ---
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
