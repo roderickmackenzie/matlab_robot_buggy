@@ -306,60 +306,9 @@ Step 11: You should have a big pack of AA batteries in your kit, find 8 of them,
 
 
 
-Step 13: Once you have wired up the wires carrying current to the motors, you then need to add the wires carrying power to the circuit board from the battery.  Choose two wires with two male ends and add them screw them into the circuit board as show in figure 15. I’ve used brown and black wires, but you can use any color wires you want.
-
-Step 14: Finally, find six female to female, jumper leads and attach them to the front most pins on the motor driver board, shown in figure 16.  It does not matter what color they are.  There may be some jumpers on some of the pins, if there are, just remove them.  The final wired up jumper board should look like figure 16.  The three wires on the left are to control the left hand motor and the three wires on the right are to control the right hand motor.  These are called the motor control wires.
-
-
-
-
-Step 15: The threaded posts can now be attached to each corner of the base plate. The posts can be placed in all four corners of the base plate as shown in figure 9, and then secured in place with nuts as shown in figure 18.
-
-
-
-
-
-
-
-Step 16: Once all posts have been securely attached to the base plate, the upper plate can be placed on top of the posts and secured with additional nuts. As the plates are not symmetrical, the plate may need rotating until it can fit properly.   Thread the wires from the battery from below up through the top plate as shown in figure 19.
-
-Step 17:  In step 14 you attached six female-female jumper cables to the motor control board.  Take the left hand set of three wires and thread them through the top plate, then take the right hand set of three wires and thread them through the top plate.  This is shown in figure 20.
-
-Step 18: With the top plate in position, attach the remaining components (raspberry pi, breadboard) using the double-sided sticky pads. The components must be attached in the orientation shown in figure 21. Note: Only use a 1cm2 of sticky material, or it will be very hard to dissemble the buggy later on.
-
-
-
-Wiring the buggy
-----------
-Congratulations you have now built your buggy!!  With all the components in position, they can now all be wired up in order for the buggy to work. Due to the complexity of the wiring, each section will be addressed individually in order to reduce the complexity of the process.  The buggy won’t work until all parts are wired up.
-Step 1: In this section, you will be wiring up each system of the buggy individually according to a series of wiring diagrams. Most of the wiring will be based on using an electronic breadboard as shown in figure 18. Breadboards allow you to quickly and easily build circuits by placing wires and components into the holes in the board. Each hole in the breadboard is also electrically connected to a series of other holes (as shown by the red lines in figure 12).
-
-
- 
-Step 2: The first system to be wired is the power supply for both the motors and the PI. In order to connect all the components, you will need jumper cables, (it does not matter which color jumper cables you use), a voltage regulator, switch and a battery connector. An image of the voltage regulator is shown in figure 23.  The voltage regulator takes the voltage supplied by the battery (which can vary depending on how used the batteries are but should be around 12V), and ensures it’s a nice steady 5V for the PI to use.  Now go and find these components in the buggy kit.
-
-
-
-Step 3: Once you have the correct components. First mount the voltage regulator on the board as shown in figure 24.  Make sure it is the right way around, and in exactly the same position as shown in the figure. Then connect the wires as shown in figure 25, using the jumper cables.
-
 
 
 >>Note: You must ensure you connect the jumper cable to the correct pin on the raspberry pi in order for this to work
-
-
-
-
-
-
-
-
-      
-
-Step 4: Once the power supply to batteries and PI have been connected, you can now connect the output pins that will control the motors. Using the female-to-female jumper cables which you have already threaded through the top plate of the buggy, connect the raspberry pins to the motor controller board according to the diagram in figure 27. Again, ensure you attach the correct pins, otherwise the motors will not respond to commands.
- 
-
-
-Step 5: You will now connect the echo distance sensor to the raspberry pi. The echo sensor has four pins: 5V power, ground, trigger and echo. The sensor works by sending an ultra-sonic pulse, and then recording the time it takes to detect an echo. Using this time and the speed of sound, the distance to the nearest object in front of the sensor can be determined. As with the motor controller, you can connect the echo sensor the raspberry pi using the jumper cables. However, you must use two resistors (R1 and R2) in order to correctly use the sensor.
 
 Step 6: In order to correctly connect the echo sensor, you must first place two resistors, R1 and R2, with resistances of 4.7 kΩ [color code yellow, purple red, gold] and 10 kΩ [brown ,red, black, black, brown] respectively. The resistors are to be placed onto the breadboard in the positions shown in figure 28. You will have to trim the end of the resistor wires in order to get them to sit flush to the board, as shown in figure 25.
 
@@ -367,25 +316,12 @@ Step 7: Once the resistors are in place, you can connect the rest of the pins us
 
 
 
-
-Figure 29: Image of ultrasonic sensor mounted about the battery pack.  It should just sit in the grove.
-
-Step 8: Once all the wiring is complete, it should look like the image shown in figure 28. At this point, the wiring is complete and the top plate can be secured with nuts four M3 nuts.
-Figure 30: Image of how the buggy should look once fully wired.
-
-Step 9: Finally the camera and camera mount can be attached to the buggy. First, slide the ribbon cable of the camera through the slot in the front of the buggy (figure 31).  The camera is then connected to the raspberry pi using a ribbon cable. To connect the camera to the pi, you must lift the black clip shown in figure 31 and slide in the ribbon cable with the metal contacts facing away from the USB ports. Once the ribbon cable is in place, the black clip can be pressed down, locking the ribbon cable in.  If you struggle with this ask a demonstrator for help!!  They ribbon cable is very easy to damage.
-Figure 31: Camera board ribbon cable attached to the raspberry pi
-
-Step 10: With the pi camera connected, you can now place it inside the camera mount as is shown in figure 32. The camera mount can then be attached to the raspberry pi using the M3 bolts and nuts, as can be seen in figures 30 and 31.
-Figure 32: Camera board in the mount, attached to the underside of the top plate
-
 Testing the Buggy
 Now the Buggy is complete. Ask a demonstrator to come over and check all the wiring is OK. If all is well, place the buggy on the ground and turn it on.  The image that was written to the PI contains a script that will automatically run when the raspberry pi is turned on. This stage will allow you to make sure that the buggy has been built properly, so ensure you look to make sure the motors are functioning correctly and in a straight line. If the echo sensor is working correctly, the buggy should reverse when in proximity to solid objects. 
 In the case of the buggy not functioning correctly, get a demonstrator to come over and check the connections.
 
 Marked assignment due at the end of the lab.  This is worth 20% of this series of labs:
 Get a demonstrator to take a photo of your group with the completed buggy with a camera phone.  You must then each individually upload this photo to moodle into the hand in box called “Buggy: Assignment 1”.  Really this is just a nice way of checking that you were at the lab and were involved in building the buggy. Not all assignments in this lab will be that easy. ;)
-
 
 Wile group work is fun, it’s also fun to do your own thing.  So for this worksheet, all parts are to be done individually, except Question 1 which you will have to do in a group. The usual plagiarism rules will apply for all but question 1. As ever, the demonstrators in the lab are here to help you.  For all questions but number 1, you can use matlab on the computers in C19/C20, you don’t need the buggy.
 
