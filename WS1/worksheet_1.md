@@ -184,6 +184,18 @@ Figure 14: Threaded post attached to the base plate using a nut on the underside
 Figure 15: The posts are attached by placing the threaded end through the hole in the corner of the plates and securing with a nut.
 </p>
 
+
+Section 3: Wiring the motors
+----------------------------
+The raspberry PI does can not deliver enough current to drive things which require a large amount of current such as a motor,
+.  We therefore need some form of current amplifier which will amplify the small signals coming from the PI to larger current signals which can drive the motor.  To do this we will use a motor driver board, the one we are using is an L289N.  
+
+<p align="center">
+<img src="./images_small/wiring_motor_driver.jpg"  width=40% >
+
+Figure 16: The posts are attached by placing the threaded end through the hole in the corner of the plates and securing with a nut.
+</p>
+
 Old
 ---
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
@@ -209,8 +221,6 @@ Step 11: You should have a big pack of AA batteries in your kit, find 8 of them,
  Once you have done this, use some more stick pads to attach the battery holder to the buggy, over the axils with the motors as shown in figure 13.  Ensure the battery pack is placed on the end above the motors to put the weight of the buggy over the powered wheels.
 
 
-
-Step 12: Although the majority of the wiring will be addressed in the next section, the motor wires will be attached now. Go and find the motor driver board from the buggy kit.  It is the circuit board shown in figure 14.  The motor wires are attached to the motor driver board at the positions shown in the figure.  Use the screwdriver to loosen the terminals, place the wires in the terminals and then tighten the screws up clamping the wires in place.  Make sure they are in tightly.
 
 
 
