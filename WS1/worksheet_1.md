@@ -56,8 +56,8 @@ It should also contain the following number of bolts and nuts:
 
 
 
-Getting to grips with the Raspberry Pi
---------------------------------------
+Section 1: Constructing the top of the buggy
+--------------------------------------------
 
 **Step 1**: Locate:
 * The top plate to the buggy, this is a brown piece of acrylic with a white thing stuck to it (this white thing is called a bread board).
@@ -140,7 +140,9 @@ Figure 10: Attaching the camera holder to the buggy.
 </p>
 
 
-**Step 8:** The main components of the buggy are two large plastic plates, so far you have used one plate to build the top of the buggy. Now, go and find the second one of these plates, this time it does not have any bread board attached to it.  This is shown in figure 11.
+Section 2: Constructing the bottom of the buggy
+-----------------------------------------------
+**Step 1:** The main components of the buggy are two large plastic plates, so far you have used one plate to build the top of the buggy. Now, go and find the second one of these plates, this time it does not have any bread board attached to it.  This is shown in figure 11.
 
 <p align="center">
 <img src="./images_small/btm_plate.jpg"  width=40% >
@@ -149,7 +151,7 @@ Figure 11: The bottom plate of the buggy
 </p>
 
 
-**Step 9:** Now go and find the gear boxes for the buggy,  they are bright yellow and look what is shown in figure 12.  From one pair there should be two with wires coming out of them, and the other pair should not have any wires.  At each corner of the base plate, there are slots to attach each of the four gear boxes, as highlighted in red in figure 11. Using two of the t-shaped plastic pieces shown in figure 12, the mount the motor to the bottom of the base plate by placing one on each side.  Also look at figure 13 to show you how the finished item should look.  Note, in figure 13 the two gear boxes with wires are mounted together, and the ones with no wires are mounted together.   You should do the same.
+**Step 2:** Now go and find the gear boxes for the buggy,  they are bright yellow and look what is shown in figure 12.  From one pair there should be two with wires coming out of them, and the other pair should not have any wires.  At each corner of the base plate, there are slots to attach each of the four gear boxes, as highlighted in red in figure 11. Using two of the t-shaped plastic pieces shown in figure 12, the mount the motor to the bottom of the base plate by placing one on each side.  Also look at figure 13 to show you how the finished item should look.  Note, in figure 13 the two gear boxes with wires are mounted together, and the ones with no wires are mounted together.   You should do the same.
 
 <p align="center">
 <img src="./images_small/btm_motor.jpg"  width=40% >
@@ -158,7 +160,7 @@ Figure 12: The gear boxes of the buggy, this one has a motor attached to it.
 </p>
 
 
-**Step 10:** As shown in figure 12, the motor case should be attached to the base plate by threading one of the motor mounts through the board and placing the other in the groove on the outer edge of the plate. The bolts in the kit can then be threaded through the motor mounts and motor casing to hold the motor in place. Once the bolts are in place, the nuts should be used to securely fasten the motor casing in place on the base.  Note, the nuts must go on the inside of the buggy, and the screw heads on the outside, or the bots will stick into the wheels.
+**Step 3:** As shown in figure 12, the motor case should be attached to the base plate by threading one of the motor mounts through the board and placing the other in the groove on the outer edge of the plate. The bolts in the kit can then be threaded through the motor mounts and motor casing to hold the motor in place. Once the bolts are in place, the nuts should be used to securely fasten the motor casing in place on the base.  Note, the nuts must go on the inside of the buggy, and the screw heads on the outside, or the bots will stick into the wheels.
 
 <p align="center">
 <img src="./images_small/btm_motor_attached.jpg"  width=40% >
@@ -166,7 +168,7 @@ Figure 12: The gear boxes of the buggy, this one has a motor attached to it.
 Figure 13: The gear boxes and motors attached to the buggy.
 </p>
 
-**Step 11:** This process can be repeated with all of the motor mounts in all four corners of the base plate. Ensure that the motor casings containing the motors are both attached to the same end of the base. Once all motors are attached, thread the motor wires through the opposite side of the base plate as shown in figure 12.  Finally push the wheels onto the shafts coming out of the gear boxes.
+**Step 4:** This process can be repeated with all of the motor mounts in all four corners of the base plate. Ensure that the motor casings containing the motors are both attached to the same end of the base. Once all motors are attached, thread the motor wires through the opposite side of the base plate as shown in figure 12.  Finally push the wheels onto the shafts coming out of the gear boxes.
 
 Old
 ---
