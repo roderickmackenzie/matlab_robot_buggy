@@ -139,6 +139,37 @@ Figure 9: Building camera holder.
 Figure 10: Attaching the camera holder to the buggy.
 </p>
 
+
+**Step 8:** The main components of the buggy are two large plastic plates, so far you have used one plate to build the top of the buggy. Now, go and find the second one of these plates, this time it does not have any bread board attached to it.  This is shown in figure 11.
+
+<p align="center">
+<img src="./images_small/btm_plate.jpg"  width=40% >
+
+Figure 11: The bottom plate of the buggy
+</p>
+
+
+**Step 9:** Now go and find the gear boxes for the buggy,  they are bright yellow and look what is shown in figure 12.  From one pair there should be two with wires coming out of them, and the other pair should not have any wires.  At each corner of the base plate, there are slots to attach each of the four gear boxes, as highlighted in red in figure 11. Using two of the t-shaped plastic pieces shown in figure 12, the mount the motor to the bottom of the base plate by placing one on each side.  Also look at figure 13 to show you how the finished item should look.  Note, in figure 13 the two gear boxes with wires are mounted together, and the ones with no wires are mounted together.   You should do the same.
+
+<p align="center">
+<img src="./images_small/btm_motor.jpg"  width=40% >
+
+Figure 12: The gear boxes of the buggy, this one has a motor attached to it.
+</p>
+
+
+**Step 10:** As shown in figure 12, the motor case should be attached to the base plate by threading one of the motor mounts through the board and placing the other in the groove on the outer edge of the plate. The bolts in the kit can then be threaded through the motor mounts and motor casing to hold the motor in place. Once the bolts are in place, the nuts should be used to securely fasten the motor casing in place on the base.  Note, the nuts must go on the inside of the buggy, and the screw heads on the outside, or the bots will stick into the wheels.
+
+<p align="center">
+<img src="./images_small/btm_motor_attached.jpg"  width=40% >
+
+Figure 13: The gear boxes and motors attached to the buggy.
+</p>
+
+**Step 11:** This process can be repeated with all of the motor mounts in all four corners of the base plate. Ensure that the motor casings containing the motors are both attached to the same end of the base. Once all motors are attached, thread the motor wires through the opposite side of the base plate as shown in figure 12.  Finally push the wheels onto the shafts coming out of the gear boxes.
+
+Old
+---
 Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
 
 Step 7: Once the power is connected, the PI should begin to boot up. After a minute or so, you should be able to see the desktop of the raspberry pi and be able to interact with its installed programs as shown in figure 3. If this doesn’t happen, ensure the SD card is correctly inserted, and ask for help!
@@ -147,22 +178,7 @@ Step 8: Have a  quick play with the PI’s desktop and start a few programs.  Yo
 
 Building the buggy
 ----------
-Now that we have the PI working, let’s build the buggy.
-Step 1: The main components of the buggy are two large plastic plates.  Go and find these in the buggy kit (see figure 5).  Choose one of the plates to be the base to your buggy, and one to the be the top.
 
-
-
-Step 2: Now go and find the gear boxes for the buggy, they are bright yellow and look what is shown in figure 6, there should be two with wires coming out of them, and two without any wires.  The gear boxes with wires have motors, the gear boxes without wires don’t have any motors.  At each corner of the base plate, there are slots to attach each of the four gear boxes, as highlighted in red in figure 5. Using two of the t-shaped plastic pieces shown in figure 6, the mount the motor to the bottom of the base plate by placing one on each side.  Also look at figure 7 to show you how the finished product should look.  Note, in figure 6 the two gear boxes with wires are mounted together, and the ones with no wires are mounted together.   You should do the same.
-
- 
-
-Step 3: As shown in figure 6, the motor case can be attached to the base plate by threading one of the motor mounts through the board and placing the other in the groove on the outer edge of the plate. The bolts in the kit can then be threaded through the motor mounts and motor casing to hold the motor in place.
-Step 4: Once the bolts are in place, the nuts can be used to securely fasten the motor casing in place on the base.  Note, the nuts must go on the inside of the buggy, and the screw heads on the outside, or the bots will stick into the wheels.
-
-Step 5: This process can be repeated with all of the motor mounts in all four corners of the base plate. Ensure that the motor casings containing the motors are both attached to the same end of the base. Once all motors are attached, thread the motor wires through the opposite side of the base plate as shown in figure 6. 
-
-
-Step 6: All the wheels can now be attached to the motor casings and the base flipped over. This forms the base of the buggy and the starting point of the design.  The wheels should just push fit on.
 Step 7: In your box you will have two power battery packs, one which can take four AA cells and one which can take five AA cells, we are going to join them together, so they can produce about 12V, enough to power the buggies motors.  Using a few bits of sticky pad (you will have to layer them to make them high enough to stick), join the two packs together (back to back), as shown in figure 8.
 
 Step 8: You should, have a battery clip in your box (it’s the sort of clip you would expect to attach to a 9V battery), attach two single junction boxes to it as shown in the figure 9.  The junction boxes come in strips of 10, to get a single one, just twist or cut one off the strip.  You may also have to use the wire cutters to remove a bit of wire so the wires can be easily screwed in to make a good contact.
