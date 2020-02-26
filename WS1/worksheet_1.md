@@ -326,6 +326,7 @@ The buggy building activity will be examined though a report, the focus on the r
 * Each diagram/figure should have a figure number and a caption.
 
 For today's session, your report should include the answer to question 1.1 along with the answers to the following questions:
+
 **Question 1.2:**  Take a picture of your group with the completed buggy, copy and paste this into your report, and write the names and student IDs of the other members of your group under the photo.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100):
 
 **Question 1.3:**  Describe in as few words as possible why we use a motor driver board.
