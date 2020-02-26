@@ -283,7 +283,7 @@ Figure 6.2:  Building the ultrasonic sensor, and attaching the wires.  The femal
 <p align="center">
 <img src="./images_small/bread_board.jpg"  width=40% >
 
-Figure 6.3:  Layout of the breadboard, with the image on the left showing the common connections between pins.
+>Figure 6.3:  Layout of the breadboard, with the image on the left showing the common connections between pins.
 </p>
 
 
