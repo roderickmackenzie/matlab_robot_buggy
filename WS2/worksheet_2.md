@@ -1,22 +1,29 @@
 Worksheet 2
 ===========
 
-Introduction - MATLAB and the Raspberry PI
-------------------------------------------
+1. Introduction - MATLAB and the Raspberry PI
+--------------------------------------------
 
-Until now you have only programmed in the MATLAB programming language, although MATLAB it’s self is quite useful, it has some drawback:
+**Step 1:** Until now you have only programmed in the MATLAB programming language, although MATLAB it’s self is quite useful, it has some drawback:
 
 1. It’s really really expensive, and to make sure the developers get their money for it, every time MATLAB starts, it checks a license server to see if you are allowed to use it (and if you have paid your money!).  This is non ideal for a non internet connected buggy.
 
 2. It’s really memory/disk intensive, and although the PI is quite powerful, it would struggle with MATLAB.  Even my i7-Intel laptop sometimes struggles with MATLAB.
 
 Luckily for you, there is an alternative to MATLAB which is free and does not have any of the above drawbacks.  It is called Octave, it’s is much less memory intensive and will run easily on our Raspberry PIs just fine. It works just like just like MATLAB, and you will feel quite at home using it.
-To start Octave, click on the Raspberry, in the top left hand corner of the screen, go to Education and click on Octave, you should get something looking like Figure 1.  Think as Octave as free/open source MATLAB.
+To start Octave, click on the Raspberry, in the top left hand corner of the screen, go to Education and click on Octave, you should get something looking like Figure 1.1  Think as Octave as free/open source MATLAB.
+
+<p align="center">
+<img src="./images/octave_start.png" width=40%>
+
+Figure 1.1: Octave running on the PI. Personally, I really like Octave and prefer using it to MATLAB.
+</p>
 
 
-Basic use of Octave
+**Step 2:** Basic use of Octave
 
 Just to make you feel at home with Octave, we will now use it to write some basic computer code, just as we did when we first started learning MATLAB.
+
 a) Generate a 10x10 random array of numbers.
 
 b) Define an array of an array called student_marks equal to [ 10 20 30 40 50 60 70 80 90]
@@ -29,13 +36,24 @@ e) Replace the 5th element of the array with 80.
 
 See it’s just like MATLAB. :)
 
-Scripts in Octave
+Exercises a-e are just warm up exercises, the will not go into your work book.
+ 
+**Step 3:** Scripts in Octave, just as in MATLAB, you can make scripts in Octave.  To make a new script, click file→New→New script.  You will see a script appear on the right hand side of the screen.  A new menu has appeared looking like figure 1.2.
 
-Q1. Just like MATLAB, you can make scripts in Octave.  To make a new script, click file→New→New script.  You will see a script appear on the right hand side of the screen.  A new menu has appeared looking like figure 2.
 
+<p align="center">
+<img src="./images/octave_script_editor.png" width=40%>
 
-Click, File→Save as and then save the file as ‘q1.m’ under /home/pi/ .  On the PI, all  users home directories are stored under /home/, and you are logged into the system under user ‘pi’, so you save all your work in /home/pi/  Now in the script use the disp command to print ‘I love programming the PI!’ to the screen.  Then once you have done this, click on the cog icon, with the little yellow play button embedded in it.  Your script will then run.  The output will appear in the command window.  If you can’t see the command window click on the, little window icon to break the script editor out of the main interface:
+Figure 1.2: The octave script editor.
+</p>
 
+Click, File→Save as and then save the file as 'q1.m' under /home/pi/ .  On the PI, all users home directories are stored under /home/, and you are logged into the system under user ‘pi’, so you save all your work in /home/pi/.  Note that the '/' character is used to separate file and folder names, rather than the '\' character as in windows.  It is also worth noting that in Linux, there is no A:, C:, D: ... Z: drive etc, everything appears as a file.  Now in the script use the disp command to print ‘I love programming the PI!’ to the screen.  Then once you have done this, click on the cog icon, with the little yellow play button embedded in it.  Your script will then run.  The output will appear in the command window.  If you can’t see the command window click on the, use the little resize icon (see figure 1.3) to break the script editor out of the main interface.
+
+<p align="center">
+<img src="./images/resize.png" width=40%>
+
+Figure 1.3: The resize icon.
+</p>
 
 
 Q2) Make a new script called q2.m.  Now edit your script so that it will sum the numbers from 1 to 100, using a for loop.
@@ -47,6 +65,7 @@ Q4) Write a script which sorts an array of 10 random numbers.  Hint: The answer�
 Q5) Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it in q5.m.
 
 The above questions, are really just to get you back into thinking about programming again. 
+
 
 The echo sensor
 
