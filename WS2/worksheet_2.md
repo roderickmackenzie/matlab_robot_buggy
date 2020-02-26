@@ -14,7 +14,7 @@ Luckily for you, there is an alternative to MATLAB which is free and does not ha
 To start Octave, click on the Raspberry, in the top left hand corner of the screen, go to Education and click on Octave, you should get something looking like Figure 1.1  Think as Octave as free/open source MATLAB.
 
 <p align="center">
-<img src="./images/octave_start.png" width=40%>
+<img src="./images/octave_start.png" width=70%>
 
 Figure 1.1: Octave running on the PI. Personally, I really like Octave and prefer using it to MATLAB.
 </p>
@@ -42,7 +42,7 @@ Exercises a-e are just warm up exercises, the will not go into your work book.
 
 
 <p align="center">
-<img src="./images/octave_script_editor.png" width=40%>
+<img src="./images/octave_script_editor.png" width=70%>
 
 Figure 1.2: The octave script editor.
 </p>
