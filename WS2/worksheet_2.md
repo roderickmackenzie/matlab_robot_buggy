@@ -1,7 +1,7 @@
 Worksheet 2
 ===========
 
-1. Introduction - MATLAB and the Raspberry PI
+1: Introduction, MATLAB and the Raspberry PI
 ---------------------------------------------
 
 **Step 1:** Until now you have only programmed in the MATLAB programming language, although MATLAB it’s self is quite useful, it has some drawback:
