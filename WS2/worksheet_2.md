@@ -87,6 +87,7 @@ The Octave/MATLAB command to drive the motors is
 ````
 motors(power1,power2,delay)
 ````
+
 Power1 and Power2 control the power going to the motors, the power must be a number from 0 to 100. The delay is the time for which the motors run.  So for example if you wanted to move the buggy forwards for one second, you would use the command.
  
 motors(100,100,1)
