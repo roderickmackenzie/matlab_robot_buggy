@@ -82,23 +82,29 @@ The above questions, are really just to get you back into thinking about program
 
 The buggy has two motors.  These can be used to drive the buggy forwards, backwards or to turn it, by running one motor forwards and one backwards.  By the end of this section you will be able to move the buggy in any direction.
 
-The Octave/MATLAB command to drive the motors is 
+The Octave/MATLAB command to drive the motors is:
 
 ```
 motors(power1,power2,delay)
 ```
 
-Power1 and Power2 control the power going to the motors, the power must be a number from 0 to 100. The delay is the time for which the motors run.  So for example if you wanted to move the buggy forwards for one second, you would use the command.
- 
+Power1 and power2 control the power going to the motors, the power must be a number from 0 to 100. The delay is the time for which the motors run.  So for example if you wanted to move the buggy forwards for one second, you would use the command.
+
+```
 motors(100,100,1)
+```
 
 If you want to run a motor in reverse simply put a minus in front of the motor power.  For example, 
 
+```
 motors(-100,-100,1)
+```
 
 To stop the motors, use the command:
 
+```
 motors(0,0,1)
+```
 
 Q1)   Now, make a new script called my_motor_script.m and save it under /home/pi/.  Make sure you add addpath(‘/home/pi/lib’) to the top of the script so that, Octave can find the  buggy functions. [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly.] Now try out the commands above to move the motors.  Did you wire them up correctly?  If they spin in different directions, just swap the wires around in the motor driver board.
 
