@@ -56,7 +56,8 @@ Figure 1.3: The resize icon.
 </p>
 
 The following exercise will refresh your knowledge of MATLAB, especially functions and files.
----
+
+`
 Q2.1) Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your work book, under section 2 question 2.1.
 
 Q2.2) Make a new script q2_2.m, using a while loop make it count from -10.0 to 0.0, in steps of 0.5.
@@ -72,8 +73,7 @@ Q2.6) Write a scrip to write the number from 0 to 10 in a file called save.dat, 
 Q2.7) Write a function called add_me to add two numbers together and return the answer.
 
 Q2.8) Write a script to open a file called mode.dat, read a single number from that file and print the words 'zero' if a '0' is found in the file and the word 'one' if a '1' is found in the file.
-
----
+`
 
 The above questions, are really just to get you back into thinking about programming again, once you have finished today's lab, copy all the .m files you generate to a USB stick and make sure all group members have the files. 
 
