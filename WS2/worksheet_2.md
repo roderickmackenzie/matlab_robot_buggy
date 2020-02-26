@@ -4,7 +4,7 @@ Worksheet 2
 1: Introduction, MATLAB and the Raspberry PI
 ---------------------------------------------
 
-**Step 1:** Until now you have only programmed in the MATLAB programming language, although MATLAB it’s self is quite useful, it has some drawback:
+**Step 1.1:** Until now you have only programmed in the MATLAB programming language, although MATLAB it’s self is quite useful, it has some drawback:
 
 1. It’s really really expensive, and to make sure the developers get their money for it, every time MATLAB starts, it checks a license server to see if you are allowed to use it (and if you have paid your money!).  This is non ideal for a non internet connected buggy.
 
@@ -20,7 +20,7 @@ Figure 1.1: Octave running on the PI. Personally, I really like Octave and prefe
 </p>
 
 
-**Step 2:** Basic use of Octave
+**Step 1.2:** Basic use of Octave
 
 Just to make you feel at home with Octave, we will now use it to write some basic computer code, just as we did when we first started learning MATLAB.
 
@@ -38,7 +38,7 @@ See it’s just like MATLAB. :)
 
 Exercises a-e are just warm up exercises, the will not go into your work book.
  
-**Step 3:** Scripts in Octave, just as in MATLAB, you can make scripts in Octave.  To make a new script, click file→New→New script.  You will see a script appear on the right hand side of the screen.  A new menu has appeared looking like figure 1.2.
+**Step 1.3:** Scripts in Octave, just as in MATLAB, you can make scripts in Octave.  To make a new script, click file→New→New script.  You will see a script appear on the right hand side of the screen.  A new menu has appeared looking like figure 1.2.
 
 
 <p align="center">
