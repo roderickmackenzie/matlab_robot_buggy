@@ -55,19 +55,28 @@ Click, File→Save as and then save the file as 'q1.m' under /home/pi/ .  On the
 Figure 1.3: The resize icon.
 </p>
 
+The following exercise will refresh your knowledge of MATLAB, especially functions and files.
 
-Q2) Make a new script called q2.m.  Now edit your script so that it will sum the numbers from 1 to 100, using a for loop.
+Q2.1) Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your work book, under section 2 question 2.1.
 
-Q3) Make a new script q3.m.  Using a while loop make it count from -10.0 to 0.0.
+Q2.2) Make a new script q2_2.m, using a while loop make it count from -10.0 to 0.0, in steps of 0.5.
 
-Q4) Write a script which sorts an array of 10 random numbers.  Hint: The answer’s in the lecture notes. :), save it in q4.m
+Q2.3) Write a script which sorts an array of 10 random numbers.  Hint: The answer’s in the lecture notes, then save it in file q2_3.m.
 
-Q5) Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it in q5.m.
+Q2.4) Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it as q2_4.m.
 
-The above questions, are really just to get you back into thinking about programming again. 
+Q2.5) Write a script to plot a graph of sin(x)+cos(x) between -pi and pi, label the axes using code, and save it as q......m
 
+Q2.6) Write a scrip to write the number from 0 to 10 in a file called save.dat, using fopen, fprintf, fclose...
+
+Q2.7) Write a function called add_me to add two numbers together and return the answer.
+
+Q2.8) Write a script to open a file called mode.dat, read a single number from that file and print the words 'zero' if a '0' is found in the file and the word 'one' if a '1' is found in the file.
+
+The above questions, are really just to get you back into thinking about programming again, once you have finished today's lab, copy all the .m files you generate to a USB stick and make sure all group members have the files. 
 
 The echo sensor
+
 
 We are now going to start using the PI to control hardware.  Let’s first start off with the echo sensor as we already have it installed.  Make a new script called echo_test.m, and save this under /home/pi/.  To control the hardware of the buggy, we are going to have to use functions, which know how to talk to the hardware.  These functions are stored in /home/pi/lib.  Add the line
 
