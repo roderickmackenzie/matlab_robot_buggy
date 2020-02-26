@@ -273,12 +273,12 @@ Figure 6.1:  Building the ultrasonic sensor, and attaching the wires.  The femal
 <p align="center">
 <img src="./images_small/ultrasonic_sensor.svg.png"  width=40% >
 
-Figure 6.2:  Building the ultrasonic sensor, and attaching the wires.  The female-male jumpers leads should be on the far left and right pins, while the female-female wires should attach to the two inside pins.
+Figure 6.2:  Wiring the ultrasonic sensor to the PI.
 </p>
 
 > **What is breadboard?**
 
-> Breadboards allow you to quickly and easily build electronic circuits without the need to solder wires together.  By placing wires and components into the holes in the board you can build a circuit within minuets. Each hole in the breadboard is electrically connected to all the other holes in it's row, as shown by the red lines in figure 6.3.
+> Breadboards allow you to quickly and easily build electronic circuits without the need to solder wires together.  By placing wires and components into the holes in the board you can build a circuit within minuets. Each hole in the breadboard is electrically connected to all the other holes in it's row, as shown by the red lines in figure 6.3.  In the bread boards we use, the connections run down the board on the far right and left of the board, and across the board for all other pins.
 
 <p align="center">
 <img src="./images_small/bread_board.jpg"  width=40% >
@@ -286,201 +286,34 @@ Figure 6.2:  Building the ultrasonic sensor, and attaching the wires.  The femal
 >Figure 6.3:  Layout of the breadboard, with the image on the left showing the common connections between pins.
 </p>
 
+After having completed this step, the black strip on the bread board have 0V on it and the red strip will have +5V on it.  Now connect the ultrasonic sensor to the breadboard as shown in figure 6.3, the sensor will now be able to get it's power from the bread board.
 
+**Step 6.3:** Now, connect the final two wires from the ultrasonic sensor to the PI as shown in figur 6.2.  One of these wires tells the ultrasonic sensor to produce a sound (or a ping) which will reflect of an object, and the other wire tells our PI when the signal has reached the sensor again.  My timing the time taken between sending out a ping and hearing it after it has reflected off an object, the PI can figure out how far away it is.
 
-Old
----
-Step 6: Now on the computer next to the one which is writing the image to the SD card (i.e. using another computer).  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC and reconnect them to your PI. Now, insert the SD card into your PI.  Your PI is now set up and ready to go.  All new need now is power!  We will get this from the USB port of the computer.  In your buggy kit, you should see a white, USB cable, with a micro USB end, this looks like a phone charging cable.  Connect one end to a PC, and the other end to the PI.  We are using the computer as a power supply, at the moment.  Later on we will power the PI off batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.  I also suggest, you try to power the PI off the computer as much as you can, so you don’t drain your batteries.
 
-Step 7: Once the power is connected, the PI should begin to boot up. After a minute or so, you should be able to see the desktop of the raspberry pi and be able to interact with its installed programs as shown in figure 3. If this doesn’t happen, ensure the SD card is correctly inserted, and ask for help!
-Step 8: Have a  quick play with the PI’s desktop and start a few programs.  You can see that it is really a fully functioning computer.  Try to find the word processor (hint: It’s called Libreoffice)
+Section 7: Powering on the buggy
+--------------------------------
+**Step 7.1:** Find a demonstrator and ask them to check your buggy. ;)
 
+**Step 7.2:** Find the small black USB cable, and connect it between the battery pack and the PI.  Then place the buggy on the floor and turn it on.  It will take a while to boot then it will start to move forward.
 
-Building the buggy
-----------
+>Actually it probably won't move forward it will either spin or go backwards.  The red and black motors wires are connected randomly to the positive and negative terminals on the motors.  To make it go forward you will have to turn the buggy off again, unscrew the wires connecting the motors to the motor driver board, then swap then and boot the buggy again.
 
-Step 7: In your box you will have two power battery packs, one which can take four AA cells and one which can take five AA cells, we are going to join them together, so they can produce about 12V, enough to power the buggies motors.  Using a few bits of sticky pad (you will have to layer them to make them high enough to stick), join the two packs together (back to back), as shown in figure 8.
 
-Step 8: You should, have a battery clip in your box (it’s the sort of clip you would expect to attach to a 9V battery), attach two single junction boxes to it as shown in the figure 9.  The junction boxes come in strips of 10, to get a single one, just twist or cut one off the strip.  You may also have to use the wire cutters to remove a bit of wire so the wires can be easily screwed in to make a good contact.
+Section 8: Exploring the PI
+---------------------------
 
-Step 9: The black wire coming out of the x4 AA battery pack is a bit too long, cut it to around 7cm (if it has not already been cut).  Once this is done, connect it to the red wire with from the battery clip, using the junction box.  Then, clip the battery clip onto the x5 AA cell battery pack.  This is all shown in figure 10.
+**Step 8.1:** If your buggy is switched on, now switch it off.  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC from the computers and reconnect them to your PI.  Now disconnect the black wire connecting the battery pack to the PI, and reconnect the PI to a USB port of a computer.  For this exercise we will power the PI from a USB port of the computer to save batteries, when ever possible try to do this as it saves the environment a bit, the only draw back of doing this is that the motors will not run as they need 10-15V which can only be supplied by the batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.
 
-Step 10: The battery pack should, now have two wires coming out of it, a black one with a junction box on it and a red one with no junction box on it.  Find another single junction box and attach it to the battery pack, so both wires coming out for the battery pack have junction boxes on them.  Then get a single jumper lead, with two male ends on it.  Cut it in half, strip the ends and screw them into the junction boxes attached to the battery pack.  The final battery pack, assembly should look as shown in figure 11.
+>**Question 1:** Why do you think we are not using reusable batteries for this lab?  Think about battery life time and how they are used over the year.  Discuss this with your group, and make a note of the answer.
 
+**Step 8.2**:  If you followed the instructions in step 8.1, you should have a desktop which looks like figure 8.1.  The PI runs Linux which is a bit like windows but usually used on phones, tablets and servers.  There is a lot of software available for the PI (possibly more than there is for windows), but I have chosen to do a minimal install to save disk space.  Never the less, there is a word processor installed, Octave a version of MATLAB which is free and Minecraft(!!).  Try to find these packages in the start menu and have a play with them.
 
-Step 11: You should have a big pack of AA batteries in your kit, find 8 of them, and fill up the x5 battery holder with them, and x3 slots in the x4 battery holder.  As shown in figure 12.  NOTE: WE ARE INTENTIONAL NOT FILLING THE x4 BATTERY HOLDER FULLY, AS WE DO NOT YET WANT TO POWER THE BUGGY.  ONCE YOU HAVE WIRED UP THE BUGGY, GET A DEMONSTRATOR TO CHECK THE WIRING.  THEN PUT IN THE FINAL BATTERY. :)
+**Step 8.3**:  Once you are finished playing write the answer down to question 1 down in the word processor, and save it to the Desktop of the PI - we will use this later.
 
- Once you have done this, use some more stick pads to attach the battery holder to the buggy, over the axils with the motors as shown in figure 13.  Ensure the battery pack is placed on the end above the motors to put the weight of the buggy over the powered wheels.
+<p align="center">
+<img src="./images_small/pi_desktop.png"  width=40% >
 
-
-
-
-
-
-
->>Note: You must ensure you connect the jumper cable to the correct pin on the raspberry pi in order for this to work
-
-Step 6: In order to correctly connect the echo sensor, you must first place two resistors, R1 and R2, with resistances of 4.7 kΩ [color code yellow, purple red, gold] and 10 kΩ [brown ,red, black, black, brown] respectively. The resistors are to be placed onto the breadboard in the positions shown in figure 28. You will have to trim the end of the resistor wires in order to get them to sit flush to the board, as shown in figure 25.
-
-Step 7: Once the resistors are in place, you can connect the rest of the pins using the jumper cables according to the diagram in figure 16. Once the echo sensor is connected, you can then use blue tack to attach it the top plate battery pack as show in figure 27.  If you don’t have blue tack, it should just sit there on it’s own.
-
-
-
-Testing the Buggy
-Now the Buggy is complete. Ask a demonstrator to come over and check all the wiring is OK. If all is well, place the buggy on the ground and turn it on.  The image that was written to the PI contains a script that will automatically run when the raspberry pi is turned on. This stage will allow you to make sure that the buggy has been built properly, so ensure you look to make sure the motors are functioning correctly and in a straight line. If the echo sensor is working correctly, the buggy should reverse when in proximity to solid objects. 
-In the case of the buggy not functioning correctly, get a demonstrator to come over and check the connections.
-
-Marked assignment due at the end of the lab.  This is worth 20% of this series of labs:
-Get a demonstrator to take a photo of your group with the completed buggy with a camera phone.  You must then each individually upload this photo to moodle into the hand in box called “Buggy: Assignment 1”.  Really this is just a nice way of checking that you were at the lab and were involved in building the buggy. Not all assignments in this lab will be that easy. ;)
-
-Wile group work is fun, it’s also fun to do your own thing.  So for this worksheet, all parts are to be done individually, except Question 1 which you will have to do in a group. The usual plagiarism rules will apply for all but question 1. As ever, the demonstrators in the lab are here to help you.  For all questions but number 1, you can use matlab on the computers in C19/C20, you don’t need the buggy.
-
->This work sheet is worth 25% of the lab.
-
-<center>
-<img src="./images/pen.png">
-</center>
-<center>
-Figure 1: An example of the buggy course.
-</center>
-
-However to do this task we need sample images of the black tape, smarties and the white piece of paper.  Ask Rod (or a demonstrator ) for these objects.  Take pictures of each of the objects with the buggy camera naming them black.jpg, eggs.jpg and exit.jpg.  [Hint: I would not eat the smarties… they have spent quite a long time kicking around my office!]
-
-**Step 4:** Insert a USB stick into the PI, and copy off the images to a USB stick.  If you  can’t work out how to do this, ask a demonstrator.  We will be using these images in the rest of the questions.
-
-The rest of the work sheet will be individual work, not group work, done on the PCs in the computer room, on your laptop or at home.  (Usual plagiarism rules apply... sorry) When you finished the programming your code, we will copy your files back to the PI, and test them.
-
-Question 2
-----------
-Start up MATLAB on your PC.  We are now going to write some simple code to do some image recognition.  The image recognition will be based on color detection.  In a new script called q1.m use the imread and imshow command to read in the image and display the image of the floor.  What do you notice about the image?  Use the manual to look up what the flipud command does.  Have a go at using it.  What does it do to the image?  Save this script as q1.m
-
-Question 3
-----------
-**Step 1:** We are now going to write a function to calculate the average color of a image, and use the average color the camera sees to identify objects.  Think how placing an orange and then an apple in an image would affect the average color of the image.  If you can’t remember how functions work, revise this section in your notes.  Make a new MATLAB file and save it as *get_color.m*.  In this file we are going to make a function, copy and paste the following code, which will define a function into the file:
-
-~~~~
-function [r g b] = get_color(data)
-r=1;
-g=2;
-b=3;
-end
-~~~~
-
-Save your file *get_color.m* then from then on the command line type
-
-~~~~
-[r g b]=get_color(1)
-~~~~
-
-What values does this function return?  Change the function so that it returns r=5, g=6 and b=7. 
-
-**Step 2:** Color images are made up of pixels, each pixel has a red, green and blue component, the values of the red, green and blue components can range form 0 to 255.  So for example, a very red pixel would be represented by the three numbers 255,0,0 or a very green pixel would be represented by the three numbers 0,255,0 and a blue pixel would be represented by the values 0,0,255.  What value would a black and gray pixel be represented by?
-
-Have a play with this web page to understand this a bit better:
-[web page](https://www.w3schools.com/colors/colors_converter.asp)  What are the RGB values of your favourite color?  Look up the RGB values for purple and save them in your script as a comment.
-
-**Setp 3**: By looking at the color components of any image 
-we can guess what could be in the image.  For example if the image is of the floor in the L3 lab, it will consist of lots of gray pixels.  If the image is full of colorful Easter eggs, it will have a wide range of colors etc...
-
-In the next part of the example sheet we are going to edit the the function *get_color(x)* return the average intensity of red, green and blue pixels in our image.  By following the steps you will be able to do this.
-
-Question 4
-----------
-**step 1:** Rather than calling your get_color(x) function from the command line, make a new script called  *detect.m*, and in that script call you function by adding the line of code:
-~~~~
-get_color(1)
-~~~~
-
-**step 2**: Currently we are passing the get_color function the value of 1,  we don't want to do this we would like to pass it an image from the camera.  So using imread in the script *detect.m*, read the image *floor.jpb* into a variable *a* and pass it to your function by using the code
-
-~~~~
-get_color(a)
-~~~~
-
-Now in your *get_color()* function use the command *imshow*, so that the function will display any image which is passed to it.
-
-
-**Step 3:** We now need to define two nested loops to iterate over every pixel in our image.  For now we are going to pretend our image is 100x100 pixels big.  Inside the function *get_color*, underneath your *imshow* command define two nested for loops, one which counts using the variable x from 1 to 100 and one which counts using the variable y from 1 to 100.  If you can't remember what a nested loop is refer to your notes.
-
-**step 4**:  Using the *sprintf* and the *disp* commands print out all the values of *x* and *y*, over which the loops count.
-
-**step 5**:  We know that this image is bigger than 100x100 pixels.  Use the *size* command to store the *x* and *y* size of the image in the variables *x_len* and *y_len*.  Change your for loops so rather than counting to 100, they count to x_len and y_len.
-
-**Step 6**:  In the CW2 we played with a black and white (sometimes called gray scale) image of the science museum.  We learnt that gray scale images are stored in a 2D matrix, with a value between 0-255 representing the value of each pixel. Zero represents the color black and 255 represents the color white, and all values between being shades of gray.  If one wanted to extract the intensity at 50,50 pixel form an image stored in the array *data*, we would use the code:
-
-~~~~~
-data(50,50)
-~~~~~
-
-However our image is not gray scale it is a color image.  In Color images as I mentioned above we store red, green and blue pixels.  Therefore at each position in the image there is a red green and blue value stored.  To access the red value at 50,50 we would use the command
-
-~~~~~
-data(50,50,1)
-~~~~~
-
-To access the green value we would use the command:
-
-~~~~~
-data(50,50,2)
-~~~~~
-
-and to access the blue value we would use the command:
-
-~~~~~
-data(50,50,3)
-~~~~~
-
-Edit your *sprtinf* statement to display the red, green and blue values of the pixels at every x,y value your nested for loops count over.
-
-Question 5
-----------
-**Step 1:** We are now going to edit the function so that it sums, all the values of the red pixels in the the image. First delete the lines:
-
-~~~~
-r=1;
-g=2;
-b=3;
-~~~~
-
-from your function.  At the top of your function (but still in your function) define the counter r=0.0. Within the nested loop add the line of code
-
-~~~~
-r=r+int32(a(x,y,1));
-~~~~
-
->What is this line of code doing?  Write your answer as a comment in your script.
-
-By writing *int32* before the a, we are just telling MATLAB/Octave to use an *int32* type variable to store the sum of all the red pixels.  An *int32*, is a special type of variable which can store very big numbers, we are using this as we expect the value of *r* to get very big.  The technical term for this is *type casting*.  Now add corresponding lines for the blue, and green colors, just as we did for the red color.  After your nested loops add the commands:
-
-~~~~
-r
-g
-b
-~~~~
-
-To show you the totals of the red green and blue in the images.
-Now test out the function again on the command line.  You should get some large values for r,g and b returned.
-
-**Step 2:** Returning the sum of red, green and blue, pixels is not so useful. What we want really is the function to return the average values of the red, green and blue pixels.  So add to your function a variable (called count) which adds up the number of pixels over which the r,g,b values are summed.  Then at the end of your function, divide r,g and b values by count.  [An alternative way of doing this is to divide the totals by y_len*x_len] Test your function again by running the script, *detect.m*.  It should now return the average pixel intensity, for the region defined in figure 1.
-
-**Step 3:** Change your script *detect.m* to load *black.jpg* and *eggs.jpg*.  What values do you get out?  Are they different for each object?  If so how different?
-
-Question 6
-----------
-**Step 1:** We have now written a function to detect the color of an object.  All we need now it to change our program to figure out which color relates to which object.  Depending on the light in the room the exact values from the camera may change so rather than saying the average color from a section of black tape is 0,0,0 we could say that black tape has values of red<50 and green<50, blue<50.  I would use this code to check if an object is black or not:
-
-~~~~
-if (r<50)
-    if (g<50)
-        if (b<50)
-           disp("The object is black!!")
-        end
-    end
-end
-~~~~
-
-copy and paste this code into *detect.m*.  Does it work?  Copy and paste this code, while changing the values to detect the color white representing the exit.  Does it work or does it get confused?
-
-Question 7 (bonus question):
-----------------------------
-Now try to adjust your script to identify the picture of the Easter eggs. 
+>Figure 8.1:  An example of the PI desktop.
+</p>
+ 
