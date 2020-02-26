@@ -265,10 +265,10 @@ Attach the female-male jumpers leads to the sensor driver board, on the far left
 <p align="center">
 <img src="./images_small/ultrasonic_sensor.jpg"  width=40% >
 
-Figure 6.1:  Building the ultrasonic sensor, and attaching the wires.  The female-male jumpers leads should be on the far left and right pins, while the female-female wires should attach to the two inside pins.  It does not matter which color wires you use.
+Figure 6.1:  Building the ultrasonic sensor, and attaching the wires.  The female-male jumpers leads should be on the far left and right pins, while the female-female wires should attach to the two inside pins.  It does not matter which color wires you use, in the next steps we will connect this sensor to the PI.
 </p>
 
-**Step 6.2:**  Now that you have attached the wires to the ultrasonic sensor you can connect it to the PI.  We will power the PI using it's micro USB port, the power will come from the batteries via a voltage converter which will step down the 10-15V supply from the batteries to a steady 5 Volts.  If you look at figure 6.2, you can see a diagram of the output pins on the PI.  Click on the picture to zoom in.  The section of the diagram labeled GPIO Pin out tells you what each of the pins does on the PI.  Pin 4 and 6 expose the +5V and 0V from the power supply, we are going to tap into these pins to get the voltage we need to drive the ultrasonic sensor (and later other components).  Get two female-male wires, and connect them to pin 4 and 6, as shown in figure 6.2.  Then connect the wires to the bread board as shown in the diagram.  The wire coming from pin 4 should go to the red strip on the bread board, and the wire coming out of pin 6 should go to the blue or black strip on your bread board.
+**Step 6.2:**  We will power the PI using it's micro USB port, the power will come from the batteries via a voltage converter which will step down the 10-15V supply from the batteries to a steady 5 Volts.  If you look at figure 6.2, you can see a diagram of the output pins on the PI.  Click on the picture to zoom in.  The section of the diagram labeled GPIO Pin out tells you what each of the pins does on the PI, some pins can be used to control things, some pins can be used to read information in from sensors.  Pin 4 and 6 expose the +5V and 0V from the power supply to the PI, we are going to tap into these pins to get the voltage we need to drive the ultrasonic sensor (and later other components).  Get two female-male wires, and connect them to pin 4 and 6, as shown in figure 6.2.  Then connect the wires to the bread board as shown in the diagram.  The wire coming from pin 4 should go to the red strip on the bread board, and the wire coming out of pin 6 should go to the blue or black strip on your bread board.
 
 <p align="center">
 <img src="./images_small/ultrasonic_sensor.svg.png"  width=40% >
@@ -276,7 +276,7 @@ Figure 6.1:  Building the ultrasonic sensor, and attaching the wires.  The femal
 Figure 6.2:  Building the ultrasonic sensor, and attaching the wires.  The female-male jumpers leads should be on the far left and right pins, while the female-female wires should attach to the two inside pins.
 </p>
 
----
+~~~~
 **What is breadboard?**
 
 Breadboards allow you to quickly and easily build electronic circuits without the need to solder wires together.  By placing wires and components into the holes in the board you can build a circuit within minuets. Each hole in the breadboard is electrically connected to all the other holes in it's row, as shown by the red lines in figure 6.3.
@@ -286,7 +286,7 @@ Breadboards allow you to quickly and easily build electronic circuits without th
 
 Figure 6.3:  Layout of the breadboard, with the image on the left showing the common connections between pins.
 </p>
----
+~~~~
 
 
 Old
