@@ -276,17 +276,16 @@ Figure 6.1:  Building the ultrasonic sensor, and attaching the wires.  The femal
 Figure 6.2:  Building the ultrasonic sensor, and attaching the wires.  The female-male jumpers leads should be on the far left and right pins, while the female-female wires should attach to the two inside pins.
 </p>
 
-~~~~
-**What is breadboard?**
+> **What is breadboard?**
 
-Breadboards allow you to quickly and easily build electronic circuits without the need to solder wires together.  By placing wires and components into the holes in the board you can build a circuit within minuets. Each hole in the breadboard is electrically connected to all the other holes in it's row, as shown by the red lines in figure 6.3.
+> Breadboards allow you to quickly and easily build electronic circuits without the need to solder wires together.  By placing wires and components into the holes in the board you can build a circuit within minuets. Each hole in the breadboard is electrically connected to all the other holes in it's row, as shown by the red lines in figure 6.3.
 
 <p align="center">
 <img src="./images_small/bread_board.jpg"  width=40% >
 
 Figure 6.3:  Layout of the breadboard, with the image on the left showing the common connections between pins.
 </p>
-~~~~
+
 
 
 Old
