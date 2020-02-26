@@ -327,19 +327,19 @@ The buggy building activity will be examined though a report, the focus on the r
 
 For today's session, your report should include the answer to question 1.1 along with the answers to the following questions:
 
-**Question 1.2:**  Take a picture of your group with the completed buggy, copy and paste this into your report, and write the names and student IDs of the other members of your group under the photo.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100):
+Take a picture of your group with the completed buggy, copy and paste this into your report, and write the names and student IDs of the other members of your group under the photo.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100):
 
-**Question 1.3:**  Describe in as few words as possible why we use a motor driver board.
+**Question 1.2:**  Describe in as few words as possible why we use a motor driver board.
 
-**Question 1.4:**  Why do we use two voltages to drive the motors and the PI?
+**Question 1.3:**  Why do we use two voltages to drive the motors and the PI?
 
-**Question 1.5:**  Use the internet to find out why it is critical to have a steady supply voltage to drive the PI.
+**Question 1.4:**  Use the internet to find out why it is critical to have a steady supply voltage to drive the PI.
 
-**Question 1.6:**  What do the letters ARM stand for in relation to the PI?
+**Question 1.5:**  What do the letters ARM stand for in relation to the PI?
 
-**Question 1.7:**  Use the internet to find out how much RAM the PI has, and how fast it's CPU in Hz compared to an older Pentium 100 desktop PC?
+**Question 1.6:**  Use the internet to find out how much RAM the PI has, and how fast it's CPU in Hz compared to an older Pentium 100 desktop PC?
 
-**Question 1.8:**  What do the letters GPIO stand for?
+**Question 1.7:**  What do the letters GPIO stand for?
 
-**Question 1.9:**  How big is the hard disk (or storage device) of the PI? (Hint you won't find this answer on the internet.)
+**Question 1.8:**  How big is the hard disk (or storage device) of the PI? (Hint you won't find this answer on the internet.)
 
