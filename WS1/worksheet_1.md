@@ -305,7 +305,7 @@ Section 8: Exploring the PI
 
 **Step 8.1:** If your buggy is switched on, now switch it off.  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC from the computers and reconnect them to your PI.  Now disconnect the black wire connecting the battery pack to the PI, and reconnect the PI to a USB port of a computer.  For this exercise we will power the PI from a USB port of the computer to save batteries, when ever possible try to do this as it saves the environment a bit, the only draw back of doing this is that the motors will not run as they need 10-15V which can only be supplied by the batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.
 
->**Question 1:** Why do you think we are not using reusable batteries for this lab?  Think about battery life time and how they are used over the year.  Discuss this with your group, and make a note of the answer.
+>**Question 1.1:** Why do you think we are not using reusable batteries for this lab?  Think about battery life time and how they are used over the year.  Discuss this with your group, and make a note of the answer.
 
 **Step 8.2**:  If you followed the instructions in step 8.1, you should have a desktop which looks like figure 8.1.  The PI runs Linux which is a bit like windows but usually used on phones, tablets and servers.  There is a lot of software available for the PI (possibly more than there is for windows), but I have chosen to do a minimal install to save disk space.  Never the less, there is a word processor installed, Octave a version of MATLAB which is free and Minecraft(!!).  Try to find these packages in the start menu and have a play with them.
 
@@ -316,4 +316,17 @@ Section 8: Exploring the PI
 
 >Figure 8.1:  An example of the PI desktop.
 </p>
- 
+
+Section 9: Starting your robot buggy report
+-------------------------------------------
+The buggy building activity will be examined though a report, the focus on the report will be your ability to write MATLAB code, and to answer the questions posed during the report.  Your report should contain:
+* A cover page, with your name, e-mail address and student ID.
+* One section for each work sheet you do.
+* Each section should contain the answers to each question posed during the work sheets.
+* Each diagram/figure should have a figure number and a caption.
+
+For today's session, your report should include the answer to question 1.1 along with the answers to the following questions:
+> **Question 1.2:**  Take a picture of your group with the completed buggy, copy and paste this into your report, and write the names and student IDs of the other members of your group under the photo.
+
+
+
