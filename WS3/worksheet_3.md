@@ -80,7 +80,15 @@ Often when controlling hardware there are various versions of commands, some eas
 
 **Question 3.4:**  Now edit your script called stop_stat, so that it gradually starts moving the buggy, then runs the motors on 60 percent power for 5 seconds, then gradually stops it.  What do you notice?
 
-**Question 3.5:**  You should have noticed that the buggy accelerated from a standing start to 100 power, then suddenly slowed down, then as it was about to stop it accelerated to 100 power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100.  To prevent this you will need to change  
+**Question 3.5:**  You should have noticed that the buggy accelerated from a standing start to 100% power, then as you ran the motors_adv(70,70) command, it suddenly slowed down, next as it was about to desccelerate it accelerated to 100% power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100% power.  To prevent this you would have to know the current speed of the buggy and start any acceleration at this speed.  The command:
+
+```
+get_motors_state()
+```
+
+returns an array of size two, the 1st element contains the speed of the first motor, the 2nd element is the speed of the second motor.
+
+**Question 3.6:**  Make a new script called, 
 
 In this section 
 out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.
