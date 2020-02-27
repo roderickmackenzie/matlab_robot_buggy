@@ -107,7 +107,8 @@ returns an array of size two, the 1st element contains the speed of the first mo
 
 
 
-
+Controlling output pins on the PI
+---------------------------------
 
 In this section 
 out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.
