@@ -115,7 +115,7 @@ So far you have used reliability high level commands to control the motors, hidd
 **Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below:
 
 <p align="center">
-<img src="./images/drawing.png" width=70%>
+<img src="./images/drawing.png" width=40%>
 
 Figure 1: The LED bar graph wired into the bread board.
 </p>
