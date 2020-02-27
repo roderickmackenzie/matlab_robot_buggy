@@ -125,7 +125,37 @@ Figure 1: The LED bar graph wired into the bread board.
 **Question 3.9:** If you look closely at each resistor, you will see 
 http://www.resistorguide.com/resistor-color-code/
 
-In this section 
+
+Using the GPIO pins
+
+Now you have a grasp of the Octave software, you can start with some basic input and output commands. In this section you will use some pre-defined function in order to turn on LEDs and to check the state of a switch.
+The Raspberry Pi has a set of GPIO pins that can act as inputs or outputs. The labels for the GPIO pins can be seen in figure 3.  If you hold your PI, with the USB ports towards you and the SD card slot pointing away from you, the GPIO pins will be orientated the same as they are in the picture.
+Output
+Question 1: Which GPIO pins are the motors connected to?  Save your answer as a comment in the file gpio_question.m.
+
+Figure 3: Raspberry Pi GPIO pin labels
+
+Question 2: We are now going to have a play with driving some LEDs with the GPIO pins.  Once you have mastered driving LEDs, you will be able to drive any external real world device using these pins.  Think, car breaks, fans, lighting, ignition systems to rockets, anything which takes a yes/no signal to do something.  So, although driving LEDs may seem pretty simple, it gives you the power to interface your computer with any real world device.  In order to turn the LEDs off and on they must be connected to a output pins of the PI, using a 330 ohm resistor [brown, black,black, orange,orange].  The resistor just limits the current the LED draws from the PI.  The wiring diagram for the LED can be seen in figure 4, the yellow blobs are the 330ohm resistors, they are connected to the negative power rail.  The red wires go to the PI, use male female jumper leads to do this.
+Figure 4: Wiring diagram for the LED [You may have to slightly rearrange the wiring for the echo sensor to get the LEDs into your bread board, don’t rearrange the wiring for the power supply.]
+
+Now the LEDs have been connected, the all the pins can be turned on for one second using the octave function
+
+```
+pin_out(“1111”,1.0)
+```
+
+Make a new script called led_test.m and see if the command works.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].   Now add the command pin_out(“1010”,1.0), to your script.  What does it do? Save you script.
+Question 3: Write a script to make your LEDs turn on and off randomly. With a one second wait between each random selection of LEDs.  Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.  Save this in the script led_test.m .
+
+Question 4: Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this video :): 
+https://www.youtube.com/watch?v=hG44lIO_bss
+This can be done with a while loop,  the pin_out command and the wait command. [If you’ve not seen the TV program…. you’ve missed nothing. :) ]
+Question 5: Write a program to turn on the LEDs when the distance detected from the echo sensor is less than 10cm, and to turn them off when the the distance is larger than 10cm.  Save this as echo_led.m
+
+
+
+Old
+---
 out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.
 
 
@@ -139,25 +169,6 @@ Q5) By setting one motor to a much lower power level than the other, it is possi
     • Go forwards on full power with both motors for 3 seconds.
     • Then run the other motor slow for 3 seconds to straighten up the buggy.
 This sect of actions should enable your buggy to move around one of your team mates stood in the way.  Pay with the code until it works, you may have to adjust the timings, and use a bit of creativity.  Also it may or not work so well on carpet, feel free to go and find a surface which is not carpet – like the ESLC.
-
-Using the GPIO pins
-Now you have a grasp of the Octave software, you can start with some basic input and output commands. In this section you will use some pre-defined function in order to turn on LEDs and to check the state of a switch.
-The Raspberry Pi has a set of GPIO pins that can act as inputs or outputs. The labels for the GPIO pins can be seen in figure 3.  If you hold your PI, with the USB ports towards you and the SD card slot pointing away from you, the GPIO pins will be orientated the same as they are in the picture.
-Output
-Question 1: Which GPIO pins are the motors connected to?  Save your answer as a comment in the file gpio_question.m.
-
-Figure 3: Raspberry Pi GPIO pin labels
-Question 2: We are now going to have a play with driving some LEDs with the GPIO pins.  Once you have mastered driving LEDs, you will be able to drive any external real world device using these pins.  Think, car breaks, fans, lighting, ignition systems to rockets, anything which takes a yes/no signal to do something.  So, although driving LEDs may seem pretty simple, it gives you the power to interface your computer with any real world device.  In order to turn the LEDs off and on they must be connected to a output pins of the PI, using a 330 ohm resistor [brown, black,black, orange,orange].  The resistor just limits the current the LED draws from the PI.  The wiring diagram for the LED can be seen in figure 4, the yellow blobs are the 330ohm resistors, they are connected to the negative power rail.  The red wires go to the PI, use male female jumper leads to do this.
-Figure 4: Wiring diagram for the LED [You may have to slightly rearrange the wiring for the echo sensor to get the LEDs into your bread board, don’t rearrange the wiring for the power supply.]
-Now the LEDs have been connected, the all the pins can be turned on for one second using the octave function
-pin_out(“1111”,1.0)
-Make a new script called led_test.m and see if the command works.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].   Now add the command pin_out(“1010”,1.0), to your script.  What does it do? Save you script.
-Question 3: Write a script to make your LEDs turn on and off randomly. With a one second wait between each random selection of LEDs.  Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.  Save this in the script led_test.m .
-
-Question 4: Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this video :): 
-https://www.youtube.com/watch?v=hG44lIO_bss
-This can be done with a while loop,  the pin_out command and the wait command. [If you’ve not seen the TV program…. you’ve missed nothing. :) ]
-Question 5: Write a program to turn on the LEDs when the distance detected from the echo sensor is less than 10cm, and to turn them off when the the distance is larger than 10cm.  Save this as echo_led.m
 
 Input from the outside world
 Ask a demonstrator (or me :) ) for a ‘block of red switches’, I have not put these in the kits as the pins get damaged very easily.  In this final section to the work sheet, we are going to be using the switches to get input from the outside world.  Again, just like with the LEDs, these switches could be replaced with any type of sensors, gas sensors, light sensors, heat sensors, you name it you can connect it to the PI.  However, to keep things simple we are first going to play with simple off on switches first.
