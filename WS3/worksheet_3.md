@@ -110,6 +110,18 @@ returns an array of size two, the 1st element contains the speed of the first mo
 Controlling output pins on the PI
 ---------------------------------
 
+So far you have used reliability high level commands to control the motors, hidden behind these motor commands is quite a lot of [complex code](https://en.wikipedia.org/wiki/Pulse-width_modulation).  However, very often you will need to be able to turn and off individual outputs from a computer.  You might for example want to detonate a war head, activate an air bag or turn on some lights.  To do these type of actions you must understand how to control voltages on the output pins of a computer.  For this example we are going to be using an LED bar graph.
+
+**Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below:
+
+<p align="center">
+<img src="./images/drawing.png" width=70%>
+
+Figure 1: The LED bar graph wired into the bread board.
+</p>
+
+
+
 In this section 
 out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.
 
