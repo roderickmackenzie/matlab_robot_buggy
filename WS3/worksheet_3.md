@@ -112,7 +112,7 @@ Controlling output pins on the PI
 
 So far you have used reliability high level commands to control the motors, hidden behind these motor commands is quite a lot of [complex code](https://en.wikipedia.org/wiki/Pulse-width_modulation).  However, very often you will need to be able to turn and off individual outputs from a computer.  You might for example want to detonate a war head, activate an air bag or turn on some lights.  To do these type of actions you must understand how to control voltages on the output pins of a computer.  For this example we are going to be using an LED bar graph.
 
-**Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below:
+**Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below, the resistors should go into the black/blue strip on the bread board:
 
 <p align="center">
 <img src="./images/drawing.png" width=40%>
@@ -120,7 +120,10 @@ So far you have used reliability high level commands to control the motors, hidd
 Figure 1: The LED bar graph wired into the bread board.
 </p>
 
+**Question 3.8:** What are the resistors for?  Use the internet to find this out.
 
+**Question 3.9:** If you look closely at each resistor, you will see 
+http://www.resistorguide.com/resistor-color-code/
 
 In this section 
 out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.

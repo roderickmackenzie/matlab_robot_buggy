@@ -39,6 +39,8 @@ Your box should contain:
 |  Camera holder | x1  				| UoN |  |
 |  Camera+ribbon cable | x1 		| RS |  |
 |  Raspberry PI enclosure | x1		| RS |  |
+|  330 Ohm resistors 	  | x4		| RS | 125-1157 |
+
 
 It should also contain the following number of bolts and nuts:
 
