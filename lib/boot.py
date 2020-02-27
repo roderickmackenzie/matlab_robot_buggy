@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 import os
 from time import sleep
-from lib import measure
 import RPi.GPIO as GPIO
 
 from lib import gpio_open
 from lib import gpio_close
-from lib import motor
-from lib import measure
-from lib import measure2
+from motors import motors
 from lib import leds
+from echo_sensor import echo_sensor
+
 import shutil
 from test_auto_run import test_auto_run
 import picamera
@@ -20,7 +19,7 @@ while(1):
 		camera = picamera.PiCamera()
 		break
 	except:
-		os.system("zenity --error --title=\"Oh dear\" --text=\"No camera check the cable, it may be around the wrong way.  Also remember to be careful with the cable it is very delicate.  ;) Rod\"")
+		os.system("zenity --error --title=\"Oh dear\" --text=\"No camera. Check the cable, it may be around the wrong way.  Also remember to be careful with the cable it is very delicate. Reboot when fixed. ;)  Rod\"")
 		
 camera.resolution=(640,480)
 camera.framerate=90
@@ -30,6 +29,7 @@ old_power2=0.0
 
 
 files_dir='/home/pi/io'
+my_motor=motors()
 def init():
 	global files_dir
 	if os.path.isdir(files_dir)==False:
@@ -74,20 +74,11 @@ def poll_switch():
 
 def poll_measure():
 	global files_dirc
-	ret=measure()
+	ret=echo_sensor()
 	if ret!=-1.0:
 		f=open(os.path.join(files_dir,'echo.dat'),"w")
 		f.write(str(ret))
 		f.close()
-
-def poll_measure2():
-	if os.path.isfile("/home/pi/enable_sensor2")==True:
-		global files_dirc
-		ret=measure2()
-		if ret!=-1.0:
-			f=open(os.path.join(files_dir,'echo2.dat'),"w")
-			f.write(str(ret))
-			f.close()
 
 def poll_camera():
 	global camera
@@ -114,22 +105,25 @@ def poll_motor():
 	global old_power2
 	power1=0.0
 	power2=0.0
-	try:
-		f=open(os.path.join(files_dir,'motors.dat'),"r")
-		lines=f.readlines()
-		f.close()
-		for i in range(0,len(lines)):
-			lines[i]=lines[i].rstrip()
+	#try:
+	f=open(os.path.join(files_dir,'motors.dat'),"r")
+	lines=f.readlines()
+	f.close()
+	
+	for i in range(0,len(lines)):
+		lines[i]=lines[i].rstrip()
+	if len(lines)>0:
 		lines=lines[0].split()
-		power1=float(lines[0])
-		power2=float(lines[1])
+		if len(lines)==2:
+			power1=float(lines[0])
+			power2=float(lines[1])
 
-		if power1!=old_power1 or power2!=old_power2:
-			motor(power1,power2)
-			old_power1=power1
-			old_power2=power2
-	except:
-		print('error in motor')
+			if power1!=old_power1 or power2!=old_power2:
+				print(lines)
+				my_motor.go(power1,power2)
+				old_power1=power1
+				old_power2=power2
+
 
 def poll_leds():
 	global files_dir
@@ -150,12 +144,15 @@ gpio_open()
 print "buggy autorun"
 debug("booted")
 lines=[]
+pid=os.fork()
+if pid==0:
+	while(1):
+		poll_motor()
+		sleep(0.1)
 
 while(1):
-	poll_motor()
 	test_auto_run()
 	poll_measure()
-	poll_measure2()
 	poll_leds()
 	poll_switch()
 	poll_camera()

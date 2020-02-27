@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 import os
 from time import sleep
-from lib import measure
 import RPi.GPIO as GPIO
 
 from lib import gpio_open
 from lib import gpio_close
-from lib import motor
-from lib import measure
 from lib import leds
 import sys
 

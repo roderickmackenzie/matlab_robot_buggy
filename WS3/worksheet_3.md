@@ -96,7 +96,17 @@ returns an array of size two, the 1st element contains the speed of the first mo
 * Write a while loop to count from the current speed to the desired speed in steps of ds, use the variable current_speed to store the current speed of the buggy, display this variable to the screen.
 * Next insert a sleep command to make the loop pause for 0.5 seconds each time it runs.
 * Finally add the motors_adv command to the loop, so that the variable current_speed is sent to the motors.  After completing these steps, your buggy should start moving the decelerate from 100 to 0.  Now change the initial speed to 70 and see what happens.
-* Finally, 
+
+
+**Question 3.7:**  Make the script goto_speed into a function, and add an input parameter into the function definition which allows the user to choose the number of steps taken to reach the desired speed.  Generate another script which called fast_slow.m, this script should use the function goto_speed to do the following:
+
+* Accelerate the buggy from a standing start to 100% speed over a period of 5 seconds
+* Gradually reduce the speed to 50% power over a period of three seconds.
+* Rapidly accelerate to 100%, then remain at this power for 4 seconds.
+* Suddenly stop.
+
+
+
 
 
 In this section 
