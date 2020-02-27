@@ -1,8 +1,8 @@
-Worksheet 3
-===========
+Worksheet 3 - Output to the real world
+=====================================
 
-1. Motor control - basic output
--------------------------------
+Motor control - basic output
+----------------------------
 
 The buggy has two motors.  These can be used to drive the buggy forwards, backwards or to turn it, by running one motor forwards and one backwards.  By the end of this section you will be able to move the buggy in any direction.
 
@@ -58,8 +58,31 @@ To stop the motors.
 
 3. Advanced motor control
 -------------------------
+The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code can not do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
 
+```
+motors_adv(power,power)
+```
 
+If you issue this command the motors will start, and just keep running.  Notice there is no timing command, thus once you turn the motors on you will have to turn it off by issuing:
+
+```
+motors_adv(0,0)
+```
+
+Often when controlling hardware there are various versions of commands, some easy to use and some harder with more power.
+
+**Question 3.1:**  Notice that in the previous examples, when you issued the command motors(100,100,5) command the buggy did a wheely.  This because the buggy is slightly heavier towards the back and has a lot of motor power.  We are now going to write two functions to gently ramp the power of the motors when setting off, so that it stops the buggy doing a wheely.  Make a new script called start_now.m and using a for loop and the motors_adv command, ramp the power of the motors from 0 to 100, over a period of 3 seconds.
+
+**Question 3.2:**  Now make a new script called stop_now.m and make the function ramp the power of the buggy from 100 to 0 over a period of 3 seconds.
+
+**Question 3.3:**  Turn you scripts stop_now and start_now, into functions so that they can be called from a third script start_stop.m.  Edit your script start_stop.m, so that it runs starts the buggy, runs the motors for three seconds, then stops the buggy.
+
+**Question 3.4:**  Now edit your script called stop_stat, so that it gradually starts moving the buggy, then runs the motors on 60 percent power for 5 seconds, then gradually stops it.  What do you notice?
+
+**Question 3.5:**  You should have noticed that the buggy accelerated from a standing start to 100 power, then suddenly slowed down, then as it was about to stop it accelerated to 100 power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100.  To prevent this you will need to change  
+
+In this section 
 out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.
 
 
