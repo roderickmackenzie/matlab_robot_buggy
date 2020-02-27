@@ -56,7 +56,7 @@ To stop the motors.
 **Question 2:**  We are now going to experiment with making the buggy turn, after this exercise the buggy will be able to drive in a square, to make the buggy turn you will have to stop one wheel and drive the other forward, you will be able to turn faster by running one motor forward and running one in reverse.  Edit your script so that the buggy drives forward, turns right, moves forward, turns right, moves forward.... etc.... until it has reached it's starting position.  The buggy should move in a square.
 
 
-3. Advanced motor control
+ 3. Advanced motor control
 -------------------------
 The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code can not do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
 
