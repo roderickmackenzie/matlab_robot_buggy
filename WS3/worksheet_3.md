@@ -56,8 +56,8 @@ To stop the motors.
 **Question 2:**  We are now going to experiment with making the buggy turn, after this exercise the buggy will be able to drive in a square, to make the buggy turn you will have to stop one wheel and drive the other forward, you will be able to turn faster by running one motor forward and running one in reverse.  Edit your script so that the buggy drives forward, turns right, moves forward, turns right, moves forward.... etc.... until it has reached it's starting position.  The buggy should move in a square.
 
 
-3. Advanced motor control
--------------------------
+Advanced motor control
+----------------------
 
 The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code can not do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
 
@@ -81,7 +81,7 @@ Often when controlling hardware there are various versions of commands, some eas
 
 **Question 3.4:**  Now edit your script called stop_stat, so that it gradually starts moving the buggy, then runs the motors on 60 percent power for 5 seconds, then gradually stops it.  What do you notice?
 
-**Question 3.5:**  You should have noticed that the buggy accelerated from a standing start to 100% power, then as you ran the motors_adv(70,70) command, it suddenly slowed down, next as it was about to desccelerate it accelerated to 100% power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100% power.  To prevent this you would have to know the current speed of the buggy and start any acceleration at this speed.  The command:
+**Question 3.5:**  You should have noticed that the buggy accelerated from a standing start to 100% power, then as you ran the motors_adv(70,70) command, it suddenly slowed down, next as it was about to decelerate it accelerated to 100% power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100% power.  To prevent this you would have to know the current speed of the buggy and start any acceleration at this speed.  The command:
 
 ```
 get_motors_state()
@@ -89,7 +89,15 @@ get_motors_state()
 
 returns an array of size two, the 1st element contains the speed of the first motor, the 2nd element is the speed of the second motor.
 
-**Question 3.6:**  Make a new script called, 
+**Question 3.6:**  Make a new script called goto_speed.m.  The purpose of this script will be to smoothly accelerate the buggy from it's current speed to a desired speed.
+* Make the script start your buggy moving forward at speed 100 for 3 seconds.
+* Then define a variable called target, which contains the next desired speed of the buggy, set it's value to 0.  We are going to slow (or speed up) the buggy in 10 steps over a period of 5 seconds.
+*  Subtract the current speed of the buggy from the target speed, to get the difference in speed between it's current speed and the desired speed .  Now divide this number by 10, and store the result in a viable called ds.
+* Write a while loop to count from the current speed to the desired speed in steps of ds, use the variable current_speed to store the current speed of the buggy, display this variable to the screen.
+* Next insert a sleep command to make the loop pause for 0.5 seconds each time it runs.
+* Finally add the motors_adv command to the loop, so that the variable current_speed is sent to the motors.  After completing these steps, your buggy should start moving the decelerate from 100 to 0.  Now change the initial speed to 70 and see what happens.
+* Finally, 
+
 
 In this section 
 out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.
