@@ -61,7 +61,7 @@ Figure 1: Adding the switches to the bread board.
 </p>
 
 <p align="center">
-<img src="./images/pinout.png" width=40%>
+<img src="./images/pinout.jpg" width=40%>
 
 Figure 2: The pinout of the PI.
 </p>
