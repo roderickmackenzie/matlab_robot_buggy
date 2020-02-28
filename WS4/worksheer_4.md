@@ -60,11 +60,22 @@ Ask a demonstrator (or me :) ) for a ‘block of red switches’, I have not put
 Figure 1: Adding the switches to the bread board.
 </p>
 
-Wire up the switches according to the wiring diagram in figure 6, if you get lost ask a demonstrator for help.
+<p align="center">
+<img src="./images/pinout.png" width=40%>
 
-Figure 6: Adding the switches to the bread board. The yellow boxes are resistors, they are the same as the 330 Ohm ones you used for the LEDs.
+Figure 2: The pinout of the PI.
+</p>
 
-Once the switches are installed you can read their state using the pin_in() function in octave, this returns a 1D array containing the position of the switches.  Try playing with the switches and see what pin_in() returns.  The switches don’t stick to the bread board very well because they have short legs.  To turn the switches on and off I suggest you hold the red switch block down with one fingure, and toggle the switches with the a screwdriver.
+
+Wire up the switches according to the wiring diagram in figure 1, if you get lost ask a demonstrator for help.  The yellow boxes are resistors, they are the same as the 330 Ohm ones you used for the LEDs.  I have again included a in figure 2 a pin out of the PI.
+
+Once the switches are installed you can read their state using the
+
+```
+pin_in()
+```
+
+function in octave, this returns a 1D array containing the position of the switches.  Try playing with the switches and see what pin_in() returns.  The switches don’t stick to the bread board very well because they have short legs.  To turn the switches on and off I suggest you hold the red switch block down with one fingure, and toggle the switches with the a screwdriver.
 
 Question 1: We are now going to write a script to make the buggy drive in a big circle.  If switch 1 is on, then your buggy will drive in a clockwise circle, if switch 1 is off it will drive anti clockwise circle.  When the buggy meets an object, it will stop for one second, then display the following sequences on the LEDs 1111,1110,1101,1100,1011,1010, 1001,1000,0111,0110,0101,0100,0011,0010,0001, 0000, with a 0.1 second wait between each combination of numbers.  These numbers are actually binary numbers counting from 15 to 0, (we will learn about binary numbers in second year).  Once the buggy has counted from 1111 to 0000, it should resume driving in a circle.  The task has been broken down into a series of steps below.  
     • Step 1: Make a new script called circle.m and save it. Then, use the pin_in() function, to determine if switch 1 is on or off.
