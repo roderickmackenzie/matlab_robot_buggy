@@ -140,10 +140,7 @@ Figure 2: The pin out of the PI.
 Figure 3: Examples of resistors.
 </p>
 
-Question 2: We are now going to have a play with driving some LEDs with the GPIO pins.  Once you have mastered driving LEDs, you will be able to drive any external real world device using these pins.  Think, car breaks, fans, lighting, ignition systems to rockets, anything which takes a yes/no signal to do something.  So, although driving LEDs may seem pretty simple, it gives you the power to interface your computer with any real world device.  In order to turn the LEDs off and on they must be connected to a output pins of the PI, using a 330 ohm resistor [brown, black,black, orange,orange].  The resistor just limits the current the LED draws from the PI.  The wiring diagram for the LED can be seen in figure 4, the yellow blobs are the 330ohm resistors, they are connected to the negative power rail.  The red wires go to the PI, use male female jumper leads to do this.
-Figure 4: Wiring diagram for the LED [You may have to slightly rearrange the wiring for the echo sensor to get the LEDs into your bread board, don’t rearrange the wiring for the power supply.]
-
-Now the LEDs have been connected, the all the pins can be turned on for one second using the octave function
+**Step 2:** Now the LEDs have been connected, he pins can be turned on for one second using the octave function
 
 ```
 pin_out(“1111”,1.0)
