@@ -38,7 +38,7 @@ Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before the
 Hint 2: Position your buggy so the wheels are off the ground, you can use the box your PI came in to do this. If you don’t do this your buggy will fly off the table.
 ```
 
-**Step 1.1:** We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat this.  Edit the script my_motor_script.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds.
+**Step 1.1:** We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Edit the script my_motor_script.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds.
 
 **Step 1.2:** Place your buggy on the tool box or some other object so it's wheels are off the ground and not touching anything.  Now click run, and the motors should start to drive forward and then backwards.
 
@@ -49,7 +49,7 @@ motors(0,0,1)
 ```
 To stop the motors.
 
-**Step 1.3:**  Now, assuming your script works, re-save you script as /home/pi/autorun.m. Unplug all the cables from the buggy turn it off and place it on the floor.  Turn the buggy on with the power switch, and it should run of batteries. It  will take about 30 seconds to boot, but when it does it will run the file autorun.m and your buggy should start going forwards and backwards.
+**Step 1.3:**  Now, assuming your script works, re-save you script as /home/pi/autorun.m. Unplug all the cables from the buggy turn it off and place it on the floor.  Turn the buggy on with the power switch, and it should run of batteries. It will take about 30 seconds to boot, but when it does it will run the file autorun.m and your buggy should start going forwards and backwards.
 
 **Step 1.4:**  Tune the timings in your motor commands so that the buggy goes exactly 2 meters forwards and two meters backwards.
 
@@ -73,36 +73,45 @@ motors_adv(0,0)
 
 Often when controlling hardware there are various versions of commands, some easy to use and some harder with more power.
 
-**Question 3.1:**  Notice that in the previous examples, when you issued the command motors(100,100,5) command the buggy did a wheely.  This because the buggy is slightly heavier towards the back and has a lot of motor power.  We are now going to write two functions to gently ramp the power of the motors when setting off, so that it stops the buggy doing a wheely.  Make a new script called start_now.m and using a for loop and the motors_adv command, ramp the power of the motors from 0 to 100, over a period of 3 seconds.
+**Question 3.1:**  Notice that in the previous examples, when you issued the command motors(100,100,5) command the buggy did a wheely.  This because the buggy is slightly heavier towards the back and has a lot of motor power.  We are now going to write two functions to gently ramp the power of the motors when setting off, so that it stops the buggy doing a wheely.  Make a new script called start_now.m and using a for loop and the motors_adv command, ramp the power of the motors from 0 to 100, over a period of 10 seconds.
 
-**Question 3.2:**  Now make a new script called stop_now.m and make the function ramp the power of the buggy from 100 to 0 over a period of 3 seconds.
+**Question 3.2:**  Now make a new script called stop_now.m and make the function ramp the power of the buggy from 100 to 0 over a period of 10 seconds.
 
 **Question 3.3:**  Turn you scripts stop_now and start_now, into functions so that they can be called from a third script start_stop.m.  Edit your script start_stop.m, so that it runs starts the buggy, runs the motors for three seconds, then stops the buggy.
 
 **Question 3.4:**  Now edit your script called stop_stat, so that it gradually starts moving the buggy, then runs the motors on 60 percent power for 5 seconds, then gradually stops it.  What do you notice?
 
-**Question 3.5:**  You should have noticed that the buggy accelerated from a standing start to 100% power, then as you ran the motors_adv(70,70) command, it suddenly slowed down, next as it was about to decelerate it accelerated to 100% power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100% power.  To prevent this you would have to know the current speed of the buggy and start any acceleration at this speed.  The command:
+**Question 3.5:**  You should have noticed that the buggy accelerated from a standing start to 100% power, then as you ran the motors_adv(60,60) command, it suddenly slowed down, next as it was about to decelerate it accelerated to 100% power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100% power.  To prevent this you would have to know the current speed of the buggy and start any acceleration at this speed.  The command:
 
 ```
 get_motors_state()
 ```
 
-returns an array of size two, the 1st element contains the speed of the first motor, the 2nd element is the speed of the second motor.
+returns an array of size two, the 1st element contains the speed of the first motor, the 2nd element is the speed of the second motor.  Have a play with this command.
 
 **Question 3.6:**  Make a new script called goto_speed.m.  The purpose of this script will be to smoothly accelerate the buggy from it's current speed to a desired speed.
-* Make the script start your buggy moving forward at speed 100 for 3 seconds.
-* Then define a variable called target, which contains the next desired speed of the buggy, set it's value to 0.  We are going to slow (or speed up) the buggy in 10 steps over a period of 5 seconds.
-*  Subtract the current speed of the buggy from the target speed, to get the difference in speed between it's current speed and the desired speed .  Now divide this number by 10, and store the result in a viable called ds.
-* Write a while loop to count from the current speed to the desired speed in steps of ds, use the variable current_speed to store the current speed of the buggy, display this variable to the screen.
-* Next insert a sleep command to make the loop pause for 0.5 seconds each time it runs.
-* Finally add the motors_adv command to the loop, so that the variable current_speed is sent to the motors.  After completing these steps, your buggy should start moving the decelerate from 100 to 0.  Now change the initial speed to 70 and see what happens.
+
+* Make the script start your buggy moving forward at speed 100.
+
+* Then define a variable called *target*, which contains the next desired speed of the buggy, set it's value to 0.  We are going to slow (or speed up) the buggy in 10 steps over a period of 10 seconds.
+
+*  Subtract the current speed of the buggy from the target speed, to get the difference in speed between it's current speed and the desired speed, you can find the current speed with the function *get_motors_state()*.  Now divide this number by 10, and store the result in a viable called *ds*.
+
+* Write a while loop to count from the current speed to the desired speed in steps of *ds*, use the variable *current_speed* to store the current speed of the buggy, display this variable to the screen.
+
+* Next insert a sleep command to make the loop pause for 1 seconds each time it runs.
+
+* Finally add the *motors_adv* command to the loop, so that the variable current_speed is sent to the motors.  After completing these steps, your buggy should start moving the decelerate from 100 to 0.  Now change the initial speed to 70 and see what happens.
 
 
 **Question 3.7a:**  Make the script goto_speed into a function, and add an input parameter into the function definition which allows the user to choose the number of steps taken to reach the desired speed.  Generate another script which called fast_slow.m, this script should use the function goto_speed to do the following:
 
-* Accelerate the buggy from a standing start to 100% speed over a period of 5 seconds
+* Accelerate the buggy from a standing start to 100% speed over a period of 10 seconds.
+
 * Gradually reduce the speed to 50% power over a period of three seconds.
+
 * Rapidly accelerate to 100%, then remain at this power for 4 seconds.
+
 * Suddenly stop.
 
 
