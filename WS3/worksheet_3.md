@@ -30,7 +30,13 @@ To stop the motors, use the command:
 motors(0,0,1)
 ```
 
-**Question 1:**   Now, make a new script called my_motor_script.m and save it under /home/pi/.  Make sure you add addpath(‘/home/pi/lib’) to the top of the script so that, Octave can find the  buggy functions. [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly.] Now try out the commands above to move the motors.  Did you wire them up correctly?  If they spin in different directions, just swap the wires around in the motor driver board.
+**Question 1:**   Now, make a new script called my_motor_script.m and save it under /home/pi/.   To control the hardware of the buggy, we are going to have to use functions, which know how to talk to the hardware.  These functions are stored in /home/pi/lib.  Add the line
+
+```
+addpath(‘/home/pi/lib’)
+```
+
+to the top of your script, this will tell Octave where the functions are stored [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly.] Now try out the commands above to move the motors.  Did you wire them up correctly?  If they spin in different directions, just swap the wires around in the motor driver board.
 
 ```
 Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before these commands will work though.
