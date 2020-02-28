@@ -164,14 +164,14 @@ Hint, first pick a random number between 1 and 4, then use an if-elseif-end stat
 **Question 3.14:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program…. you’ve missed nothing. :) ]
 
 
-**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs.
+**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to 
 
 Developing yourself as an engineer
 ----------------------------------
 
 For a good engineer, engineering should be as much a hobby as a profession.  You should continually be trying to improve your skills every day both in your free time and when working.  You should think of computing and electronics as a fun thing to do and try to explore it on your own.  There is not enough time in 3-4 short years of lectures to teach you all the skills you will need in your professional lives.  Why don't you try:
-* Learning Python in your free time: Here are some good links to get started: [Downloading and installing](https://www.python.org/about/gettingstarted/), [Watch youtube channels on Python](https://www.youtube.com/watch?v=cpPG0bKHYKc), (tutorials)[https://wiki.python.org/moin/BeginnersGuide/Programmers]
-* Subscribe to some electronics youtube channels, this one is quite good (mikeselectricstuff)[https://www.youtube.com/channel/UCcs0ZkP_as4PpHDhFcmCHyA], and so is this one (EEVBlog)[https://www.youtube.com/user/EEVblog].
+* Learning Python in your free time: Here are some good links to get started: [Downloading and installing](https://www.python.org/about/gettingstarted/), [Watch youtube channels on Python](https://www.youtube.com/watch?v=cpPG0bKHYKc), [tutorials](https://wiki.python.org/moin/BeginnersGuide/Programmers)
+* Subscribe to some electronics youtube channels, this one is quite good [mikeselectricstuff](https://www.youtube.com/channel/UCcs0ZkP_as4PpHDhFcmCHyA), and so is this one [EEVBlog](https://www.youtube.com/user/EEVblog).
 
 
 
