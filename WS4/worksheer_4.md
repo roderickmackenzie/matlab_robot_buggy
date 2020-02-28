@@ -40,12 +40,14 @@ just after the command used to print the distance, this will force Octave to sho
 **Question 4.3** We are now going to edit the script to reverse the direction of the buggy if, an object is detected.  Define a variable outside the while loop called *direction* set it to 1.0.  Now, if a distance below 25 cm is detected make the script multiply direction by -1.0 and wait for one second.  Now, edit the script by using an ‘if-else’ statement, to drive the buggy forwards if direction is set to 1.0 and backwards if direction is set to -1.0.  Note if the sensor can not see an object then it gives a value of -1.  You will have to use if statements to not change direction if the value is equal to -1.
 
 
-**Question 4.4**  By setting one motor to a much lower power level than the other, it is possible to make the buggy turn.  Edit your script, so that when the buggy detects an object, it will:
-    • Reverse for 2 seconds
-    • Start going forwards again, but it run one motor slower than the other for a 3 seconds to make it turn.
-    • Go forwards on full power with both motors for 3 seconds.
-    • Then run the other motor slow for 3 seconds to straighten up the buggy.
-This sect of actions should enable your buggy to move around one of your team mates stood in the way.  Pay with the code until it works, you may have to adjust the timings, and use a bit of creativity.  Also it may or not work so well on carpet, feel free to go and find a surface which is not carpet – like the ESLC.
+**Question 4.4:**  By setting one motor to a much lower power level than the other, it is possible to make the buggy turn.  Edit your script, so that when the buggy detects an object, it will:
+
+* Reverse for 2 seconds
+* Start going forwards again, but it run one motor slower than the other for a 3 seconds to make it turn.
+* Go forwards on full power with both motors for 3 seconds.
+* Then run the other motor slow for 3 seconds to straighten up the buggy.
+
+This sect of actions should enable your buggy to move around one of your team mates stood in the way.  The ultrasonic sensors do not have a very good range, so you may have to slow the buggy down a bit for it to work well.  Pay with the code until it works, you may have to adjust the timings, and use a bit of creativity.
 
 Input from the outside world
 Ask a demonstrator (or me :) ) for a ‘block of red switches’, I have not put these in the kits as the pins get damaged very easily.  In this final section to the work sheet, we are going to be using the switches to get input from the outside world.  Again, just like with the LEDs, these switches could be replaced with any type of sensors, gas sensors, light sensors, heat sensors, you name it you can connect it to the PI.  However, to keep things simple we are first going to play with simple off on switches first.
