@@ -115,11 +115,10 @@ returns an array of size two, the 1st element contains the speed of the first mo
 * Suddenly stop.
 
 
-
 Controlling output pins on the PI
 ---------------------------------
 
-So far you have used relatively high level commands to control the motors, hidden behind these motor commands is quite a lot of [complex code](https://en.wikipedia.org/wiki/Pulse-width_modulation).  However, very often you will need to be able to turn and off individual outputs from a computer.  You might for example want to detonate a war head, activate an air bag or turn on some lights.  To do these type of actions you must understand how to control voltages on the output pins of a computer.  In this example we will be controlling an LED bar graph, although you could replace the LEDs with any component you wanted to drive.
+So far you have used relatively high level commands to control the motors, hidden behind these motor commands is quite a lot of [complex code](https://en.wikipedia.org/wiki/Pulse-width_modulation).  However, very often you will need to be able to turn and off individual outputs from a computer.  You might for example want to detonate a warhead, activate an air bag or turn on some lights.  To do these type of actions you must understand how to control voltages on the output pins of a computer.  In this example we will be controlling an LED bar graph, although you could replace the LEDs with any component you wanted to drive.
 
 **Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below, the resistors should go into the black/blue strip.  Then connect the other side of the LEDs to the PI using the jumper cables, refer to Figure 2 to understand which pins on the PI the LEDs should be connected to, these pins on the PI are called GPIO pins or general-purpose input/output pins.
 
@@ -152,12 +151,12 @@ Figure 3: Examples of resistors.
 **Step 2:** Now the LEDs have been connected, the pins can be turned on with the command
 
 ```
-set_pin(GPIO_PIN_NUMBER,1)
+gpio_write(GPIO_PIN_NUMBER,1)
 ```
 
 and can be turned off with the command
 ```
-set_pin(GPIO_PIN_NUMBER,0)
+gpio_write(GPIO_PIN_NUMBER,0)
 ```
 
 **Question 3.11:** Make a short script called ws_3_3_11.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
@@ -173,7 +172,7 @@ Hint, first pick a random number between 1 and 4, then use an if-elseif-end stat
 **Question 3.14:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program…. you’ve missed nothing. :) ]
 
 
-**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move forward about 10 meters while displaying the knight rider effect on the LEDs, then stop.
+**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move forward about 10 meters while displaying the knight rider effect on the LEDs, then stop the buggy
 
 
 Controlling the PI it's self - and power management
@@ -182,17 +181,19 @@ Controlling the PI it's self - and power management
 Robots not too dissimilar to yours are used to explore remote planets such as [mars](https://mars.nasa.gov/mer/).  Such a robot would be a long way from  Earth, and there is a limited amount of power available.  For example, in summer there may be enough power to run the computers, cameras, and communications equipment in the robot, however in winter, the robot may have to power down to save power.  In PI has the command:
 
 ```
-save_power_mode()
+poweroff()
 ```
 
-Which will turn the main computer of the buggy off. Add this command to the end of your script so that after the robot has completed moving 10 meters it turns off.
+Which will turn the main computer of the buggy off to save power. Add this command to the end of your script so that after the robot has completed moving 10 meters it turns off.
 
 
 Developing yourself as an engineer
 ----------------------------------
 
 For a good engineer, engineering should be as much a hobby as a profession.  You should continually be trying to improve your skills every day both in your free time and when working.  You should think of computing and electronics as a fun thing to do and try to explore it on your own.  There is not enough time in 3-4 short years of lectures to teach you all the skills you will need in your professional lives.  Why don't you try:
+
 * Learning Python in your free time: Here are some good links to get started: [Downloading and installing](https://www.python.org/about/gettingstarted/), [Watch youtube channels on Python](https://www.youtube.com/watch?v=cpPG0bKHYKc), [tutorials](https://wiki.python.org/moin/BeginnersGuide/Programmers)
+
 * Subscribe to some electronics youtube channels, this one is quite good [mikeselectricstuff](https://www.youtube.com/channel/UCcs0ZkP_as4PpHDhFcmCHyA), and so is this one [EEVBlog](https://www.youtube.com/user/EEVblog).
 
 
