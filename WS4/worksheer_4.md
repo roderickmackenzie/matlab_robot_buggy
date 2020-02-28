@@ -49,11 +49,16 @@ just after the command used to print the distance, this will force Octave to sho
 
 This sect of actions should enable your buggy to move around one of your team mates stood in the way.  The ultrasonic sensors do not have a very good range, so you may have to slow the buggy down a bit for it to work well.  Pay with the code until it works, you may have to adjust the timings, and use a bit of creativity.
 
-Input from the outside world
-Ask a demonstrator (or me :) ) for a ‘block of red switches’, I have not put these in the kits as the pins get damaged very easily.  In this final section to the work sheet, we are going to be using the switches to get input from the outside world.  Again, just like with the LEDs, these switches could be replaced with any type of sensors, gas sensors, light sensors, heat sensors, you name it you can connect it to the PI.  However, to keep things simple we are first going to play with simple off on switches first.
-The bread board is getting pretty crowed now, but if you squeeze you resisters for your echo sensor right to the end, and then push the LEDs just up against them, there is enough room for the red block of switches.  This can be seen in figure 5.
+Switches
+--------
 
-Figure 5: Adding the switches to the bread board.
+Ask a demonstrator (or me :) ) for a ‘block of red switches’, I have not put these in the kits as the pins get damaged very easily.  In this final section to the work sheet, we are going to be using the switches to get input from the outside world.  Again, just like with the LEDs, these switches could be replaced with any type of sensors, gas sensors, light sensors, heat sensors, you name it you can connect it to the PI.  However, to keep things simple we are first going to play with simple off on switches first.
+
+<p align="center">
+<img src="./images/drawing_switch.png" width=40%>
+
+Figure 1: Adding the switches to the bread board.
+</p>
 
 Wire up the switches according to the wiring diagram in figure 6, if you get lost ask a demonstrator for help.
 
