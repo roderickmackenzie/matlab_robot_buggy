@@ -98,7 +98,7 @@ returns an array of size two, the 1st element contains the speed of the first mo
 * Finally add the motors_adv command to the loop, so that the variable current_speed is sent to the motors.  After completing these steps, your buggy should start moving the decelerate from 100 to 0.  Now change the initial speed to 70 and see what happens.
 
 
-**Question 3.7:**  Make the script goto_speed into a function, and add an input parameter into the function definition which allows the user to choose the number of steps taken to reach the desired speed.  Generate another script which called fast_slow.m, this script should use the function goto_speed to do the following:
+**Question 3.7a:**  Make the script goto_speed into a function, and add an input parameter into the function definition which allows the user to choose the number of steps taken to reach the desired speed.  Generate another script which called fast_slow.m, this script should use the function goto_speed to do the following:
 
 * Accelerate the buggy from a standing start to 100% speed over a period of 5 seconds
 * Gradually reduce the speed to 50% power over a period of three seconds.
@@ -110,9 +110,11 @@ returns an array of size two, the 1st element contains the speed of the first mo
 Controlling output pins on the PI
 ---------------------------------
 
-So far you have used reliability high level commands to control the motors, hidden behind these motor commands is quite a lot of [complex code](https://en.wikipedia.org/wiki/Pulse-width_modulation).  However, very often you will need to be able to turn and off individual outputs from a computer.  You might for example want to detonate a war head, activate an air bag or turn on some lights.  To do these type of actions you must understand how to control voltages on the output pins of a computer.  For this example we are going to be using an LED bar graph.
+So far you have used relatively high level commands to control the motors, hidden behind these motor commands is quite a lot of [complex code](https://en.wikipedia.org/wiki/Pulse-width_modulation).  However, very often you will need to be able to turn and off individual outputs from a computer.  You might for example want to detonate a war head, activate an air bag or turn on some lights.  To do these type of actions you must understand how to control voltages on the output pins of a computer.  In this example we will be controlling an LED bar graph, although you could replace the LEDs with any component you wanted to drive.
 
-**Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below, the resistors should go into the black/blue strip on the bread board:
+**Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below, the resistors should go into the black/blue strip.  Then connect the other side of the LEDs to the PI using the jumper cables, refer to Figure 2 to understand which pins on the PI the LEDs should be connected to, these pins on the PI are called GPIO pins or general-purpose input/output pins.
+
+**Question 3.7b:**  Which GPIO pins are the motors connected to?
 
 <p align="center">
 <img src="./images/drawing.png" width=40%>
@@ -120,20 +122,23 @@ So far you have used reliability high level commands to control the motors, hidd
 Figure 1: The LED bar graph wired into the bread board.
 </p>
 
-**Question 3.8:** What are the resistors for?  Use the internet to find this out.
+<p align="center">
+<img src="./images/pinout.jpg" width=40%>
 
-**Question 3.9:** If you look closely at each resistor, you will see 
-http://www.resistorguide.com/resistor-color-code/
+Figure 2: The pin out of the PI.
+</p>
 
+**Question 3.8:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed? 
 
-Using the GPIO pins
+ **Question 3.9:** In your report draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.
 
-Now you have a grasp of the Octave software, you can start with some basic input and output commands. In this section you will use some pre-defined function in order to turn on LEDs and to check the state of a switch.
-The Raspberry Pi has a set of GPIO pins that can act as inputs or outputs. The labels for the GPIO pins can be seen in figure 3.  If you hold your PI, with the USB ports towards you and the SD card slot pointing away from you, the GPIO pins will be orientated the same as they are in the picture.
-Output
-Question 1: Which GPIO pins are the motors connected to?  Save your answer as a comment in the file gpio_question.m.
+**Question 3.10:** If you look closely at each resistor, you will see that they have some colored lines on them, these lines tell you which value the resistors are in Ohms.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the value of the resistors in figure 3.  If you look at the ultrasonic sensor driver board you will see two more resistors, write down the value of these resistors in your report.
 
-Figure 3: Raspberry Pi GPIO pin labels
+<p align="center">
+<img src="./images/resistors.jpg" width=40%>
+
+Figure 3: Examples of resistors.
+</p>
 
 Question 2: We are now going to have a play with driving some LEDs with the GPIO pins.  Once you have mastered driving LEDs, you will be able to drive any external real world device using these pins.  Think, car breaks, fans, lighting, ignition systems to rockets, anything which takes a yes/no signal to do something.  So, although driving LEDs may seem pretty simple, it gives you the power to interface your computer with any real world device.  In order to turn the LEDs off and on they must be connected to a output pins of the PI, using a 330 ohm resistor [brown, black,black, orange,orange].  The resistor just limits the current the LED draws from the PI.  The wiring diagram for the LED can be seen in figure 4, the yellow blobs are the 330ohm resistors, they are connected to the negative power rail.  The red wires go to the PI, use male female jumper leads to do this.
 Figure 4: Wiring diagram for the LED [You may have to slightly rearrange the wiring for the echo sensor to get the LEDs into your bread board, don’t rearrange the wiring for the power supply.]
@@ -145,6 +150,7 @@ pin_out(“1111”,1.0)
 ```
 
 Make a new script called led_test.m and see if the command works.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].   Now add the command pin_out(“1010”,1.0), to your script.  What does it do? Save you script.
+
 Question 3: Write a script to make your LEDs turn on and off randomly. With a one second wait between each random selection of LEDs.  Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.  Save this in the script led_test.m .
 
 Question 4: Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this video :): 
