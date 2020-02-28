@@ -140,17 +140,28 @@ Figure 2: The pin out of the PI.
 Figure 3: Examples of resistors.
 </p>
 
-**Step 2:** Now the LEDs have been connected, he pins can be turned on for one second using the octave function
+**Step 2:** Now the LEDs have been connected, the pins can be turned on with the command
 
 ```
-pin_out(“1111”,1.0)
+set_pin(GPIO_PIN_NUMBER,1)
 ```
 
-Make a new script called led_test.m and see if the command works.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].   Now add the command pin_out(“1010”,1.0), to your script.  What does it do? Save you script.
+and can be turned off with the command
+```
+set_pin(GPIO_PIN_NUMBER,0)
+```
 
-Question 3: Write a script to make your LEDs turn on and off randomly. With a one second wait between each random selection of LEDs.  Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.  Save this in the script led_test.m .
+**Question 3.11:** Make a short script called ws_3_3_11.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
 
-Question 4: Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this video :): 
+**Question 3.12:** Edit your script so that the LEDs will flash on and off with a one second interval for ever. 
+
+**Question 3.13:** Now make a new script to turn your LEDs randomly at regular intervals of 0.5 seconds.
+
+```
+Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.
+``
+
+**Question  Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this video :): 
 https://www.youtube.com/watch?v=hG44lIO_bss
 This can be done with a while loop,  the pin_out command and the wait command. [If you’ve not seen the TV program…. you’ve missed nothing. :) ]
 Question 5: Write a program to turn on the LEDs when the distance detected from the echo sensor is less than 10cm, and to turn them off when the the distance is larger than 10cm.  Save this as echo_led.m
