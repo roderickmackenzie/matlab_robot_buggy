@@ -1,4 +1,4 @@
-Worksheet 4
+Worksheet 6
 ===========
 
 The buggy challenge
