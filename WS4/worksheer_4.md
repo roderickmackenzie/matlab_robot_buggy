@@ -34,13 +34,13 @@ just after the command used to print the distance, this will force Octave to sho
 **Question 4.1** Edit your program so that it prints out the words “Too close!”, when you hold less than 5 cm front of the sensor, “I miss you!”, when your hand is not there, and “Just right”, when your hand is 10-15 cm away. Save this all under ws4_4_1.m
 
 
-Question 5: Write a program to turn on the LEDs when the distance detected from the echo sensor is less than 10cm, and to turn them off when the the distance is larger than 10cm.  Save this as echo_led.m
+**Question 4.2** Write a program to turn on the LEDs when the distance detected from the echo sensor is less than 10cm, and to turn them off when the the distance is larger than 10cm.  Save this as ws4_4_2.m  What is the range of the echo sensor?  Give this value in your report.
 
-Q3) We are now going to edit the script to reverse the direction of the buggy if, an object is detected.  Define a variable outside the while loop called ‘direction’ set it to 1.0.  Now, if a distance below 45 cm is detected make the script multiply direction by -1.0 and wait for one second.  Now, edit the script by using an ‘if-else’ statement, to drive the buggy forwards if direction is set to 1.0 and backwards if direction is set to -1.0.
-Q4) 
-    • Note 1: autorun.m will only be executed, when no keyboard or mouse are present.  If you want to test autorun.m, while the screen is still connected to you PC, just unplug the keyboard and mouse, and it will be executed.
-    • Note 2: Do remember to turn off the buggy before connecting it to the PC again.  If you don’t there is a risk power will be fed from the batteries to the USB port of the PC, which won’t have a good outcome. [https://www.youtube.com/watch?v=2SopsQEfoc4]
-Q5) By setting one motor to a much lower power level than the other, it is possible to make the buggy turn.  Edit your script, so that when the buggy detects an object, it will:
+
+**Question 4.3** We are now going to edit the script to reverse the direction of the buggy if, an object is detected.  Define a variable outside the while loop called *direction* set it to 1.0.  Now, if a distance below 25 cm is detected make the script multiply direction by -1.0 and wait for one second.  Now, edit the script by using an ‘if-else’ statement, to drive the buggy forwards if direction is set to 1.0 and backwards if direction is set to -1.0.  Note if the sensor can not see an object then it gives a value of -1.  You will have to use if statements to not change direction if the value is equal to -1.
+
+
+**Question 4.4**  By setting one motor to a much lower power level than the other, it is possible to make the buggy turn.  Edit your script, so that when the buggy detects an object, it will:
     • Reverse for 2 seconds
     • Start going forwards again, but it run one motor slower than the other for a 3 seconds to make it turn.
     • Go forwards on full power with both motors for 3 seconds.
