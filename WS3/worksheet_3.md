@@ -164,7 +164,20 @@ Hint, first pick a random number between 1 and 4, then use an if-elseif-end stat
 **Question 3.14:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program…. you’ve missed nothing. :) ]
 
 
-**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to 
+**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move forward about 10 meters while displaying the knight rider effect on the LEDs, then stop.
+
+
+Controlling the PI it's self - and power management
+---------------------------------------------------
+
+Robots not too dissimilar to yours are used to explore remote planets such as [mars](https://mars.nasa.gov/mer/).  Such a robot would be a long way from  Earth, and there is a limited amount of power available.  For example, in summer there may be enough power to run the computers, cameras, and communications equipment in the robot, however in winter, the robot may have to power down to save power.  In PI has the command:
+
+```
+save_power_mode()
+```
+
+Which will turn the main computer of the buggy off. Add this command to the end of your script so that after the robot has completed moving 10 meters it turns off.
+
 
 Developing yourself as an engineer
 ----------------------------------
