@@ -58,10 +58,10 @@ mkdir new_dir_name
 
 to the beginning of the script to make a new directory called */home/pi/floor*.
 
-**Question 5.6:**  Each time an image is taken use the
+**Question 5.6:**  Each time an image is taken use the [movefile](https://www.mathworks.com/help/matlab/ref/movefile.html) command
 
 ```
-[movefile](https://www.mathworks.com/help/matlab/ref/movefile.html) source_file destination_file
+movefile source_file destination_file
 ```
 Command to move the image to the location */home/pi/floor/{image_numer}.jpg*, so for example after three images are taken you will have the following files in your floor directory:
 
@@ -81,13 +81,13 @@ Hint to generate the destination path, you will have to use the sprintf command.
 a=imread('/home/pi/image.jpg')
 ```
 
-and the *imshow* command to view the images it has taken, the camera is actually mounted upside down on the buggy so you may want to use the
+and the *imshow* command to view the images it has taken, the camera is actually mounted upside down on the buggy so you may want to use the [flipud](https://www.mathworks.com/help/matlab/ref/flipud.html) command 
 
 ```
-a=[flipud](https://www.mathworks.com/help/matlab/ref/flipud.html)(a);
+a=flipud(a);
 ```
 
-command to flip the image vertically.
+to flip the image vertically.
 Program the buggy to move forward along the floor
 power=100
 
