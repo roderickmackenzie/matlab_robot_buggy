@@ -1,12 +1,19 @@
 Worksheet 4 - Getting input from the world
 ==========================================
 
+So far we have spent time getting the buggy to move by using the computer to control external lights and motors, in this worksheet we will focus on getting the computer to get input from the real world so it can understand what is happening around it.
 
 The echo sensor
 ---------------
 The buggy is equipt with an echo sensor, this sends out an ultra sonic pulse and waits for it to bounce off an object.  By timing the time between the pulse being sent and the pulse being received again by the sensor we can calculate the distance to an object.
 
-**Step 1:** Make a new script called echo_test.m as usual add the 
+<p align="center">
+<img src="./images/sonar.svg" width=40%>
+
+Figure 1: Adding the switches to the bread board.
+</p>
+
+**Question 4.1:** Make a new script called q4_1.m as usual add the 
 
 ```
 addpath(‘/home/pi/lib’)
