@@ -91,5 +91,9 @@ to flip the image vertically.  Then use the get_color function to obtain the ave
 
 **Question 5.8:** Adjust your script from 5.6 to use the get_color and the *imread* each time it takes a picture of the floor.  It should compare the values returned by get_color, to determine if it has just taken an image of the floor or not.  You can decide if it has taken an image of the floor by comparing the values returned by get_color, to the average values of the floor calculated by you in the previous question.  If the values are different by more than 20% then you can assume the buggy has not taken a picture of the floor but something else.  If it has taken a picture of the floor print the words "floor" and if not it should print the words "not floor!".
 
+**Question 5.9:** Adjust your script from 5.8 to move at speed 80 and take an image of the floor every 4 seconds.  If a surface which is not the floor is detected then the buggy should stop.  Take an image, run the motors for 0.5 seconds, then take another image, then repeat this process 10 times.  Then start moving forward normally again.
 
+**Question 5.10:** Adjust your script from 5.9, so that every 0.5 seconds the buggy reads a value from the ultrasonic sensor.  If a value of less than 100cm is returned, then the buggy sould rotate 270 degrees, and then start moving forward again.
+
+**Question 5.11:** Finally go and find some more 330 Ohm resistors, and select four more GPIO pins.  Wire up the LEDs to the GPIO pins, and adjust your script from 5.10 so that every time an image is taken, thee *average* of the RGB values of the image are displayed on the LEDs in binary.
 
