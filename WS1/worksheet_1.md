@@ -321,9 +321,9 @@ Section 8: Exploring the PI
 
 Section 9: Starting your robot buggy report
 -------------------------------------------
-The buggy building activity will be examined though a report, the focus on the report will be your ability to write MATLAB code, and to answer the questions posed during the report.  Your report should contain:
+The buggy building activity will be examined though both a short report and through the code you write during the activity.  All your code should be submitted in a zip file as usual, and your report should be placed in the zip file as a pdf.  Your report should contain:
 * A cover page, with your name, e-mail address and student ID.
-* One section for each work sheet you do.
+* One section for each worksheet you do.
 * Each section should contain the answers to each question posed during the work sheets.
 * Each diagram/figure should have a figure number and a caption.
 
@@ -344,4 +344,5 @@ Take a picture of your group with the completed buggy, copy and paste this into 
 **Question 1.7:**  What do the letters GPIO stand for?
 
 **Question 1.8:**  How big is the hard disk (or storage device) of the PI? (Hint you won't find this answer on the internet.)
+
 

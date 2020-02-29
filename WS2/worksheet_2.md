@@ -65,7 +65,11 @@ The following exercise will refresh your knowledge of MATLAB, especially functio
 
 **Q2.4)** Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it as q2_4.m.
 
-**Q2.5)** Write a script to plot a graph of sin(x)+cos(x) between -pi and pi, label the axes using code, and save it as q......m
+**Q2.5)** Write a script to plot a graph of sin(x)+cos(x) between -pi and pi, label the axes using code, and save it as...
+
+```
+From now on all scripts should be saved as q[Worksheet number]_[question number].m.  If we can't identify the question to which your code relates you will get no marks for it.
+```
 
 **Q2.6)** Write a scrip to write the number from 0 to 10 in a file called save.dat, using fopen, fprintf, fclose...
 
@@ -75,6 +79,10 @@ The following exercise will refresh your knowledge of MATLAB, especially functio
 
 
 The above questions, are really just to get you back into thinking about programming again, once you have finished today's lab, copy all the .m files you generate to a USB stick and make sure all group members have the files.  If you struggle with these, go and revise MATLAB by practicing, this is the minimum level needed for this lab.
+
+```
+Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.
+```
 
 
 
