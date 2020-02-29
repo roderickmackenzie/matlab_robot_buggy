@@ -15,9 +15,10 @@ The project is at 1st undergrad level.
 <p align="center">
 <img src="./images/buggy.jpg" width=50%>
 
-Figure 1: The MATLAB robot buggy
 </p>
 
-Do with it what you will, I release everything under CC-BY.
+License
+-------
+I release the source code in this repository under the 3-clause [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).  I release the doucments under the under [CC-BY](https://creativecommons.org/licenses/by/2.0/).
 
-Roderick MacKenzie 1/3/2019
+Roderick MacKenzie 29/3/2020
