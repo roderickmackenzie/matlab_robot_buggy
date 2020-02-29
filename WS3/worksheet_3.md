@@ -127,9 +127,9 @@ Controlling output pins on the PI
 
 So far you have used relatively high level commands to control the motors, hidden behind these motor commands is quite a lot of [complex code](https://en.wikipedia.org/wiki/Pulse-width_modulation).  However, very often you will need to be able to turn and off individual outputs from a computer.  You might for example want to detonate a warhead, activate an air bag or turn on some lights.  To do these type of actions you must understand how to control voltages on the output pins of a computer.  In this example we will be controlling an LED bar graph, although you could replace the LEDs with any component you wanted to drive.
 
-**Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below, the resistors should go into the black/blue strip.  Then connect the other side of the LEDs to the PI using the jumper cables, refer to Figure 2 to understand which pins on the PI the LEDs should be connected to, these pins on the PI are called GPIO pins or general-purpose input/output pins.
+**Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below. The resistors should go into the black/blue strip.  Then connect the other side of the LEDs to the PI using the jumper cables, refer to Figure 2 to understand which pins on the PI the LEDs should be connected to, these pins on the PI are called GPIO pins or general-purpose input/output pins.
 
-**Question 3.7b:**  Which GPIO pins are the motors connected to?
+**Question 3.10:**  Which GPIO pins are the motors connected to?  Write this answer in your report.
 
 <p align="center">
 <img src="./images/drawing.png" width=40%>
@@ -143,11 +143,11 @@ Figure 1: The LED bar graph wired into the bread board.
 Figure 2: The pin out of the PI.
 </p>
 
-**Question 3.8:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed? 
+**Question 3.11:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed? 
 
- **Question 3.9:** In your report draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.
+ **Question 3.12:** In your report draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.
 
-**Question 3.10:** If you look closely at each resistor, you will see that they have some colored lines on them, these lines tell you which value the resistors are in Ohms.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the value of the resistors in figure 3.  If you look at the ultrasonic sensor driver board you will see two more resistors, write down the value of these resistors in your report.
+**Question 3.13:** If you look closely at each resistor, you will see that they have some colored lines on them, these lines tell you which value the resistors are in Ohms.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the value of the resistors in figure 3 in your report.  If you look at the ultrasonic sensor driver board you will see two more resistors, write down the value of these resistors in your report.
 
 <p align="center">
 <img src="./images/resistors.jpg" width=40%>
@@ -166,26 +166,26 @@ and can be turned off with the command
 gpio_write(GPIO_PIN_NUMBER,0)
 ```
 
-**Question 3.11:** Make a short script called ws_3_3_11.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
+**Question 3.14:** Make a short script called ws_3_3_14.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
 
-**Question 3.12:** Edit your script so that the LEDs will flash on and off with a one second interval for ever. 
+**Question 3.15:** Edit your script so that the LEDs will flash on and off with a one second interval for ever. 
 
-**Question 3.13:** Now make a new script to turn your LEDs randomly at regular intervals of 0.5 seconds.
+**Question 3.16:** Now make a new script to turn your LEDs randomly at regular intervals of 0.5 seconds, save this as q3_16.m
 
 ```
 Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.
 ```
 
-**Question 3.14:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program…. you’ve missed nothing. :) ]
+**Question 3.14:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program... you’ve missed nothing. :) ]
 
 
-**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move forward about 10 meters while displaying the knight rider effect on the LEDs, then stop the buggy
+**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move the buggy forward about 10 meters while displaying the knight rider effect on the LEDs, then stop the buggy
 
 
 Controlling the PI it's self - and power management
 ---------------------------------------------------
 
-Robots not too dissimilar to yours are used to explore remote planets such as [mars](https://mars.nasa.gov/mer/).  Such a robot would be a long way from  Earth, and there is a limited amount of power available.  For example, in summer there may be enough power to run the computers, cameras, and communications equipment in the robot, however in winter, the robot may have to power down to save power.  In PI has the command:
+Robots not too dissimilar to yours are used to explore remote planets such as [mars](https://mars.nasa.gov/mer/).  Such a robot would be a long way from  Earth, and there is a limited amount of power available.  For example, in summer there may be enough power to run the computers, cameras, and communications equipment in the robot, however in winter, the robot may have to power down to save power.  Power management is a serious issue in robots and computers.  Octave on the PI has the command:
 
 ```
 poweroff()
@@ -201,6 +201,8 @@ For a good engineer, engineering should be as much a hobby as a profession.  You
 
 * Learning Python in your free time: Here are some good links to get started: [Downloading and installing](https://www.python.org/about/gettingstarted/), [Watch youtube channels on Python](https://www.youtube.com/watch?v=cpPG0bKHYKc), [tutorials](https://wiki.python.org/moin/BeginnersGuide/Programmers)
 
+* Why not buy a book to learn to program python.
+ 
 * Subscribe to some electronics youtube channels, this one is quite good [mikeselectricstuff](https://www.youtube.com/channel/UCcs0ZkP_as4PpHDhFcmCHyA), and so is this one [EEVBlog](https://www.youtube.com/user/EEVblog).
 
 
