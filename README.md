@@ -24,6 +24,6 @@ This project is meant to take 1st year mechanical engineering undergraduate stud
 
 License
 -------
-This buggy building workshop was originally run in Feb 2018, and rewritten in Feb 2020 at the University of Nottingham, UK.  I will be please of other students can benefit from the lab.  I release the source code in this repository under the 3-clause [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).  I release the doucments under the under [CC-BY](https://creativecommons.org/licenses/by/2.0/).
+This buggy building workshop was originally run in Feb 2018, and rewritten in Feb 2020 at the University of Nottingham, UK.  I will be pleased if other students can benefit from the lab.  I therefore release the source code in this repository under the 3-clause [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).  I release the documents under the under [CC-BY](https://creativecommons.org/licenses/by/2.0/).   If you do end up reusing this material do drop me a mail/post card.
 
 Roderick MacKenzie 29/3/2020
