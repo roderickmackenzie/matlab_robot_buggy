@@ -8,7 +8,7 @@ The echo sensor
 The buggy is equipt with an echo sensor, this sends out an ultra sonic pulse and waits for it to bounce off an object.  By timing the time between the pulse being sent and the pulse being received again by the sensor we can calculate the distance to an object.
 
 <p align="center">
-<img src="./images/sonar.svg" width=40%>
+<img src="./images/sonar.svg" width=60%>
 
 Figure 1: Adding the switches to the bread board.
 </p>
