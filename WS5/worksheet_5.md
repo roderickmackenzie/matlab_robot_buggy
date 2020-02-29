@@ -44,7 +44,51 @@ b=b/count;
 end
 ```
 
-We are going to use the function above to perform some basic image recognition, 
+We are going to use the function above to perform some basic image recognition base on color alone.  By the end of this work sheet the buggy will be moving randomly on the floor on the lab taking pictures of the floor.  If the color of the floor changes significantly it will slow down and take 5 images of the floor at different locations, then speed up again and start moving randomly.  While it is doing this it will avoid objects.
+
+**Question 5.3:** Make a new script which will move the buggy forward for 15 seconds on the floor.
+
+**Question 5.4:** Use a *while* loop to take images of the floor every 2 seconds, and save them to */home/pi/image.jpg*
+
+**Question 5.5:** Add the command
+
+```
+mkdir new_dir_name
+```
+
+to the beginning of the script to make a new directory called */home/pi/floor*.
+
+**Question 5.6:**  Each time an image is taken use the
+
+```
+[movefile](https://www.mathworks.com/help/matlab/ref/movefile.html) source_file destination_file
+```
+Command to move the image to the location */home/pi/floor/{image_numer}.jpg*, so for example after three images are taken you will have the following files in your floor directory:
+
+```
+0.jpg
+1.jpg
+2.jpg
+3.jpg
+4.jpg
+```
+
+Hint to generate the destination path, you will have to use the sprintf command.  This way the buggy will collect images of the floor for later analysis.  Once you have done this place your buggy on the floor, and let it take 10 images of the floor.  After it has stopped, pick the buggy up off the floor and see what it has imaged.
+
+**Question 5.7:**  Use the imread command i.e.
+
+```
+a=imread('/home/pi/image.jpg')
+```
+
+and the *imshow* command to view the images it has taken, the camera is actually mounted upside down on the buggy so you may want to use the
+
+```
+a=[flipud](https://www.mathworks.com/help/matlab/ref/flipud.html)(a);
+```
+
+command to flip the image vertically.
+Program the buggy to move forward along the floor
 power=100
 
 while(1)
