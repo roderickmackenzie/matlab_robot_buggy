@@ -1,13 +1,14 @@
 Worksheet 6
 ===========
 
-The buggy challenge
--------------------
-Your buggy is trapped in a valley, infested by a rather large rabbit who likes to eat buggies.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  The rabbit lives in an area marked off by *black masking tape*, if the buggy enters the area where the bunny lives it will get eaten, and the game will be over.
+The Easter Rabbit Buggy challenge
+---------------------------------
 
-There are also some rocks (Easter eggs) scattered around the valley which your buggy must avoid as they can get trapped in the wheels.  The exit is denoted by a white chalk road (in this case an A3 sheet of white paper.)
+Your buggy is trapped in a valley, where a rather large rabbit called Rudolf lives who likes to eat buggies. Because it's not quite yet Easter and Rudolf has not had any chocolate eggs this yet this year, your buggy is in danger of being nibbled if it bumps into Rudolf.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  If your buggy bumps into the walls of the valley it must take a time out of 30 seconds (the demonstrator will pick the buggy up and remove it from the course) then restart the course from the beginning.
 
-As a group, edit your buggy code so that your buggy will search for and find the white road as quickly as possible without bumping into the rabbit or running over the smarties.  50% will be given if you attempt the exercise with a reasonable answer.  Another 25% will be given for for finding the white piece of paper and the remaining 25% will be given depending on how well your buggy performs, and any cool your answer is(!)  Rules of the game:
+The rabbit lives in an area surrounded by Easter eggs, if the buggy detects Easter eggs on the floor it should reverse and then turn around and continue trying to find the exit to the valley.  If your buggy bumps into Rudolf, he has to sit out the buggy challenge for 10 min to be repaired.
+
+As a group, edit your buggy code so that your buggy will search for the exit as quickly as possible without bumping into the rabbit or running over the smarties.  50% will be given if you attempt the exercise with a reasonable answer.  Another 25% will be given for for finding the white piece of paper and the remaining 25% will be given depending on how well your buggy performs, and any cool your answer is(!)  Rules of the game:
 
 - The buggy must find the white piece of paper to win the game.
 - If it bumps into the bunny, the game is over.
@@ -253,6 +254,4 @@ waits for 1 second.
 Question 6: Your script buggy.m is now ready to be copied over to the buggy and tested. Before you do that, in buggy.m where you pass the variable count to get_real_world_rgb, replace it with -1.  This will make get_real_world_rgb call the camera() command. Also replace the disp command you used to print 1111 and 0000 to the screen with the command to turn on and off the LEDs.  Finally, replace ‘moving buggy forwards’ and ‘turn and reverse!!!!! Object detected!!!’ with commands to move the motors of the buggy.  Get a demonstrator to check your script before you copy it to the buggy, and test it. [Hint, if you want to test the buggy on the carpet you will need to determine the rgb values of the carpet for the buggy to work]
 Question 7: Edit your script so that, when it starts it automatic takes a picture of what it first sees then compares all subsequent images to these values to determine if an object has been encountered.
 
-Old
----
-out the values from the echo sensor.  Now using an if statement, run the motors for 1 second if the distance detected is more than 45cm, if a distance of less than 45 cm, is detected make the code wait for 5 second using the sleep command.
+
