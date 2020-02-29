@@ -4,7 +4,7 @@ Worksheet 5 - The camera
 The camera
 ----------
 
-You will have noticed that your buggy has a camera.  In this worksheet we are going to imagine the buggy is on the surface of a foreign planet such as Mars, the buggys is looking for interesting geographical features.  Different types of rocks often have different colors, we will be programming the buggy to search for interesting types of rocks.
+You will have noticed that your buggy has a camera.  In this worksheet we are going to imagine the buggy is on the surface of a foreign planet such as Mars, the buggy is looking for interesting geographical features.  Different types of rocks often have different colors, we will be programming the buggy to search for interesting types of rocks, then it sees an area of interesting rocks the buggy will take pictures of it in detail.
 
 
 **Step 1/Question 5.1:** Make a new octave (MATLAB) script, add the command
@@ -17,7 +17,43 @@ as usual to the script. Then add the command
 camera()
 ```
 
-to the script. Save and run the script and you will see that an image has been written to /home/pi/image.jpg.  To open this image, click on the folder icon in the top left of the screen (it is the third icon from the left, next to the raspberry).  If you now double click on image.jpg you will see a picture of what the camera was looking at.  Try to take a picture of your group with the camera and add this to your report
+to the script. Save and run the script and you will see that an image has been written to /home/pi/image.jpg.  To open this image, click on the folder icon in the top left of the screen (it is the third icon from the left, next to the raspberry).  If you now double click on image.jpg you will see a picture of what the camera was looking at.  Try to take a picture of your group with the camera and add this to your report.
+
+
+**Question 5.2:** Copy and paste the function below to a new script script called get_color, discuss as a group what it does.   Then copy it to your report and write a comment on each line describing how it works.  What is the advantage of setting s to a very big number and what is the advantage of setting s to a small number.  Describe the inputs and outputs of the function.  Finally describe in lest than 20 words how RGB images are stored in a computers memory, note this is discussed in the example sheets.
+
+```
+function [r,g,b] = get_color(a,x_start,y_start,s) ;
+r=0.0;
+g=0.0;
+b=0.0;
+count=0;
+for x=x_start:x_start+s
+	for y=y_start:y_start+s
+		r=r+int32(a(y,x,1));
+		g=g+int32(a(y,x,2));
+		b=b+int32(a(y,x,3));
+		count=count+1.0;
+	end
+end
+
+r=r/count;
+g=g/count;
+b=b/count;
+
+end
+```
+
+We are going to use the function above to perform some basic image recognition, 
+power=100
+
+while(1)
+	motors_adv(0,0)
+	camera();
+	a=imread('/home/pi/image.jpg');
+	a=flipud(a);
+	[r1,g1,b1]=get_color(a,200,200,10);
+	delta_cam=delta(r0,g0,b0,r1,g1,b1,50)
 
 **Step 2:** Now, put the buggy on the floor, with all the wires still plugged in. Make sure the buggy has a clear view of the floor, with no wires, cables, bags books etc.. in the way. Then take another image using your script.
 
