@@ -97,3 +97,4 @@ to flip the image vertically.  Then use the get_color function to obtain the ave
 
 **Question 5.11:** Finally go and find some more 330 Ohm resistors, and select four more GPIO pins.  Wire up the LEDs to the GPIO pins, and adjust your script from 5.10 so that every time an image is taken, thee *average* of the RGB values of the image are displayed on the LEDs in binary.
 
+

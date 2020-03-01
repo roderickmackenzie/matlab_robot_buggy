@@ -32,6 +32,9 @@ How you achieve this aim is up to you. Here are some ideas of how to solve the p
 * The speed of the left wheel.
 * The speed of the right wheel.
 * The distance the echo sensor records.
+
+These should all be plotted against time.  Hint use the fprintf, fopen and fclose commands to accomplish this.
+
 * Make a table showing the first 20 images the camera took during the course, and annotate them with any actions your code may have taken at the time.
 
 **Question 6.3:**  For extra marks, do something creative, original, and technically interesting with the buggy hardware.
