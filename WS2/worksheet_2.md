@@ -126,7 +126,7 @@ Warm up exercises 3
 **Question 2.12:**  The location of ships in the sea is recorded by a satellite 100 km above the earth and the positions of the ships are transmitted to earth every minute. The locations of the ships are represented by x,y coordinates on a 180x100 km grid  (see Figure 1).  A computer on earth receives the positions of the ships and writes the data to a file called [ship_locations.txt](./ship_locations.dat).    Each line in the file holds the position of one ship. The file has two columns of data, column 1 holds the x position of the ship and the column 2 hold the y position of the ship. When new data is received the file is over written.  
 
 <p align="center">
-<img src="./images/coast.png" width=10%>
+<img src="./images/coast.png" width=70%>
 
 Figure 1.4: The satellites view of earth. The ships and the x-y grid have been overlaid.
 </p>
