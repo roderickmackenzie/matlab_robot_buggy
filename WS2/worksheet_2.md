@@ -58,13 +58,13 @@ Figure 1.3: The resize icon.
 Warm up exercises
 -----------------
 
-### Warm up exercise 1
-
 The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  I suggest you do these questions at home **This section is individual work not group work.. the usual plagiarism rules apply...**
+
+### Warm up exercise 1
 
 **Question 2.1:** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your report, under section 2 question 2.1.
 
-**Question 2.2:** Make a new script q2_2.m, using a while loop make it count from -10.0 to 0.0, in steps of 0.5.
+**Question 2.2:** Make a new script q2_2.m, using a *while* loop make it count from -10.0 to 0.0, in steps of 0.5.
 
 **Question 2.3:** Write a script which sorts an array of 10 random numbers.  Hint: The answer’s in the lecture notes, then save it in file q2_3.m.  In your report demonstrate it works.
 
@@ -80,15 +80,12 @@ From now on all scripts should be saved as q[Worksheet number]_[question number]
 
 **Question 2.7:** Write a function called add_me to add two numbers together and return the answer.
 
-**Question 2.8:** Write a script to open a file called mode.dat, read a single number from that file and print the words 'zero' if a '0' is found in the file and the word 'one' if a '1' is found in the file.
-
-
-**Question 2.9:** Plot a graph of x*x*x+x*x+2x, between -pi and pi, save the results in your report.
+**Question 2.8:** Plot a graph of x*x*x+x*x+2x, between -pi and pi, save the results in your report.
 
 
 ### Warm up exercises 2
 
-**Question 2.10:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
+**Question 2.9:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
 
 ```
 clear
@@ -105,7 +102,7 @@ end
 disp(r)
 ```
 
-**Question 2.11:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
+**Question 2.10:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
 ```
 dat=load('data.dat')
 a=dat(:,1)
@@ -121,7 +118,7 @@ c=[a out]
 
 ### Warm up exercises 3
 
-**Question 2.12:**  The location of ships in the sea is recorded by a satellite 100 km above the earth and the positions of the ships are transmitted to earth every minute. The locations of the ships are represented by x,y coordinates on a 180x100 km grid  (see Figure 1).  A computer on earth receives the positions of the ships and writes the data to a file called [ship_locations.txt](./ship_locations.dat).    Each line in the file holds the position of one ship. The file has two columns of data, column 1 holds the x position of the ship and the column 2 hold the y position of the ship. When new data is received the file is over written.  
+**Question 2.11:**  The location of ships in the sea is recorded by a satellite 100 km above the earth and the positions of the ships are transmitted to earth every minute. The locations of the ships are represented by x,y coordinates on a 180x100 km grid  (see Figure 1).  A computer on earth receives the positions of the ships and writes the data to a file called [ship_locations.txt](./ship_locations.dat).    Each line in the file holds the position of one ship. The file has two columns of data, column 1 holds the x position of the ship and the column 2 hold the y position of the ship. When new data is received the file is over written.  
 
 <p align="center">
 <img src="./images/coast.png" width=70%>
@@ -132,14 +129,14 @@ Figure 1.4: The satellites view of earth. The ships and the x-y grid have been o
 * Write a Matlab script to read the data file, load the x and y coordinates into array <Cx> and <Cy>. Calculate the number of ships recorded in the file and output this to the screen. Then plot the locations of the ships in a labeled graph using black circles.
 
 
-**Question 2.13:**  Write a Matlab function <collision> that accepts the position of two ships and then calculates and returns the distance between them in km.  This function should be stored in it's own script file file called <collision.m>. The function collision should have the following format
+**Question 2.12:**  Write a Matlab function <collision> that accepts the position of two ships and then calculates and returns the distance between them in km.  This function should be stored in it's own script file file called <collision.m>. The function collision should have the following format
 » d=collision(ship1_x,ship1_y,ship2_x,ship2_y);
 
 
-**Question 2.14:**  Write a we Matlab script which uses the function collision to check the distance between each ship in the file and prints this to screen.  Use while loops to do this not for loops.
+**Question 2.13:**  Write a we Matlab script which uses the function collision to check the distance between each ship in the file and prints this to screen.  Use while loops to do this not for loops.
 
 
-**Question 2.15:**  Change the script so that if two ships are closer than 0.5km it prints the word "Warning!", the locations of both ships and the distance by which they are separated.
+**Question 2.14:**  Change the script so that if two ships are closer than 0.5km it prints the word "Warning!", the locations of both ships and the distance by which they are separated.
 
 
 The above questions, are really just to get you back into thinking about programming again.  If you struggle with these, go and revise MATLAB by practicing, this is the minimum level needed for this lab.
