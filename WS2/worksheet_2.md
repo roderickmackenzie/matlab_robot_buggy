@@ -85,7 +85,7 @@ From now on all scripts should be saved as q[Worksheet number]_[question number]
 
 ### Warm up exercises 2
 
-**Question 2.9:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
+**Question 2.9:** Copy and paste the code into a new script, and add a comment to each line to describe what it does, then comment on the overall meaning of the code, at the bottom of the script.
 
 ```
 clear
@@ -102,7 +102,7 @@ end
 disp(r)
 ```
 
-**Question 2.10:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
+**Question 2.10:** Copy and paste the code into a new script, and add a comment to each line to describe what it does, then comment on the overall meaning of the code, at the bottom of the script.
 ```
 dat=load('data.dat')
 a=dat(:,1)
