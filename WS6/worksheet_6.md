@@ -4,11 +4,11 @@ Worksheet 6
 The Easter Rabbit Buggy challenge
 ---------------------------------
 
-Your buggy is trapped in a valley, where a rather large rabbit called Rudolf lives who likes to eat buggies. Because it's not quite yet Easter and Rudolf has not had any chocolate eggs this yet this year, your buggy is in danger of being nibbled if it bumps into Rudolf.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  If your buggy bumps into the walls of the valley it must take a time out of 30 seconds (the demonstrator will pick the buggy up and remove it from the course) then restart the course from the beginning.
+Your buggy is trapped in a valley, where a rather large rabbit called Rudolf lives who likes.  It's not quite Easter, so Rudolf has not had any chocolate eggs this yet this year, so your buggy is in danger of being nibbled if it bumps into Rudolf.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  If your buggy bumps into the walls of the valley it must take a time out of 30 seconds (the demonstrator will pick the buggy up and remove it from the course) then restart the course from the beginning.  Use the echo sensor to avoid the walls.
 
-The rabbit lives in an area surrounded by Easter eggs, if the buggy detects Easter eggs on the floor it should reverse and then turn around and continue trying to find the exit to the valley.  If your buggy bumps into Rudolf, he has to sit out the buggy challenge for 10 min to be repaired.
+The rabbit lives in an area surrounded by Easter eggs, if the buggy detects Easter eggs on the floor it should reverse and then turn around and continue trying to find the exit to the valley.  The exit to the course is denoted by a white piece of paper on the floor - detect this with your camera.  If your buggy bumps into Rudolf, he has to sit out the buggy challenge for 10 min to be repaired.
 
-As a group, edit your buggy code so that your buggy will search for the exit as quickly as possible without bumping into the rabbit or running over the smarties.  50% will be given if you attempt the exercise with a reasonable answer.  Another 25% will be given for for finding the white piece of paper and the remaining 25% will be given depending on how well your buggy performs, and any cool your answer is(!)  Rules of the game:
+As a group, edit your buggy code so that your buggy will search for the exit as quickly as possible without bumping into the rabbit or hitting a wall.  Rules of the game:
 
 - The buggy must find the white piece of paper to win the game.
 - If it bumps into the bunny, the game is over.
