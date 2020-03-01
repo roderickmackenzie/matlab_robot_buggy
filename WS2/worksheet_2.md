@@ -55,30 +55,70 @@ Click, File→Save as and then save the file as 'q1.m' under /home/pi/ .  On the
 Figure 1.3: The resize icon.
 </p>
 
-The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets, especially the ones on loops, files and plotting.
+Warm up exercises 1
+-------------------
 
-**Q2.1)** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your work book, under section 2 question 2.1.
+The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets, especially the ones on loops, files and plotting.  You can either do these questions at home, or you can do them in the lab.  You will be able to do them on MATLAB in C19/C20.  **This section is individual work not group work.. the usual plagiarism rules apply...**
 
-**Q2.2)** Make a new script q2_2.m, using a while loop make it count from -10.0 to 0.0, in steps of 0.5.
+**Question 2.1:** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your report, under section 2 question 2.1.
 
-**Q2.3)** Write a script which sorts an array of 10 random numbers.  Hint: The answer’s in the lecture notes, then save it in file q2_3.m.
+**Question 2.2:** Make a new script q2_2.m, using a while loop make it count from -10.0 to 0.0, in steps of 0.5.
 
-**Q2.4)** Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it as q2_4.m.
+**Question 2.3:** Write a script which sorts an array of 10 random numbers.  Hint: The answer’s in the lecture notes, then save it in file q2_3.m.  In your report demonstrate it works.
 
-**Q2.5)** Write a script to plot a graph of sin(x)+cos(x) between -pi and pi, label the axes using code, and save it as...
+**Question 2.4:** Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it as q2_4.m.
+
+**Question 2.5:** Write a script to plot a graph of sin(x)+cos(x) between -pi and pi, label the axes using code, and save it as..  Include a copy of the plot in your report.
 
 ```
 From now on all scripts should be saved as q[Worksheet number]_[question number].m.  If we can't identify the question to which your code relates you will get no marks for it.
 ```
 
-**Q2.6)** Write a scrip to write the number from 0 to 10 in a file called save.dat, using fopen, fprintf, fclose...
+**Question 2.6:** Write a scrip to write the number from 0 to 10 in a file called save.dat, using fopen, fprintf, fclose...
 
-**Q2.7)** Write a function called add_me to add two numbers together and return the answer.
+**Question 2.7:** Write a function called add_me to add two numbers together and return the answer.
 
-**Q2.8)** Write a script to open a file called mode.dat, read a single number from that file and print the words 'zero' if a '0' is found in the file and the word 'one' if a '1' is found in the file.
+**Question 2.8:** Write a script to open a file called mode.dat, read a single number from that file and print the words 'zero' if a '0' is found in the file and the word 'one' if a '1' is found in the file.
 
 
-The above questions, are really just to get you back into thinking about programming again, once you have finished today's lab, copy all the .m files you generate to a USB stick and make sure all group members have the files.  If you struggle with these, go and revise MATLAB by practicing, this is the minimum level needed for this lab.
+**Question 2.9:** Plot a graph of x*x*x+x*x+2x, between -pi and pi, save the results in your report.
+
+
+Warm up exercises 2
+-------------------
+**Question 2.10:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
+
+```
+clear
+r=rand(15,1)
+for i=1:15
+  for ii=1:15
+    if (r(i)>r(ii))
+     temp=r(i);
+     r(i)=r(ii);
+     r(ii)=temp;
+        end
+    end
+end
+disp(r)
+```
+
+**Question 2.11:** Copy and paste the code below to your report, and add a comment to each line to describe what it does, then comment on the overall meaning of the code.
+```
+dat=load('data.dat')
+a=dat(:,1)
+b=dat(:,2)
+s=size(a)
+s=s(1)
+out=zeros(s,1)
+for n=1:s
+out(n)=(b(n+1)-b(n-1))/(a(n+1)-a(n-1))
+end
+c=[a out]
+```
+
+**Question 2.12:** 
+The above questions, are really just to get you back into thinking about programming again.  If you struggle with these, go and revise MATLAB by practicing, this is the minimum level needed for this lab.
 
 ```
 Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.
