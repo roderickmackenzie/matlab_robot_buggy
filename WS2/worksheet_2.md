@@ -55,10 +55,13 @@ Click, File→Save as and then save the file as 'q1.m' under /home/pi/ .  On the
 Figure 1.3: The resize icon.
 </p>
 
-Warm up exercises 1
--------------------
+Warm up exercises
+-----------------
 
-The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets, especially the ones on loops, files and plotting.  You can either do these questions at home, or you can do them in the lab.  You will be able to do them on MATLAB in C19/C20.  **This section is individual work not group work.. the usual plagiarism rules apply...**
+Warm up exercise 1
+------------------
+
+The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  I suggest you do these questions at home **This section is individual work not group work.. the usual plagiarism rules apply...**
 
 **Question 2.1:** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your report, under section 2 question 2.1.
 
@@ -112,17 +115,39 @@ s=size(a)
 s=s(1)
 out=zeros(s,1)
 for n=1:s
-out(n)=(b(n+1)-b(n-1))/(a(n+1)-a(n-1))
+	out(n)=(b(n+1)-b(n-1))/(a(n+1)-a(n-1))
 end
 c=[a out]
 ```
 
-**Question 2.12:** 
+Warm up exercises 3
+-------------------
+
+**Question 2.12:**  The location of ships in the sea is recorded by a satellite 100 km above the earth and the positions of the ships are transmitted to earth every minute. The locations of the ships are represented by x,y coordinates on a 180x100 km grid  (see Figure 1).  A computer on earth receives the positions of the ships and writes the data to a file called [ship_locations.txt](./ship_locations.dat).    Each line in the file holds the position of one ship. The file has two columns of data, column 1 holds the x position of the ship and the column 2 hold the y position of the ship. When new data is received the file is over written.  
+
+<p align="center">
+<img src="./images/coast.png" width=10%>
+
+Figure 1.4: The satellites view of earth. The ships and the x-y grid have been overlaid.
+</p>
+
+* Write a Matlab script to read the data file, load the x and y coordinates into array <Cx> and <Cy>. Calculate the number of ships recorded in the file and output this to the screen. Then plot the locations of the ships in a labeled graph using black circles.
+
+
+**Question 2.13:**  Write a Matlab function <collision> that accepts the position of two ships and then calculates and returns the distance between them in km.  This function should be stored in it's own script file file called <collision.m>. The function collision should have the following format
+» d=collision(ship1_x,ship1_y,ship2_x,ship2_y);
+
+
+**Question 2.14:**  Write a we Matlab script which uses the function collision to check the distance between each ship in the file and prints this to screen.  Use while loops to do this not for loops.
+
+
+**Question 2.15:**  Change the script so that if two ships are closer than 0.5km it prints the word "Warning!", the locations of both ships and the distance by which they are separated.
+
+
 The above questions, are really just to get you back into thinking about programming again.  If you struggle with these, go and revise MATLAB by practicing, this is the minimum level needed for this lab.
 
-```
-Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.
-```
+
+**Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.**
 
 
 
