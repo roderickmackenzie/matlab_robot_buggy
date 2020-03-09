@@ -58,7 +58,7 @@ Figure 1.3: The resize icon.
 Warm up exercises
 -----------------
 
-The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  I suggest you do these questions at home **This section is individual work not group work.. the usual plagiarism rules apply...**
+The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  I suggest you do these questions at home **This section is individual work not group work.. the usual plagiarism rules apply...**  You can use MATLAB for these questions, you do not need to install octave.  Octave is a clone of MATLAB.
 
 ### Warm up exercise 1
 
