@@ -76,7 +76,7 @@ The following exercise will refresh your knowledge of MATLAB, especially functio
 From now on all scripts should be saved as q[Worksheet number]_[question number].m.  If we can't identify the question to which your code relates you will get no marks for it.
 ```
 
-**Question 2.6:** Write a scrip to write the number from 0 to 10 in a file called save.dat, using fopen, fprintf, fclose...
+**Question 2.6:** Write a scrip to write the number from 0 to 10 in a file called save.dat, using *fopen*, *fprintf*, *fclose*...
 
 **Question 2.7:** Write a function called add_me to add two numbers together and return the answer.
 
