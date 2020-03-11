@@ -44,7 +44,7 @@ Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before the
 Hint 2: Position your buggy so the wheels are off the ground, you can use the box your PI came in to do this. If you don’t do this your buggy will fly off the table.
 ```
 
-**Step 3.1:** We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Create a script called my_motor_script.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds.
+**Step 3.1:** We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Edit the script q3_1.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds.
 
 **Step 3.2:** Place your buggy on the tool box or some other object so it's wheels are off the ground and not touching anything.  Now click run, and the motors should start to drive forward and then backwards.
 
