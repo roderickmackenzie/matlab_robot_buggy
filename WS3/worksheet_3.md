@@ -83,7 +83,7 @@ Often when controlling hardware there are various versions of commands, some eas
 
 **Question 3.4:**  Now make a new script called stop_now.m and make the function ramp the power of the buggy from 100 to 0 over a period of 10 seconds.
 
-**Question 3.5:**  Turn you scripts stop_now and start_now, into functions so that they can be called from a third script q3_5.m.  Edit your script q3_5.m, so that it runs starts the buggy slowly, runs the motors for three seconds, then slowly accelerates the buggy.  You should use the functions you generated in the previous sections.
+**Question 3.5:**  Turn you scripts stop_now and start_now, into functions so that they can be called from a third script q3_5.m.  Edit your script q3_5.m, so that it starts the buggy slowly, runs the motors for three seconds, then slowly decelerate the buggy.  You should use the functions you generated in the previous sections.
 
 
 **Question 3.6:**  Now edit your script called q3_5, so that it gradually starts moving the buggy, then runs the motors on 60 percent power for 5 seconds, then gradually stops it.  What do you notice?
