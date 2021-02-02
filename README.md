@@ -9,6 +9,7 @@ This repository contains all the source code and teaching material needed to bui
 - *Work sheet 4* : Input, echo sensors, switches and cameras.
 - *Work sheet 5* : Image recognition
 - *Work sheet 6* : The buggy challenge, an obstetrical course for the buggies.
+- *buggy_simulator* : A virtual buggy simulator for when we can't do the lab. Works a bit like LOGO on the BBC micro.
 
 <p align="center">
 <img src="./images/buggy.jpg" width=50%>
