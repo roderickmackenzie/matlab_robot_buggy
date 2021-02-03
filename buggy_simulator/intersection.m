@@ -1,19 +1,19 @@
 function [ x y hit] =intersection (x0,y0,x1,y1,x2,y2,x3,y3)
 
-    xdiff = [x0 - x1, x2 - x3]
-    ydiff = [y0 - y1, y2 - y3]
-	x=-1
-	y=-1
-	hit=false
+    xdiff = [x0 - x1, x2 - x3];
+    ydiff = [y0 - y1, y2 - y3];
+	x=-1;
+	y=-1;
+	hit=false;
 
-    div = rdet(xdiff, ydiff)
+    div = rdet(xdiff, ydiff);
 	if div == 0
 
-		return
+		return;
 	end
-    d = [rdet([x0,y0],[x1,y1] ), rdet([x2,y2],[x3,y3])]
-    x = rdet(d, xdiff) / div
-    y = rdet(d, ydiff) / div
+    d = [rdet([x0,y0],[x1,y1] ), rdet([x2,y2],[x3,y3])];
+    x = rdet(d, xdiff) / div;
+    y = rdet(d, ydiff) / div;
 
 	hit =false;
 	y_max_obj=max(y0,y1);
