@@ -24,6 +24,10 @@ Doing this lab with the emulator
 -----------------
 Just as you would have to in the real world, I am going to give you the emulator and the *real* lab sheets which are unadapted for the emulator, it is your job to get through the labs and do the tasks with the emulator.  If you were developing a product, you would then go and test your code you developed with the help of the emulator on the real buggy (We won't be doing this for obvious reasons).  Read though all the experimental sections of the lab sheets so you understand what is going on.  As ever I will be helping you get through the example sheets, with a team of demonstrators.
 
+Going further on your own
+-----------------
+The computer the buggy is based around is called the Rasbry PI, it is a very low cost computer which you can get from Amazon or RS for about 30 pounds.  If you find this lab fun and want to go further, I highly recommend you get one.  It's a very good entrance into the world of home automation, robotics, and even writing code in C/Linux.  This year (due to Covid) I would recommend this more than usual.  Spending significant time 'hacking' on the PI will probably teach you far more than I can teach you in a semester of computing lectures.
+
 On to worksheet 1
 -----------------
 [Worksheet 1](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md)
