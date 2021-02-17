@@ -22,7 +22,7 @@ You can download the buggy emulator from [here](https://github.com/roderickmacke
 
 Doing this lab with the emulator
 -----------------
-Just as you would have to in the real world, I am going to give you the emulator and the *real* lab sheets which are unadapted for the emulator, it is your job to get through the labs and do the tasks with the emulator.  Read though all the experimental sections of the lab sheets so you understand what is going on.  As ever I will be helping you get through the example sheets, with a team of demonstrators.
+Just as you would have to in the real world, I am going to give you the emulator and the *real* lab sheets which are unadapted for the emulator, it is your job to get through the labs and do the tasks with the emulator.  If you were developing a product, you would then go and test your code you developed with the help of the emulator on the real buggy (We won't be doing this for obvious reasons).  Read though all the experimental sections of the lab sheets so you understand what is going on.  As ever I will be helping you get through the example sheets, with a team of demonstrators.
 
 On to worksheet 1
 -----------------
