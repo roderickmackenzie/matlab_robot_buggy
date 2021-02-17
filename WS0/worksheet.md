@@ -15,4 +15,6 @@ The buggy emulator
 ~~~~~~~~~~~~~~~~~~
 In the real world you often need to write [emulators](https://en.wikipedia.org/wiki/Emulator), so simulate a piece of equipment or computer system.  You may have to do this because ;1) the real equipment is not yet developed think of writing code for a new mobile phone chip which has not yet been fabricated ;2) the equipment is [too old so does not exist any more](http://www.emulator-zone.com/doc.php/nes/) such as a Nintendo emulator to run your old sonic the hedgehog games; 3) Or because testing your device out in the real world is too expensive.  An example of the latter is in developing automated driving systems.  It's far quicker (and safer!) to test your new machine learning algorithms out on a virtual world than let them drive around a real car.  Usually, one uses an emulator to develop the code for a product, then moves onto the real hardware one available.  In our scenario, it's just all too dangerous to run the lab as usual.
 
-
+On to worksheet 1
+~~~~~~~~~~~~~~~~~~
+[Worksheet 1](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md)
