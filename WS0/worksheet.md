@@ -1,4 +1,4 @@
-Worksheet 0
+Worksheet 0 - The buggy emulator
 ===========
 
 Introduction
