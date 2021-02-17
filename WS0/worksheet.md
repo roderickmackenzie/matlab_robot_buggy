@@ -28,6 +28,10 @@ Going further on your own
 -----------------
 The computer the buggy is based around is called the Rasbry PI, it is a very low cost computer which you can get from Amazon or RS for about 30 pounds.  If you find this lab fun and want to go further, I highly recommend you get one.  It's a very good entrance into the world of home automation, robotics, and even writing code in C/Linux.  This year (due to Covid) I would recommend this more than usual.  Spending significant time 'hacking' on the PI will probably teach you far more than I can teach you in a semester of computing lectures.
 
+Assessment
+----------
+For each work sheet (apart from this one!) there are some questions or work to do in your own time or during the lab.  There will be a hand in box place on moodle towards the end of the lab.
+
 On to worksheet 1
 -----------------
 [Worksheet 1](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md)

@@ -341,8 +341,13 @@ Take a picture of your group with the completed buggy, copy and paste this into 
 
 **Question 1.6:**  Use the internet to find out how much RAM the PI has, and how fast it's CPU in Hz compared to an older Pentium 100 desktop PC?
 
-**Question 1.7:**  What do the letters GPIO stand for?
+**Question 1.7:**  What do the letters GPIO stand for, and what are the GPIO pins used for on the PI?
 
-**Question 1.8:**  How big is the hard disk (or storage device) of the PI? (Hint you won't find this answer on the internet.)
+**Question 1.8:**  What sensors does the robot have to detect the external world? 
 
+**Question 1.9:**  We use non rechargable AA cells for the buggy, why don't we use recharagable ones?
 
+Navagaion
+-----------------
+[Worksheet 0](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS0/worksheet.md)
+[Worksheet 2](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md)
