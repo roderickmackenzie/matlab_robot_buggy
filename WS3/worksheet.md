@@ -206,4 +206,7 @@ For a good engineer, engineering should be as much a hobby as a profession.  You
 * Subscribe to some electronics youtube channels, this one is quite good [mikeselectricstuff](https://www.youtube.com/channel/UCcs0ZkP_as4PpHDhFcmCHyA), and so is this one [EEVBlog](https://www.youtube.com/user/EEVblog).
 
 
-
+Navagaion
+-----------------
+[<<Worksheet 2](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md) |
+[Worksheet 4>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS4/worksheet.md)
