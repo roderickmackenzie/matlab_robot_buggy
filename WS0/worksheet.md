@@ -11,10 +11,18 @@ This lab was originally introduced to give 1st year students a taste of how to u
 Figure 1: The robot assembled.
 </p>
 
-The buggy emulator
+Emulators in the real world
 ------------------
 
-In the real world you often need to write [emulators](https://en.wikipedia.org/wiki/Emulator), so simulate a piece of equipment or computer system.  You may have to do this because ;1) the real equipment is not yet developed think of writing code for a new mobile phone chip which has not yet been fabricated ;2) the equipment is [too old so does not exist any more](http://www.emulator-zone.com/doc.php/nes/) such as a Nintendo emulator to run your old sonic the hedgehog games; 3) Or because testing your device out in the real world is too expensive.  An example of the latter is in developing automated driving systems.  It's far quicker (and safer!) to test your new machine learning algorithms out on a virtual world than let them drive around a real car.  Usually, one uses an emulator to develop the code for a product, then moves onto the real hardware one available.  In our scenario, it's just all too dangerous to run the lab as usual.
+In the real world you often need to write [emulators](https://en.wikipedia.org/wiki/Emulator), to simulate a piece of equipment or computer system.  You may have to do this because ;1) the real equipment is not yet developed think of writing code for a new mobile phone chip which has not yet been fabricated ;2) the equipment is [too old so does not exist any more](http://www.emulator-zone.com/doc.php/nes/) such as a Nintendo emulator to run your old sonic the hedgehog games; 3) Or because testing your device out in the real world is too expensive.  An example of the latter is in developing automated driving systems.  It's far quicker (and safer!) to test your new machine learning algorithms out on a virtual world than let them drive around a real car.  Usually, one uses an emulator to develop the code for a product, then moves onto the real hardware one available.  In our scenario, it's just all too dangerous to run the lab as usual.
+
+The buggy emulator
+-----------------
+You can download the buggy emulator from [here](https://github.com/roderickmackenzie/matlab_robot_buggy/tree/master/buggy_simulator), download the zip file and unzip it on your PC in an empty directory.  I would recommend on your desktop.  You can look around and edit the code it is just MATLAB, you should be able to understand most of it.  Open the file called *autorun.m* and press play.  You should see a robot buggy appear on the screen and start moving around.
+
+Doing this lab with the emulator
+-----------------
+Just as you would have to in the real world, I am going to give you the emulator and the *real* lab sheets which are unadapted for the emulator, it is your job to get through the labs and do the tasks with the emulator.  Read though all the experimental sections of the lab sheets so you understand what is going on.
 
 On to worksheet 1
 -----------------
