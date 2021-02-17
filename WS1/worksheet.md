@@ -349,5 +349,5 @@ Take a picture of your group with the completed buggy, copy and paste this into 
 
 Navagaion
 -----------------
-[<<Worksheet 0](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS0/worksheet.md) /
+[<<Worksheet 0](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS0/worksheet.md) |
 [Worksheet 2>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md)
