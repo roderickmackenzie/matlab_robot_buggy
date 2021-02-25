@@ -6,6 +6,8 @@ This series of four labs will take you through the process of building a compute
 
 Your robot buggy kit
 -----------------
+>Virtual lab: If you are doing the virtual lab, go ahead and read through the instructions as if you were going to put the buggy together.  This will help give you a good idea of what the buggy is capable of and help you interact with the buggy emulator.
+
 The robot buggy kit is sown in figures 1 and 2.  Figure 1, shows how the components should be stored in the toolbox, and figure 2 includes the larger components which will not fit in the box.  When you return your buggy at the end of the buggy building sessions, all the components should be placed into the toolbox exactly as you found them.
 <p align="center">
 <img src="./images_small/kit.jpg">
@@ -319,17 +321,11 @@ Section 8: Exploring the PI
 >Figure 8.1:  An example of the PI desktop.
 </p>
 
-Section 9: Starting your robot buggy report
+Section 9: Getting ready to upload work
 -------------------------------------------
-The buggy building activity will be examined though both a short report and through the code you write during the activity.  All your code should be submitted in a zip file as usual, and your report should be placed in the zip file as a pdf.  Your report should contain:
-* A cover page, with your name, e-mail address and student ID.
-* One section for each worksheet you do.
-* Each section should contain the answers to each question posed during the work sheets.
-* Each diagram/figure should have a figure number and a caption.
+For each lab you will generate a zip file which will contain all your answers to the questions in the lab. There is a submission box for this on moodle.
 
-For today's session, your report should include the answer to question 1.1 along with the answers to the following questions:
-
-Take a picture of your group with the completed buggy (you can't take the photo if you are doing the virtual lab), save this ready to be uploaded in the zip file.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100), *save the answers as comments in the file worksheet_1.m*:
+Take a picture of your group with the completed buggy (you can't take the photo if you are doing the virtual lab), save this ready to be uploaded in the zip file.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100), *save the answers as comments in the file lab_1.m*:
 
 >**Question 1.2:**  Describe in as few words as possible why we use a motor driver board.
 
@@ -347,10 +343,7 @@ Take a picture of your group with the completed buggy (you can't take the photo 
 
 >**Question 1.9:**  Name five languages you can program the PI in.
 
->**Question 2.0:**  Please make sure you have done the preparation work "Self study prep material - lecture 1"/"Self study prep material - lecture 2". Please upload the answers with this lab.  If you do not attempt the preparation material you will not be able to get any marks for the buggy session.  The aim of these work sheets is to reinforce the basic MATALB material we have covered in lectures 1-10 and to introduce the concept of classes. 
-
-Preparation work
-----------
+>**Question 2.0:**  Please make sure you have done the preparation work "Self study prep material - lecture 1"/"Self study prep material - lecture 2". Please upload the answers to those work sheets with.  If you do not attempt the preparation material you will not be able to get any marks for the buggy labs.  The aim of these worksheets is to introduce you to some advanced MATALB concepts. Note: I am not expecting you to answer every question in the work sheets, just have a good go at them and use them as a warm up exercise to this set of labs.
 
 
 Navigation

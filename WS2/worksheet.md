@@ -60,9 +60,9 @@ Figure 1.3: The resize icon.
 Warm up exercises
 -----------------
 
-The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  I suggest you do these questions at home **This section is individual work not group work.. the usual plagiarism rules apply...**  You can use MATLAB for these questions, you do not need to install octave.  Octave is a clone of MATLAB.
+The following exercise refresh/test your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  You can view the rest of this work sheet as an assessment on how much you have learnt from lectures 1-10 of the MATLAB course.  You can use MATLAB for these questions, you do not need to install octave.  Octave is just a clone of MATLAB.
 
-### Warm up exercise 1
+### Exercise 1
 
 
 **Question 2.1:** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your report, under section 2 question 2.1.
@@ -86,7 +86,7 @@ From now on all scripts should be saved as q[Worksheet number]_[question number]
 **Question 2.8:** Plot a graph of x*x*x+x*x+2x, between -pi and pi, save the results in your report.
 
 
-### Warm up exercises 2
+### Exercises 2
 
 **Question 2.9:** Copy and paste the code into a new script, and add a comment to each line to describe what it does, then comment on the overall meaning of the code, at the bottom of the script.
 
@@ -119,7 +119,7 @@ end
 c=[a out]
 ```
 
-### Warm up exercises 3
+### Exercises 3
 
 **Question 2.11:**  The location of ships in the sea is recorded by a satellite 100 km above the earth and the positions of the ships are transmitted to earth every minute. The locations of the ships are represented by x,y coordinates on a 180x100 km grid  (see Figure 1).  A computer on earth receives the positions of the ships and writes the data to a file called [ship_locations.txt](./ship_locations.txt).    Each line in the file holds the position of one ship. The file has two columns of data, column 1 holds the x position of the ship and the column 2 hold the y position of the ship. When new data is received the file is over written.  
 

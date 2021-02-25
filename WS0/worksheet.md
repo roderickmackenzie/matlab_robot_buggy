@@ -30,11 +30,15 @@ The computer the buggy is based around is called the Rasbry PI, it is a very low
 
 Preparation work
 ----------
-Some of the programming concepts, you will need during the buggy session such as classes we have not covered in the lectures yet.  Therefore before you begin the buggy session, please find the lectures called "Self study prep material - lecture 1"/"Self study prep material - lecture 2" on moodle and go through them.  Then work your way through the work sheets associated with the lectures.  Bring any questions you may have to the first on-line buggy session.  You will need to be good at classes and functions to get through the buggy sessions.  Note: These lectures have been straight copied from an advanced MATLAB course I give the 2nd year aerospace class, so just ignore anything which is to do with that module - they are effectively just advanced MATALB lectures. You will have to upload the answers to the associated preparation work sheets with the answers for Lab 1. 
+Some of the programming concepts, you will need during the buggy session such as classes we have not covered in the lectures yet.  Therefore before you begin the buggy session, please find the lectures called "Self study prep material - lecture 1"/"Self study prep material - lecture 2" on moodle and go through them.  Then work your way through the work sheets associated with the lectures.  The fist lecture is effectively a warm up exercise refreshing much of what we covered during the first semester, and the second work sheet introduces the concept of classes. Bring any questions you may have to the first on-line buggy session.  You will need to be good at classes and functions to get through the buggy sessions.  Note: These lectures have been straight copied from an advanced MATLAB course I give the 2nd year aerospace class, so just ignore anything which is to do with that module - they are effectively just advanced MATALB lectures. You will have to upload the answers to the associated preparation work sheets with the answers for Lab 1.  Note: I am not expecting you to answer every question in the work sheets, just have a good go at them and use them as a warm up exercise to this set of labs.
+
+Plagiarism
+----------
+If you are doing the virtual lab, **this series of labs is individual work not group work.. the usual plagiarism rules apply...**
 
 Assessment
 ----------
-For each of the four work sheets associated with this lab,  there are some questions to work through, these will be *marked* by the demonstrators and you will get given a mark out of 100%.  The buggy is worth 35% of this module.  To get the marks for the work sheets you will ALSO have to have also handed in the *Preparation work* see above.
+For each of the four work sheets associated with this lab,  there are some questions to work through, these will be *marked* by the demonstrators and you will get given a mark out of 100%.  The buggy is worth 35% of this module.  To get the marks for the work sheets you will ALSO have to have also handed in the *Preparation work* see above. For each lab you will have to upload a zip folder containing what you have done.
 
 
 
