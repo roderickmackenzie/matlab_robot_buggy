@@ -59,7 +59,7 @@ Click, File→Save as and then save the file as 'q1.m' under /home/pi/ .  On the
 Figure 1.3: The resize icon.
 </p>
 
-Warm up exercises
+A MATLAB test to get things going..
 -----------------
 
 The following exercise refresh/test your knowledge of MATLAB, especially functions and files.  You can view the rest of this work sheet as an assessment on how much you have learnt from lectures 1-10 of the MATLAB course.  You can use MATLAB for these questions, you do not need to install octave.  Octave is just a clone of MATLAB.
