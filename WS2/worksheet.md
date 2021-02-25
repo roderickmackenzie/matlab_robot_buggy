@@ -62,7 +62,7 @@ Figure 1.3: The resize icon.
 A MATLAB test to get things going..
 -----------------
 
-The following exercise refresh/test your knowledge of MATLAB, especially functions and files.  You can view the rest of this work sheet as an assessment on how much you have learnt from lectures 1-10 of the MATLAB course.  You can use MATLAB for these questions, you do not need to install octave.  Octave is just a clone of MATLAB.
+The following exercise refreshes/tests your knowledge of MATLAB, especially functions and files.  You can view the rest of this work sheet as an assessment on how much you have learnt from lectures 1-10 of the MATLAB course.  If you struggle with these, go and revise MATLAB a bit more.  Myself and the demonstrators are also happy to help you with your questions in the lab.
 
 ### Exercise 1
 
@@ -144,7 +144,7 @@ Figure 1.4: The satellites view of earth. The ships and the x-y grid have been o
 **Question 2.14:**  Change the script so that if two ships are closer than 0.5km it prints the word "Warning!", the locations of both ships and the distance by which they are separated.
 
 
-The above questions, are really just to get you back into thinking about programming again.  If you struggle with these, go and revise MATLAB a bit more.  Myself and the demonstrators are also happy to help you with your questions in the lab.
+The above questions, are really just to get you back into thinking about programming again.
 
 
 **Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.**
