@@ -1,7 +1,7 @@
 Worksheet 2
 ===========
 
-1: Introduction, MATLAB and the Raspberry PI
+1: MATLAB and the Raspberry PI
 --------------------------------------------
 
 **Step 1.1:** Until now you have only programmed in the MATLAB programming language, although MATLAB it’s self is quite useful, it has some drawback:
@@ -23,6 +23,8 @@ Figure 1.1: Octave running on the PI. Personally, I really like Octave and prefe
 **Step 1.2:** Basic use of Octave
 
 Just to make you feel at home with Octave, we will now use it to write some basic computer code, just as we did when we first started learning MATLAB.
+
+> Virtual lab: If you are doing the virtual lab you can skip questions q-e because you will be using MATLAB on a PC, and you will have done the "Self study prep material - lecture 1"/"Self study prep material - lecture 2" preparation material.
 
 a) Generate a 10x10 random array of numbers.
 
