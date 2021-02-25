@@ -1,4 +1,4 @@
-Worksheet 3 - Output to the real world
+Lab 3 - Output to the real world
 =====================================
 
 Motor control - basic output
@@ -30,13 +30,14 @@ To stop the motors, use the command:
 motors(0,0,1)
 ```
 
-**Question 3.1:**   Now, make a new script called q3_1.m and save it under /home/pi/.   To control the hardware of the buggy, we are going to have to use functions, which know how to talk to the hardware.  These functions are stored in /home/pi/lib.  Add the line
+**Question 3.1:**   Now, make a new script called q3_1.m and save it under /home/pi/.   To control the hardware of the buggy, we are going to have to use functions, which know how to talk to the hardware.  These functions are stored in if you are using the real hardware and in /home/pi/lib, the directory you downloaded the emulator to if you are doing the virtual buggy lab.  Add the line
+
 
 ```
 addpath(‘/home/pi/lib’)
 ```
 
-to the top of your script, this will tell Octave where the functions are stored.  [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly.] Now try out the commands above to move the motors.  Did you wire them up correctly?  If they spin in different directions, just swap the wires around in the motor driver board.
+to the top of your script, this will tell Octave where the functions are stored.   If you are using the emulator, make sure the path (/home/pi/lib) points to the directory where the emulator code is stored on your computer rather than /home/pi/lib. [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly.] Now try out the commands above to move the motors.  Did you wire them up correctly?  If they spin in different directions, just swap the wires around in the motor driver board.
 
 ```
 Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before these commands will work though.
@@ -44,7 +45,20 @@ Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before the
 Hint 2: Position your buggy so the wheels are off the ground, you can use the box your PI came in to do this. If you don’t do this your buggy will fly off the table.
 ```
 
-**Step 3.1:** We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Edit the script q3_1.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds.
+
+**Step 3.1:** The code to control the buggy is stored in a class called *buggy*, you will have learnt about classes during the introduction videos.  Firstly in your file initialize a new instance of the class buggy like this:
+```
+clear all
+my_buggy=buggy()
+my_buggy=my_buggy.setup_enviroment()
+```
+The first line of the code clears all previously defined variables, the second line makes a new instnace of the buggy class, and the third line initializes the buggy.  If you are running the real buggy this will peform a self check on the hardware, if you are running the virtual buggy if will pop up a window displaying the virtual world in which the buggy will run arround.
+ 
+We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Edit the script q3_1.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds. Note all the commands will have to be accessed throug the buggy class so the *motors* command would be accessed as:
+
+```
+my_buggy=my_buggy.motors(100,100,1)
+```
 
 **Step 3.2:** Place your buggy on the tool box or some other object so it's wheels are off the ground and not touching anything.  Now click run, and the motors should start to drive forward and then backwards.
 
@@ -208,5 +222,5 @@ For a good engineer, engineering should be as much a hobby as a profession.  You
 
 Navagaion
 -----------------
-[<<Worksheet 2](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md) |
-[Worksheet 4>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS4/worksheet.md)
+[<<Lab 2](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md) |
+[Lab 4>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS4/worksheet.md)
