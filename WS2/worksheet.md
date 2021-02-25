@@ -149,6 +149,6 @@ The above questions, are really just to get you back into thinking about program
 
 Navigation
 -----------------
-[<<Worksheet 1](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md) |
-[Worksheet 3>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS3/worksheet.md)
+[<<Lab 1](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md) |
+[Lab 3>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS3/worksheet.md)
 

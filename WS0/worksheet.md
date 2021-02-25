@@ -1,4 +1,4 @@
-Worksheet 0 - The buggy emulator
+Lab 0 - The buggy emulator
 ===========
 
 Introduction
@@ -38,6 +38,6 @@ For each of the four work sheets associated with this lab,  there are some quest
 
 
 
-On to worksheet 1
+On to Lab 1
 -----------------
-[Worksheet 1>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md)
+[Lab 1>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md)

@@ -355,5 +355,5 @@ Preparation work
 
 Navigation
 -----------------
-[<<Worksheet 0](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS0/worksheet.md) |
-[Worksheet 2>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md)
+[<<Lab 0](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS0/worksheet.md) |
+[Lab 2>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md)
