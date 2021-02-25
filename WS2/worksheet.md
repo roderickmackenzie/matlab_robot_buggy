@@ -4,6 +4,8 @@ Lab 2
 1: MATLAB and the Raspberry PI
 --------------------------------------------
 
+> Virtual lab: If you are doing the virtual you can just use MATLAB on your PC instead of octave or access MATLAB via the virtual Engineering Desktop.
+
 **Step 1.1:** Until now you have only programmed in the MATLAB programming language, although MATLAB it’s self is quite useful, it has some drawback:
 
 1. It’s really really expensive, and to make sure the developers get their money for it, every time MATLAB starts, it checks a license server to see if you are allowed to use it (and if you have paid your money!).  This is non ideal for a non internet connected buggy.
@@ -60,7 +62,7 @@ Figure 1.3: The resize icon.
 Warm up exercises
 -----------------
 
-The following exercise refresh/test your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  You can view the rest of this work sheet as an assessment on how much you have learnt from lectures 1-10 of the MATLAB course.  You can use MATLAB for these questions, you do not need to install octave.  Octave is just a clone of MATLAB.
+The following exercise refresh/test your knowledge of MATLAB, especially functions and files.  You can view the rest of this work sheet as an assessment on how much you have learnt from lectures 1-10 of the MATLAB course.  You can use MATLAB for these questions, you do not need to install octave.  Octave is just a clone of MATLAB.
 
 ### Exercise 1
 
@@ -142,7 +144,7 @@ Figure 1.4: The satellites view of earth. The ships and the x-y grid have been o
 **Question 2.14:**  Change the script so that if two ships are closer than 0.5km it prints the word "Warning!", the locations of both ships and the distance by which they are separated.
 
 
-The above questions, are really just to get you back into thinking about programming again.  If you struggle with these, go and revise MATLAB by practicing, this is the minimum level needed for this lab.
+The above questions, are really just to get you back into thinking about programming again.  If you struggle with these, go and revise MATLAB a bit more.  Myself and the demonstrators are also happy to help you with your questions in the lab.
 
 
 **Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.**
