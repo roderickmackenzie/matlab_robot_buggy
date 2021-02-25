@@ -3,7 +3,7 @@ Worksheet 0 - The buggy emulator
 
 Introduction
 ----------
-This lab was originally introduced to give 1st year students a taste of how to use computers to control hardware and how to make computers interact with the real world (See figure 1).  Unfortunately, between March 2019 and now, there was a global pandemic, this makes it hard to run large group labs with 300+ students in them.  Added to this the robots are fairly complicated devices with lots of wires which would be very hard to clean between labs.  I therefore had to come up with a virtual lab which gives you most of the experience of the real lab but in a safe (and hopefully fun!) way.  The answer is the virtual buggy lab:  I have written a buggy simulator and a virtual environment which which enables you to simulate the actions of the buggy in matlab.  The only thing you will miss out on is the actual screwing together of the buggy, which is a real shame but was more a fun exercise rather than anything where you learnt a great deal. 
+This lab was originally introduced to give 1st year students a taste of how to use computers to control hardware and how to make computers interact with the real world (See figure 1).  Unfortunately, between March 2019 and now, there was a global pandemic, this makes it hard to run large group labs with 300+ students in them.  Added to this the robots are fairly complicated devices (see below) with lots of wires which would be very hard to clean between labs.  I therefore had to come up with a virtual lab which gives you most of the experience of the real lab but in a safe (and hopefully fun!) way.  The answer is the virtual buggy lab:  I have written a buggy simulator and a virtual environment which which enables you to simulate the actions of the buggy in matlab.  The only thing you will miss out on is the actual screwing together of the buggy, which is a real shame but it was more a fun exercise rather than anything where you learnt a great deal. 
 
 <p align="center">
 <img src="./images/buggy.jpg"  width=25% >
@@ -30,11 +30,11 @@ The computer the buggy is based around is called the Rasbry PI, it is a very low
 
 Preparation work
 ----------
-Some of the programming concepts, you will need during the buggy session such as classes we have not covered in the lectures yet.  Therefore before you begin the buggy session, please find the lectures called "Self study prep material - lecture 1"/"Self study prep material - lecture 2" on moodle and go through them.  Then work your way through the work sheets on your own or in groups.  Bring any questions you may have to the first on-line buggy session.  You will need to be good at classes and functions to get through the buggy sessions.
+Some of the programming concepts, you will need during the buggy session such as classes we have not covered in the lectures yet.  Therefore before you begin the buggy session, please find the lectures called "Self study prep material - lecture 1"/"Self study prep material - lecture 2" on moodle and go through them.  Then work your way through the work sheets on your own or in groups.  Bring any questions you may have to the first on-line buggy session.  You will need to be good at classes and functions to get through the buggy sessions.  Note: These lectures have been straight copied from an advanced MATLAB course I give the 2nd year aerospace class, so just ignore any thing which is to do with that module.
 
 Assessment
 ----------
-For each of the four work sheets associated with this lab,  there are some questions to work through, these will be *marked* by the demonstrators and you will get given a mark out of 100%.  The buggy is worth 35% of this module.  There will be a hand in box place on moodle towards the end of the lab.  To get the marks for the work sheets you will have to have also handed in the *Preparation work*, see above.
+For each of the four work sheets associated with this lab,  there are some questions to work through, these will be *marked* by the demonstrators and you will get given a mark out of 100%.  The buggy is worth 35% of this module.  There will be a hand in box place on moodle towards the end of the lab.  To get the marks for the work sheets you will have to have also handed in the *Preparation work*, see above, you will have to hand in the answers with *worksheet 1*.
 
 
 

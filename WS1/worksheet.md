@@ -307,7 +307,7 @@ Section 8: Exploring the PI
 
 **Step 8.1:** If your buggy is switched on, now switch it off.  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC from the computers and reconnect them to your PI.  Now disconnect the black wire connecting the battery pack to the PI, and reconnect the PI to a USB port of a computer.  For this exercise we will power the PI from a USB port of the computer to save batteries, when ever possible try to do this as it saves the environment a bit, the only draw back of doing this is that the motors will not run as they need 10-15V which can only be supplied by the batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.
 
->**Question 1.1:** Why do you think we are not using reusable batteries for this lab?  Think about battery life time and how they are used over the year.  Discuss this with your group, and make a note of the answer.
+>**Question 1.1:** Why do you think we are not using reusable batteries for this lab?  Think about battery life time and how they are used over the year.  Discuss this with your group, and make a note of the answer. *Save the answer to this in worksheet_1.m*
 
 **Step 8.2**:  If you followed the instructions in step 8.1, you should have a desktop which looks like figure 8.1.  The PI runs Linux which is a bit like windows but usually used on phones, tablets and servers.  There is a lot of software available for the PI (possibly more than there is for windows), but I have chosen to do a minimal install to save disk space.  Never the less, there is a word processor installed, Octave a version of MATLAB which is free and Minecraft(!!).  Try to find these packages in the start menu and have a play with them.
 
@@ -329,7 +329,7 @@ The buggy building activity will be examined though both a short report and thro
 
 For today's session, your report should include the answer to question 1.1 along with the answers to the following questions:
 
-Take a picture of your group with the completed buggy, copy and paste this into your report, and write the names and student IDs of the other members of your group under the photo.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100):
+Take a picture of your group with the completed buggy (you can't take the photo if you are doing the virtual lab), save this ready to be uploaded in the zip file.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100), *save the answers as comments in the file worksheet_1.m*:
 
 >**Question 1.2:**  Describe in as few words as possible why we use a motor driver board.
 
@@ -345,8 +345,11 @@ Take a picture of your group with the completed buggy, copy and paste this into 
 
 >**Question 1.8:**  What sensors does the robot have to detect the external world? 
 
+>**Question 1.9:**  Name five languages you can program the PI in.
 
-Navagaion
+>**Question 2.0:**  If you are doing the virtual lab: Clearly this worksheet will not take you very long if you are doing the virtual lab.  Therefore, please do the example sheets "Self study prep material - lecture 1"/"Self study prep material - lecture 2", and upload them with worksheet.  If you do not attempt the preparation material you will not be able to get any marks for the buggy session.
+
+Navigation
 -----------------
 [<<Worksheet 0](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS0/worksheet.md) |
 [Worksheet 2>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS2/worksheet.md)
