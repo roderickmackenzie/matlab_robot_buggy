@@ -1,4 +1,4 @@
-Worksheet 2
+Lab 2
 ===========
 
 1: MATLAB and the Raspberry PI
@@ -24,7 +24,7 @@ Figure 1.1: Octave running on the PI. Personally, I really like Octave and prefe
 
 Just to make you feel at home with Octave, we will now use it to write some basic computer code, just as we did when we first started learning MATLAB.
 
-> Virtual lab: If you are doing the virtual lab you can skip questions q-e because you will be using MATLAB on a PC, and you will have done the "Self study prep material - lecture 1"/"Self study prep material - lecture 2" preparation material.
+> Virtual lab: If you are doing the virtual lab you can skip questions q-e because you will be using MATLAB on a PC.
 
 a) Generate a 10x10 random array of numbers.
 
@@ -38,7 +38,7 @@ e) Replace the 5th element of the array with 80.
 
 See it’s just like MATLAB. :)
 
-Exercises a-e are just warm up exercises, the will not go into your work book.
+Exercises a-e are just warm up exercises, the will not go into your uploaded zip folder.
  
 **Step 1.3:** Scripts in Octave, just as in MATLAB, you can make scripts in Octave.  To make a new script, click file→New→New script.  You will see a script appear on the right hand side of the screen.  A new menu has appeared looking like figure 1.2.
 
@@ -63,6 +63,7 @@ Warm up exercises
 The following exercise will refresh your knowledge of MATLAB, especially functions and files, if you find the questions hard go back though some of the example sheets and lectures, especially the ones on loops, files and plotting.  I suggest you do these questions at home **This section is individual work not group work.. the usual plagiarism rules apply...**  You can use MATLAB for these questions, you do not need to install octave.  Octave is a clone of MATLAB.
 
 ### Warm up exercise 1
+
 
 **Question 2.1:** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your report, under section 2 question 2.1.
 
@@ -146,5 +147,8 @@ The above questions, are really just to get you back into thinking about program
 
 **Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.**
 
-
+Navigation
+-----------------
+[<<Worksheet 1](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS1/worksheet.md) |
+[Worksheet 3>>](https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/WS3/worksheet.md)
 

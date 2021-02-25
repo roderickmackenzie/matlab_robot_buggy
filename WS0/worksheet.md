@@ -30,11 +30,11 @@ The computer the buggy is based around is called the Rasbry PI, it is a very low
 
 Preparation work
 ----------
-Some of the programming concepts, you will need during the buggy session such as classes we have not covered in the lectures yet.  Therefore before you begin the buggy session, please find the lectures called "Self study prep material - lecture 1"/"Self study prep material - lecture 2" on moodle and go through them.  Then work your way through the work sheets on your own or in groups.  Bring any questions you may have to the first on-line buggy session.  You will need to be good at classes and functions to get through the buggy sessions.  Note: These lectures have been straight copied from an advanced MATLAB course I give the 2nd year aerospace class, so just ignore any thing which is to do with that module.
+Some of the programming concepts, you will need during the buggy session such as classes we have not covered in the lectures yet.  Therefore before you begin the buggy session, please find the lectures called "Self study prep material - lecture 1"/"Self study prep material - lecture 2" on moodle and go through them.  Then work your way through the work sheets associated with the lectures.  Bring any questions you may have to the first on-line buggy session.  You will need to be good at classes and functions to get through the buggy sessions.  Note: These lectures have been straight copied from an advanced MATLAB course I give the 2nd year aerospace class, so just ignore anything which is to do with that module - they are effectively just advanced MATALB lectures. You will have to upload the answers to the associated preparation work sheets with the answers for Lab 1. 
 
 Assessment
 ----------
-For each of the four work sheets associated with this lab,  there are some questions to work through, these will be *marked* by the demonstrators and you will get given a mark out of 100%.  The buggy is worth 35% of this module.  There will be a hand in box place on moodle towards the end of the lab.  To get the marks for the work sheets you will have to have also handed in the *Preparation work*, see above, you will have to hand in the answers with *worksheet 1*.
+For each of the four work sheets associated with this lab,  there are some questions to work through, these will be *marked* by the demonstrators and you will get given a mark out of 100%.  The buggy is worth 35% of this module.  To get the marks for the work sheets you will ALSO have to have also handed in the *Preparation work* see above.
 
 
 

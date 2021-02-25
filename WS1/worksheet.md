@@ -1,4 +1,4 @@
-Worksheet 1
+Lab 1
 ===========
 Introduction
 ----------
@@ -347,7 +347,11 @@ Take a picture of your group with the completed buggy (you can't take the photo 
 
 >**Question 1.9:**  Name five languages you can program the PI in.
 
->**Question 2.0:**  If you are doing the virtual lab: Clearly this worksheet will not take you very long if you are doing the virtual lab.  Therefore, please do the example sheets "Self study prep material - lecture 1"/"Self study prep material - lecture 2", and upload them with worksheet.  If you do not attempt the preparation material you will not be able to get any marks for the buggy session.
+>**Question 2.0:**  Please make sure you have done the preparation work "Self study prep material - lecture 1"/"Self study prep material - lecture 2". Please upload the answers with this lab.  If you do not attempt the preparation material you will not be able to get any marks for the buggy session.  The aim of these work sheets is to reinforce the basic MATALB material we have covered in lectures 1-10 and to introduce the concept of classes. 
+
+Preparation work
+----------
+
 
 Navigation
 -----------------
