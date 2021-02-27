@@ -1,16 +1,16 @@
 classdef object
    properties
-	x0
-	y0
-	x_lines=[]
-	y_lines=[]
-	colors=[]
-	ang=0.0%21*(2*3.1415926/360.0)
-	transparent
-	name=''
-	gpio_pins=zeros(1,26)
-	leds="11111111"
-	power=true
+	x0;
+	y0;
+	x_lines=[];
+	y_lines=[];
+	colors=[];
+	ang=0.0%21*(2*3.1415926/360.0);
+	transparent;
+	name='';
+	gpio_pins=zeros(1,26);
+	leds="11111111";
+	power=true;
    end
 
    methods
@@ -19,7 +19,7 @@ classdef object
 			self.y_lines=[self.y_lines ; y0 y0    y0+dy y0+dy ];
 			self.colors=[self.colors ; color ];
 			self.transparent=false;
-			ret=self
+			ret=self;
       end
 
       function ret = buggy(self,x0,y0)
@@ -88,14 +88,14 @@ classdef object
 
 	  function ret=move(self,m0,m1)
 			if (self.power==true)
-				dtheta=(m0-m1)*0.001
-				dx=(m0+m1)*0.01/2.0
+				dtheta=(m0-m1)*0.001;
+				dx=(m0+m1)*0.01/2.0;
 				self.ang=self.ang+dtheta;
 				self.x0=self.x0+sin(self.ang)*dx
 				self.y0=self.y0+cos(self.ang)*dx
 			end
 			self=self.buggy(self.x0,self.y0);
-			ret=self
+			ret=self;
 	  end
 
       function ret=draw(self)

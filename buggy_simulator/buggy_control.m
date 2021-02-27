@@ -32,8 +32,8 @@ function ret = buggy_control()
 	objs=objs.add_obj(o);
 
 	objs.draw();
-	ret=objs
-	disp('Buggy initialized!')
+	ret=objs;
+	disp('Buggy initialized!');
 end
 
 

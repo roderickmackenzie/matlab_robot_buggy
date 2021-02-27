@@ -37,14 +37,14 @@ classdef buggy
 
 			%objs(1:1) = object();
 			%obj.objs=objs;
-			self.pol0=1
-			self.pol1=1
-			ret=self
+			self.pol0=1;
+			self.pol1=1;
+			ret=self;
       end
 
  	function ret=motors(self,m0,m1,len)
-		self.objs=self.objs.motors(100,100,1)
-		ret=self
+		self.objs=self.objs.motors(100,100,1);
+		ret=self;
 	end
    end
 

@@ -8,8 +8,8 @@ classdef objects
    methods
       function obj = objects(self)
 			objs(1:1) = object();
-			obj.pol0=1.0
-			obj.pol1=-1.0
+			obj.pol0=1.0;
+			obj.pol1=-1.0;
 			obj.objs=objs;
       end
 
@@ -68,7 +68,7 @@ classdef objects
       end
 
 	function ret=motors(self,m0,m1,time)
-		hit=true
+		hit=true;
 		ib=self.find_buggy();
 		n=0
 
@@ -88,17 +88,17 @@ classdef objects
 			%end
 
 			%line([x2 x3],[y2 y3],'color','b');
-			%printf("echo=%f\n",self.echo());
-			pause(0.05)
-			n=n+0.20
+			%printf("echo=%f\n",self.echo_sensor());
+			pause(0.05);
+			n=n+0.20;
 		end
-		ret=self
+		ret=self;
 	end
 
-	function ret=echo(self)
-		x=0
-		y=0
-		hit=true
+	function ret=echo_sensor(self)
+		x=0;
+		y=0;
+		hit=true;
 
 		ib=self.find_buggy();
 		obj=self.objs(ib);
@@ -127,16 +127,16 @@ classdef objects
 		ib=self.find_buggy();
 		self.objs(ib).power=false;
 		self.objs(ib)=self.objs(ib).buggy(self.objs(ib).x0,self.objs(ib).y0);
-		self.draw()
-		ret=self
+		self.draw();
+		ret=self;
 	end
 
 	function ret=gpio_write(self,pin_number,value)
 		ib=self.find_buggy();
 		self.objs(ib).gpio_pins(pin_number)=value;
 		self.objs(ib)=self.objs(ib).buggy(self.objs(ib).x0,self.objs(ib).y0);
-		self.draw()
-		ret=self
+		self.draw();
+		ret=self;
 	end
    end
 
