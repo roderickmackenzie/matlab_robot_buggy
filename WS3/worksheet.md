@@ -27,7 +27,7 @@ Within this class are all the methods need to access the buggy hardware.
 Try adding the command
 
 ```
-my_buggy.motors(100,100,1)
+my_buggy=my_buggy.motors(100,100,1)
 ```
 
 What happens?  You buggy should have moved forward for 1 second, if it did not move forward but in another direction you probably wired your motors up the wrong way if this is the case just swap the wires around  in the motor driver board.  If you are doing the virtual buggy lab you can virtually change the polarity of the wiring of the motors by adding the commands:
@@ -157,7 +157,7 @@ In the real world you would be able to move chairs around the room to make an ob
 **Question v3.4:** Now try to change the color of the objects in the virtual world.  Again you don't know how to do this but try to figure it out.
 
 **Question v3.5:**
-Make a new script called q3_3.m and try to make your buggy drive in a figure of 8.  Try to make it as curvy as possible.
+Make a new script called q3_5.m and try to make your buggy drive in a figure of 8.  Try to make it as curvy as possible.
 
 
 
@@ -168,7 +168,7 @@ So far you have used relatively high level commands to control the motors, hidde
 
 **Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below. The resistors should go into the black/blue strip.  Then connect the other side of the LEDs to the PI using the jumper cables, refer to Figure 2 to understand which pins on the PI the LEDs should be connected to, these pins on the PI are called GPIO pins or general-purpose input/output pins.
 
-**Question 3.10:**  Which GPIO pins are the motors connected to?  Write this answer in your report.
+**Question 3.10:**  Which GPIO pins are the motors connected to?  Save this as a comment in a script called q3_10.m.
 
 <p align="center">
 <img src="./images/drawing.png" width=40%>
@@ -182,11 +182,11 @@ Figure 1: The LED bar graph wired into the bread board.
 Figure 2: The pin out of the PI.
 </p>
 
-**Question 3.11:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed? 
+**Question 3.11:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed?  Save this as a comment in a script called q3_10.m.
 
- **Question 3.12:** In your report draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.
+ **Question 3.12:** Draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.  Save this as q3_12.m
 
-**Question 3.13:** If you look closely at each resistor, you will see that they have some colored lines on them, these lines tell you which value the resistors are in Ohms.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the value of the resistors in figure 3 in your report.  If you look at the ultrasonic sensor driver board you will see two more resistors, write down the value of these resistors in your report.
+**Question 3.13:** Using the web/youtube learn how the color codes printed on resistors can tell you what value they are.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the color codes you would expect for a 1k Ohm and a 1 Mega Ohm resistor, save these values in the script q3_12.m.
 
 <p align="center">
 <img src="./images/resistors.jpg" width=40%>
@@ -205,11 +205,11 @@ and can be turned off with the command
 gpio_write(GPIO_PIN_NUMBER,0)
 ```
 
-**Question 3.14:** Make a short script called ws_3_3_14.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
+**Question 3.14:** Make a short script called q3_14.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
 
 **Question 3.15:** Edit your script so that the LEDs will flash on and off with a one second interval for ever. 
 
-**Question 3.16:** Now make a new script to turn your LEDs randomly at regular intervals of 0.5 seconds, save this as q3_16.m
+**Question 3.16:** Now make a new script to turn your LEDs on/off randomly at regular intervals of 0.5 seconds, save this as q3_16.m
 
 ```
 Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.
@@ -218,7 +218,7 @@ Hint, first pick a random number between 1 and 4, then use an if-elseif-end stat
 **Question 3.14:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program... you’ve missed nothing. :) ]
 
 
-**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move the buggy forward about 10 meters while displaying the knight rider effect on the LEDs, then stop the buggy
+**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move the buggy forward about 10 meters while displaying the knight rider effect on the LEDs, then stop the buggy. (If you are doing the virtual lab edit make your buggy move in a square and every time it turns get it to do the night rider effect.)
 
 
 Controlling the PI it's self - and power management
@@ -230,7 +230,7 @@ Robots not too dissimilar to yours are used to explore remote planets such as [m
 poweroff()
 ```
 
-Which will turn the main computer of the buggy off to save power. Add this command to the end of your script so that after the robot has completed moving 10 meters it turns off.
+Which will turn the main computer of the buggy off to save power. Add this command to the end of your script from the above section so that after the robot has completed moving 10 meters it turns off.
 
 
 Developing yourself as an engineer
