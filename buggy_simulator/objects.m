@@ -143,6 +143,14 @@ classdef objects
 	function ret=pin_in(self)
 		ret=load('switches.txt');
 	end
+
+
+	function ret=camera(self)
+		file_name=sprintf("%d.jpg",randi([0 15] ,1,1));
+		full_path=fullfile(fileparts(mfilename('fullpath')),"images",file_name)
+		a=imread(full_path);
+		imwrite(a,'image.jpg','jpg');
+	end
    end
 
 
