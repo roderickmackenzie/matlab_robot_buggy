@@ -93,7 +93,7 @@ Advanced motor control (non virtual lab only)
 ----------------------
 
 
-The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code cannot do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
+Skip this section if you are doing the virtual lab.  The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code cannot do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
 
 ```
 motors_adv(power,power)
@@ -197,12 +197,12 @@ Figure 3: Examples of resistors.
 **Step 2:** Now the LEDs have been connected, the pins can be turned on with the command
 
 ```
-gpio_write(GPIO_PIN_NUMBER,1)
+my_buggy.gpio_write(GPIO_PIN_NUMBER,1)
 ```
 
 and can be turned off with the command
 ```
-gpio_write(GPIO_PIN_NUMBER,0)
+my_buggy.gpio_write(GPIO_PIN_NUMBER,0)
 ```
 
 **Question 3.14:** Make a short script called q3_14.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
@@ -227,7 +227,7 @@ Controlling the PI it's self - and power management
 Robots not too dissimilar to yours are used to explore remote planets such as [mars](https://mars.nasa.gov/mer/).  Such a robot would be a long way from  Earth, and there is a limited amount of power available.  For example, in summer there may be enough power to run the computers, cameras, and communications equipment in the robot, however in winter, the robot may have to power down to save power.  Power management is a serious issue in robots and computers.  Octave on the PI has the command:
 
 ```
-poweroff()
+my_buggy.poweroff()
 ```
 
 Which will turn the main computer of the buggy off to save power. Add this command to the end of your script from the above section so that after the robot has completed moving 10 meters it turns off.
