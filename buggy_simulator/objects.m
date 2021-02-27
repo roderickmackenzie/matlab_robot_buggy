@@ -1,11 +1,15 @@
 classdef objects
    properties
 	objs;
+	pol0;
+	pol1;
    end
 
    methods
       function obj = objects(self)
 			objs(1:1) = object();
+			obj.pol0=1.0
+			obj.pol1=-1.0
 			obj.objs=objs;
       end
 
@@ -63,32 +67,32 @@ classdef objects
 			end
       end
 
-	function ret=motors(self,m0,m1,len)
-		x=0
-		y=0
+	function ret=motors(self,m0,m1,time)
 		hit=true
-		for n=1:1000
-			ib=self.find_buggy();
+		ib=self.find_buggy();
+		n=0
+
+		while n<time
 			obj=self.objs(ib);
 			x2=obj.x0;
 			y2=obj.y0;
+			self.objs(ib)=obj.move(m0*self.pol0,self.pol1*m1)
+			self.draw();
 
 			x3=x2+sin(obj.ang)*110.0;
 			y3=y2+cos(obj.ang)*110.0;
 
-			self.objs(ib).ang=self.objs(ib).ang+0.02;
-			self.objs(ib)=self.objs(ib).buggy(x2,y2);
-			self.draw();
+			%[x y ]=self.intersect(x2,y2,x3,y3);
+			%if hit==true
+			%	plot(x, y, 'ro', 'MarkerSize', 30);
+			%end
 
-			[x y ]=self.intersect(x2,y2,x3,y3);
-			if hit==true
-				plot(x, y, 'ro', 'MarkerSize', 30);
-			end
-
-			line([x2 x3],[y2 y3],'color','b');
-			printf("echo=%f\n",self.echo());
-			pause(0.051)
+			%line([x2 x3],[y2 y3],'color','b');
+			%printf("echo=%f\n",self.echo());
+			pause(0.05)
+			n=n+0.20
 		end
+		ret=self
 	end
 
 	function ret=echo(self)
@@ -106,6 +110,8 @@ classdef objects
 
 		[x y ]=self.intersect(x2,y2,x3,y3);
 
+		plot(x, y, 'ro', 'MarkerSize', 30);
+
 		x=x-x2;
 		y=y-y2;
 		dist=[];
@@ -116,7 +122,25 @@ classdef objects
 		ret=min(dist);
 
 	end
+
+	function ret=poweroff(self)
+		ib=self.find_buggy();
+		self.objs(ib).power=false;
+		self.objs(ib)=self.objs(ib).buggy(self.objs(ib).x0,self.objs(ib).y0);
+		self.draw()
+		ret=self
+	end
+
+	function ret=gpio_write(self,pin_number,value)
+		ib=self.find_buggy();
+		self.objs(ib).gpio_pins(pin_number)=value;
+		self.objs(ib)=self.objs(ib).buggy(self.objs(ib).x0,self.objs(ib).y0);
+		self.draw()
+		ret=self
+	end
    end
+
+
 
 
 end

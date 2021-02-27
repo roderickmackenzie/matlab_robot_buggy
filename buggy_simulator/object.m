@@ -5,10 +5,12 @@ classdef object
 	x_lines=[]
 	y_lines=[]
 	colors=[]
-	ang=21*(2*3.1415926/360.0)
+	ang=0.0%21*(2*3.1415926/360.0)
 	transparent
 	name=''
-	leds="11110000"
+	gpio_pins=zeros(1,26)
+	leds="11111111"
+	power=true
    end
 
    methods
@@ -24,9 +26,35 @@ classdef object
 			x1=[0.0 5.0 5.0 0.0   ; -1.0 0.0 0.0 -1.0 ; -1.0 0.0 0.0 -1.0  ; 5.0 6.0 6.0 5.0 ; 5.0 6.0 6.0 5.0 ];
 			y1=[0.0 0.0 10.0 10.0 ;  0.0 0.0 1.0 1.0  ;  9.0 9.0 10.0 10.0 ; 0.0 0.0 1.0 1.0 ; 9.0 9.0 10.0 10.0 ];
 			self.colors=['b','r','r','r','r' ];
+
+			if self.gpio_pins(26)==1
+				self.leds(1)='1'
+			else
+				self.leds(1)='0'
+			end
+
+			if self.gpio_pins(19)==1
+				self.leds(2)='1'
+			else
+				self.leds(2)='0'
+			end
+
+			if self.gpio_pins(13)==1
+				self.leds(3)='1'
+			else
+				self.leds(3)='0'
+			end
+
+			if self.gpio_pins(6)==1
+				self.leds(4)='1'
+			else
+				self.leds(4)='0'
+			end
+			self.leds
 			for i=1:8
 				x1=[x1 ; 1.0 4.0 4.0 1.0  ];
 				y1=[y1 ; 0.5+i 0.5+i 1.5+i 1.5+i  ];
+
 				if self.leds(i)=='1'
 					self.colors=[self.colors 'r'];
 				else
@@ -34,6 +62,11 @@ classdef object
 				end
 			end
 
+			if (self.power==false)
+				for i =1:max(size(self.colors))
+					self.colors(i)='k';
+				end
+			end
 			x1=x1-mean(mean(x1));
 			y1=y1-mean(mean(y1));
 			x=x1*cos(2*3.14-self.ang)-y1*sin(2*3.14-self.ang);
@@ -53,7 +86,19 @@ classdef object
 			ret=self;
       end
 
-      function draw(self)
+	  function ret=move(self,m0,m1)
+			if (self.power==true)
+				dtheta=(m0-m1)*0.001
+				dx=(m0+m1)*0.01/2.0
+				self.ang=self.ang+dtheta;
+				self.x0=self.x0+sin(self.ang)*dx
+				self.y0=self.y0+cos(self.ang)*dx
+			end
+			self=self.buggy(self.x0,self.y0);
+			ret=self
+	  end
+
+      function ret=draw(self)
 			hold on
 			for section =1:size(self.x_lines)(1)
 				fill(self.x_lines(section,:),self.y_lines(section,:),self.colors(section));

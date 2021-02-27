@@ -1,6 +1,8 @@
 classdef buggy
    properties
 	objs
+	pol0;
+	pol1;
    end
 
    methods
@@ -35,6 +37,8 @@ classdef buggy
 
 			%objs(1:1) = object();
 			%obj.objs=objs;
+			self.pol0=1
+			self.pol1=1
 			ret=self
       end
 

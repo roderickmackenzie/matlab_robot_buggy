@@ -6,7 +6,40 @@ Motor control - basic output
 
 The buggy has two motors.  These can be used to drive the buggy forwards, backwards or to turn it, by running one motor forwards and one backwards.  By the end of this section you will be able to move the buggy in any direction.
 
-The Octave/MATLAB command to drive the motors is:
+To control the hardware of the buggy, we are going to have to use functions which know how to talk to the hardware.  These functions are stored in the directory ‘/home/pi/lib’ on the pi.  If you are using the virtual buggy they are stored in the directory to wihich you downloaded the buggy emulator.  Make a new script called q3_1.m and add the line of code 
+
+```
+addpath(‘/home/pi/lib’)
+```
+
+to the top of your script, this will tell Octave/MATLAB where the functions to access the buggy are stored.   If you are using the emulator, make sure the path (/home/pi/lib) points to the directory where the emulator code is stored on your computer rather than /home/pi/lib. [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly in every script we write from now on]. If you struggle to do this ask a demonstrator to help you.
+
+The functions to access the buggy are stored in a class, you learnt about classes in the preparation material.  If you don't know what a class is go and review the material now.  To control the buggy we first need to initialize an instance of the buggy class like this:
+
+```
+my_buggy=buggy_control()
+```
+
+This assigns a copy of the class *buggy_control* to the new variable my_buggy.  You can replace the variable my_buggy with any variable you want, *my_amazing_buggy* ,*fred*, *bob*, or *jane*.  It does not matter what it is called. Once you have run your script you should get the words *Buggy initialized!* printed to the screen.
+
+Within this class are all the methods need to access the buggy hardware.
+
+Try adding the command
+
+```
+my_buggy.motors(100,100,1)
+```
+
+What happens?  You buggy should have moved forward for 1 second, if it did not move forward but in another direction you probably wired your motors up the wrong way if this is the case just swap the wires around  in the motor driver board.  If you are doing the virtual buggy lab you can virtually change the polarity of the wiring of the motors by adding the commands:
+
+```
+my_buggy.pol0=x0
+my_buggy.pol1=x1
+```
+
+ to your script after you have initialized the buggy_control class for the first time, x0 and x1 should be replaced with a 1 or a -1 depending on if you want to change the polarity of the motors or not.  Experiment with the correct values.
+
+The command to drive the motors is:
 
 ```
 motors(power1,power2,delay)
@@ -30,14 +63,7 @@ To stop the motors, use the command:
 motors(0,0,1)
 ```
 
-**Question 3.1:**   Now, make a new script called q3_1.m and save it under /home/pi/.   To control the hardware of the buggy, we are going to have to use functions, which know how to talk to the hardware.  These functions are stored in if you are using the real hardware and in /home/pi/lib, the directory you downloaded the emulator to if you are doing the virtual buggy lab.  Add the line
-
-
-```
-addpath(‘/home/pi/lib’)
-```
-
-to the top of your script, this will tell Octave where the functions are stored.   If you are using the emulator, make sure the path (/home/pi/lib) points to the directory where the emulator code is stored on your computer rather than /home/pi/lib. [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly.] Now try out the commands above to move the motors.  Did you wire them up correctly?  If they spin in different directions, just swap the wires around in the motor driver board.
+**Question 3.1:**   We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Edit the script q3_1.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds.
 
 ```
 Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before these commands will work though.
@@ -45,24 +71,11 @@ Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before the
 Hint 2: Position your buggy so the wheels are off the ground, you can use the box your PI came in to do this. If you don’t do this your buggy will fly off the table.
 ```
 
-
 **Step 3.1:** The code to control the buggy is stored in a class called *buggy*, you will have learnt about classes during the introduction videos.  Firstly in your file initialize a new instance of the class buggy like this:
-```
-clear all
-my_buggy=buggy()
-my_buggy=my_buggy.setup_enviroment()
-```
-The first line of the code clears all previously defined variables, the second line makes a new instnace of the buggy class, and the third line initializes the buggy.  If you are running the real buggy this will peform a self check on the hardware, if you are running the virtual buggy if will pop up a window displaying the virtual world in which the buggy will run arround.
- 
-We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Edit the script q3_1.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds. Note all the commands will have to be accessed throug the buggy class so the *motors* command would be accessed as:
-
-```
-my_buggy=my_buggy.motors(100,100,1)
-```
 
 **Step 3.2:** Place your buggy on the tool box or some other object so it's wheels are off the ground and not touching anything.  Now click run, and the motors should start to drive forward and then backwards.
 
-**Step 3.3:**  Try not to let your buggy run the motors for too long as it will run down the batteries.  Press ctr+c to stop the scrip running, then type:
+**Step 3.3:**  Try not to let your buggy run the motors for too long as it will run down the batteries.  Press ctr+c to stop the scrip running *This will work in the virtual buggy lab too*, then type:
 
 
 **Step 3.4:**  Now, assuming your script works, re-save you script as /home/pi/autorun.m. Unplug all the cables from the buggy turn it off and place it on the floor.  Turn the buggy on with the power switch, and it should run of batteries. It will take about 30 seconds to boot, but when it does it will run the file autorun.m and your buggy should start going forwards and backwards.
@@ -71,13 +84,14 @@ my_buggy=my_buggy.motors(100,100,1)
 Note 1: autorun.m will only be executed, when no keyboard or mouse are present.  If you want to test autorun.m, while the screen is still connected to you PC, just unplug the keyboard and mouse, and /home/pi/autorun.m will be executed.
 ```
 
-**Step 3.5:**  Tune the timings in your motor commands so that the buggy goes exactly 2 meters forwards and two meters backwards, save your finished script as q3_1.m
+**Step 3.5:**  Tune the timings in your motor commands so that the buggy goes exactly 2 meters forwards and two meters backwards, save your finished script as q3_1.m.  (If you are doing the virtual lab tune the timings so that it covers as much ground in the arena as possible.)
 
 **Question 3.2:**  We are now going to experiment with making the buggy turn, after this exercise the buggy will be able to drive in a square, to make the buggy turn you will have to stop one wheel and drive the other forward, you will be able to turn faster by running one motor forward and running one in reverse.  Edit your script so that the buggy drives forward, turns right, moves forward, turns right, moves forward.... etc.... until it has reached it's starting position.  The buggy should move in a square, save this as q3_2.m.
 
 
-Advanced motor control
+Advanced motor control (non virtual lab only)
 ----------------------
+
 
 The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code cannot do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
 
@@ -93,16 +107,16 @@ motors_adv(0,0)
 
 Often when controlling hardware there are various versions of commands, some easy to use and some harder with more power.
 
-**Question 3.3:**  Notice that in the previous examples, when you issued the command motors(100,100,5) command the buggy did a wheely.  This because the buggy is slightly heavier towards the back and has a lot of motor power.  We are now going to write two functions to gently ramp the power of the motors when setting off, so that it stops the buggy doing a wheely.  Make a new script called start_now.m and using a for loop and the motors_adv command, ramp the power of the motors from 0 to 100, over a period of 10 seconds.
+**Question r3.3:**  Notice that in the previous examples, when you issued the command motors(100,100,5) command the buggy did a wheely.  This because the buggy is slightly heavier towards the back and has a lot of motor power.  We are now going to write two functions to gently ramp the power of the motors when setting off, so that it stops the buggy doing a wheely.  Make a new script called start_now.m and using a for loop and the motors_adv command, ramp the power of the motors from 0 to 100, over a period of 10 seconds.
 
-**Question 3.4:**  Now make a new script called stop_now.m and make the function ramp the power of the buggy from 100 to 0 over a period of 10 seconds.
+**Question r3.4:**  Now make a new script called stop_now.m and make the function ramp the power of the buggy from 100 to 0 over a period of 10 seconds.
 
-**Question 3.5:**  Turn you scripts stop_now and start_now, into functions so that they can be called from a third script q3_5.m.  Edit your script q3_5.m, so that it starts the buggy slowly, runs the motors for three seconds, then slowly decelerate the buggy.  You should use the functions you generated in the previous sections.
+**Question r3.5:**  Turn you scripts stop_now and start_now, into functions so that they can be called from a third script q3_5.m.  Edit your script q3_5.m, so that it starts the buggy slowly, runs the motors for three seconds, then slowly decelerate the buggy.  You should use the functions you generated in the previous sections.
 
 
-**Question 3.6:**  Now edit your script called q3_5, so that it gradually starts moving the buggy, then runs the motors on 60 percent power for 5 seconds, then gradually stops it.  What do you notice?
+**Question r3.6:**  Now edit your script called q3_5, so that it gradually starts moving the buggy, then runs the motors on 60 percent power for 5 seconds, then gradually stops it.  What do you notice?
 
-**Question 3.7:**  You should have noticed that the buggy accelerated from a standing start to 100% power, then as you ran the motors_adv(60,60) command, it suddenly slowed down, next as it was about to decelerate it accelerated to 100% power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100% power.  To prevent this you would have to know the current speed of the buggy and start any acceleration at this speed.  The command:
+**Question r3.7:**  You should have noticed that the buggy accelerated from a standing start to 100% power, then as you ran the motors_adv(60,60) command, it suddenly slowed down, next as it was about to decelerate it accelerated to 100% power then slowed to a stop.  The motion of the buggy should have been a bit jerky.  If you had been in a car like this you would get whip lash!  The reason for the jerkiness, lies in your functions stop_now and start_now, always starting and ending at 100% power.  To prevent this you would have to know the current speed of the buggy and start any acceleration at this speed.  The command:
 
 ```
 get_motors_state()
@@ -110,7 +124,7 @@ get_motors_state()
 
 returns an array of size two, the 1st element contains the speed of the first motor, the 2nd element is the speed of the second motor.  Have a play with this command, while the motors are running.
 
-**Question 3.8:**  Make a new script called goto_speed.m.  The purpose of this script will be to smoothly accelerate the buggy from it's *current speed* to a desired speed.
+**Question r3.8:**  Make a new script called goto_speed.m.  The purpose of this script will be to smoothly accelerate the buggy from it's *current speed* to a desired speed.
 
 * Make the script start your buggy moving forward at speed 100.
 
@@ -125,7 +139,7 @@ returns an array of size two, the 1st element contains the speed of the first mo
 * Finally add the *motors_adv* command to the loop, so that the variable current_speed is sent to the motors.  After completing these steps, your buggy should start moving the decelerate from 100 to 0.  Now change the initial speed to 70 and see what happens.
 
 
-**Question 3.9:**  Make the script goto_speed into a function, and add an input parameter into the function definition which allows the user to choose the number of steps taken to reach the desired speed.  Generate another script which called q3_9.m, this script should use the function goto_speed to do the following:
+**Question r3.9:**  Make the script goto_speed into a function, and add an input parameter into the function definition which allows the user to choose the number of steps taken to reach the desired speed.  Generate another script which called q3_9.m, this script should use the function goto_speed to do the following:
 
 * Accelerate the buggy from a standing start to 100% speed over a period of 10 seconds.
 
@@ -134,6 +148,17 @@ returns an array of size two, the 1st element contains the speed of the first mo
 * Rapidly accelerate to 100%, then remain at this power for 4 seconds.
 
 * Suddenly stop.
+
+Advanced motor control - virtual lab only
+----------------------
+**Question v3.3:**
+In the real world you would be able to move chairs around the room to make an obstacle course for your buggy, you would also be able to move objects out of the way to make your task of programming the buggy easier.  In the virtual world, the course is generated by the commands in the file buggy_control.m.  Open this file up and you will see that there are six sets of objects used to make the virtual world.  Using the % command and trial and error comment out the lines of code which produce the large square in the centre of the course.  There is no reason why you should know how to do this, try to figure it out.
+
+**Question v3.4:** Now try to change the color of the objects in the virtual world.  Again you don't know how to do this but try to figure it out.
+
+**Question v3.5:**
+Make a new script called q3_3.m and try to make your buggy drive in a figure of 8.  Try to make it as curvy as possible.
+
 
 
 Controlling output pins on the PI
