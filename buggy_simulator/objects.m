@@ -138,6 +138,11 @@ classdef objects
 		self.draw();
 		ret=self;
 	end
+
+
+	function ret=pin_in(self)
+		ret=load('switches.txt');
+	end
    end
 
 

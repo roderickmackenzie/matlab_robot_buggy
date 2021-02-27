@@ -2,8 +2,9 @@ clear all
 objs=buggy_control();
 objs.pol0=1.0;
 objs.pol1=1.0;
-objs=objs.motors(100,80,2);
-objs.echo_sensor()
+%objs=objs.motors(100,80,2);
+objs.echo_sensor();
+objs.pin_in()
 ads
 while(1)
 	objs.gpio_write(26,1);
