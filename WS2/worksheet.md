@@ -85,7 +85,7 @@ From now on all scripts should be saved as q[Worksheet number]_[question number]
 
 **Question 2.7:** Write a function called add_me to add two numbers together and return the answer.
 
-**Question 2.8:** Plot a graph of x<sup>3</sup>+x<sup>2</sup>+2x, between -pi and pi, save the results in your report.
+**Question 2.8:** Plot a graph of x<sup>3</sup>+x<sup>2</sup>+2x, between -pi and pi.
 
 
 ### Exercises 2
@@ -143,8 +143,6 @@ Figure 1.4: The satellites view of earth. The ships and the x-y grid have been o
 
 **Question 2.14:**  Change the script so that if two ships are closer than 0.5km it prints the word "Warning!", the locations of both ships and the distance by which they are separated.
 
-
-The above questions, are really just to get you back into thinking about programming again.
 
 
 **Make sure you make a copy of your code after each lab to USB stick, last year some groups buggies went missing between labs.**
