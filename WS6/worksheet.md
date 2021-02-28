@@ -5,7 +5,7 @@ The Easter Rabbit Buggy challenge - virtual lab
 ---------------------------------
 
 <center>
-<img src="./images/pen2.png" width="200">
+<img src="./images/pen2.png" width="700">
 </center>
 <center>
 Figure 6.2: An example of the virtual buggy course
@@ -20,7 +20,7 @@ The Easter Rabbit Buggy challenge - real lab
 **Question r6.1:**  Your buggy is trapped in a valley, where a rather large rabbit called Rudolf lives who likes.  It's not quite Easter, so Rudolf has not had any chocolate eggs this yet this year, so your buggy is in danger of being nibbled if it bumps into Rudolf.  Your buggy must find the exit to the valley without bumping into the valley walls, or encountering the rabbit.  If your buggy bumps into the walls of the valley it must take a time out of 30 seconds (the demonstrator will pick the buggy up and remove it from the course) then restart the course from the beginning.  Use the echo sensor to avoid the walls.  A diagram of the course is shown below:
 
 <center>
-<img src="./images/pen.png">
+<img src="./images/pen.png"  width="700">
 </center>
 <center>
 Figure 6.1: An example of the buggy course.
