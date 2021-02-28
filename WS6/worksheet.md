@@ -5,9 +5,9 @@ The Easter Rabbit Buggy challenge - virtual lab
 ---------------------------------
 **Question v6.1:**  By editing the file buggy_control.m build the virtual course which is depicted in figure 6.1. Place your buggy at a *random* position on the left of the course then, write code to enable the buggy to escape the maze using it's echo sensors alone.  The buggy can not take a pre-programmed course out of the maze.
 
-<center>
+<p align="center">
 <img src="./images/pen2.png" width="700">
-</center>
+</p>
 <center>
 Figure 6.1: An example of the virtual buggy course
 </center>
