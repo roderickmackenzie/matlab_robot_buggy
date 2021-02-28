@@ -21,7 +21,7 @@ The buggy emulator
 You can download the buggy emulator from [here](https://github.com/roderickmackenzie/matlab_robot_buggy/tree/master/buggy_simulator), (note: I will make this available by the first lab sesson) download the zip file and unzip it on your PC in an empty directory.  I would recommend on your desktop.  You can look around and edit the code it is just MATLAB, you should be able to understand most of it.  Open the file called *autorun.m* and press play.  You should see a robot buggy appear on the screen and start moving around.
 
 <p align="center">
-<img src="./images/emulator.jpg"  width=50% >
+<img src="./images/emulator.jpg"  width=35% >
 
 Figure 2: The buggy emulator.
 </p>
