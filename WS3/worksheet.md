@@ -158,7 +158,7 @@ In the real world you would be able to move chairs around the room to make an ob
 **Question v3.4:** Now try to change the color of the objects in the virtual world.  Again you don't know how to do this but try to figure it out.
 
 **Question v3.5:**
-Make a new script called q3_5.m and try to make your buggy drive in a figure of 8.  Try to make it as curvy as possible and as big as possible.  Now place two obstacles in the centre of the figure of 8s.
+Make a new script called q3_5.m and try to make your buggy drive in a figure of 8.  Try to make it as curvy as possible and as big as possible.  Now place two obstacles in the centre of the figure of 8s. (note you will also have to upload your edited buggy_control.m file to get the marks)
 
 
 
