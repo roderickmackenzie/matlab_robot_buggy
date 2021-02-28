@@ -1,12 +1,12 @@
 Lab 1
 ===========
-Introduction
+Background
 ----------
 This series of four labs will take you through the process of building a computer controlled robot buggy.  In essence there are two parts to the buggy.  The mechanical buggy with it’s motors, gear boxes and wheels, and the electronic system which controls the buggy.  Our buggies will be controlled by a Raspberry PI computer.  This is a fully fledged computer on a single board, it uses the same type of powerful [microprocessors](https://en.wikipedia.org/wiki/ARM_architecture) which are in your mobile phone.  It has screen output, USB ports, Network ports, WiFi and everything you would expect from a normal desktop computer.  It is my hope that by introducing you to this computer early on in your degree, you will be able to use it in your projects later, or indeed use it in your own projects at home.  First we are going to configure the Raspberry PI computer, then we are going to build the buggy.
 
 Your robot buggy kit
 -----------------
->Virtual lab: If you are doing the virtual lab, go ahead and read through the instructions as if you were going to put the buggy together.  This will help give you a good idea of what the buggy is capable of and help you interact with the buggy emulator.
+>Virtual lab: If you are doing the virtual lab, go ahead and read through the instructions as if you were going to put the buggy together.  This will help give you a good idea of what the buggy is capable of and help you interact with the buggy emulator.  You won't be able to program the emulator without knowing how the real hardware works.
 
 The robot buggy kit is sown in figures 1 and 2.  Figure 1, shows how the components should be stored in the toolbox, and figure 2 includes the larger components which will not fit in the box.  When you return your buggy at the end of the buggy building sessions, all the components should be placed into the toolbox exactly as you found them.
 <p align="center">
@@ -18,7 +18,7 @@ Figure 1: The robot buggy kit in it's toolbox, when you return your buggy kit, i
 <p align="center">
 <img src="./images_small/all.png"  width=50% >
 
-Figure 2: The robot buggy kit spread out on a table, including larger components which will not fit in the box.
+Figure 2: The robot buggy kit spread out on a table, including larger components which will not fit in the box (Mr. Penguin not included).
 </p>
 
 Your box should contain:
@@ -309,7 +309,7 @@ Section 8: Exploring the PI
 
 **Step 8.1:** If your buggy is switched on, now switch it off.  Connect the PI up to the PC monitor using the HDMI cable which you will find in the buggy kit.  Also, carefully, disconnect keyboard and mouse from the PC from the computers and reconnect them to your PI.  Now disconnect the black wire connecting the battery pack to the PI, and reconnect the PI to a USB port of a computer.  For this exercise we will power the PI from a USB port of the computer to save batteries, when ever possible try to do this as it saves the environment a bit, the only draw back of doing this is that the motors will not run as they need 10-15V which can only be supplied by the batteries.  Be very careful not to power the PI off the computer and batteries at the same time, as you could damage the computer.
 
->**Question 1.1:** Why do you think we are not using reusable batteries for this lab?  Think about battery life time and how they are used over the year.  Discuss this with your group, and make a note of the answer. *Save the answer to this in worksheet_1.m*
+>**Question 1.1:** Why do you think we are not using reusable batteries for this lab?  Think about battery life time and how they are used over the year.  Discuss this with your group, and make a note of the answer. *Save the answer to this in q1_1-10.m as comments*  Also be very careful about to follow the correct naming format when saving the questions, the questions may be automaticity marked so if you get the file names wrong, you will loose marks. 
 
 **Step 8.2**:  If you followed the instructions in step 8.1, you should have a desktop which looks like figure 8.1.  The PI runs Linux which is a bit like windows but usually used on phones, tablets and servers.  There is a lot of software available for the PI (possibly more than there is for windows), but I have chosen to do a minimal install to save disk space.  Never the less, there is a word processor installed, Octave a version of MATLAB which is free and Minecraft(!!).  Try to find these packages in the start menu and have a play with them.
 
@@ -325,7 +325,7 @@ Section 9: Getting ready to upload work
 -------------------------------------------
 For each lab you will generate a zip file which will contain all your answers to the questions in the lab. There is a submission box for this on moodle.
 
-Take a picture of your group with the completed buggy (you can't take the photo if you are doing the virtual lab), save this ready to be uploaded in the zip file.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100), *save the answers as comments in the file lab_1.m*:
+Take a picture of your group with the completed buggy (you can't take the photo if you are doing the virtual lab), save this ready to be uploaded in the zip file.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100), *save the answers as comments in the file q1_1-10.m*:
 
 >**Question 1.2:**  Describe in as few words as possible why we use a motor driver board.
 
@@ -343,7 +343,7 @@ Take a picture of your group with the completed buggy (you can't take the photo 
 
 >**Question 1.9:**  Name five languages you can program the PI in.
 
->**Question 2.0:**  Please make sure you have done the preparation work "Self study prep material - lecture 1"/"Self study prep material - lecture 2". Please upload the answers to those work sheets with.  If you do not attempt the preparation material you will not be able to get any marks for the buggy labs.  The aim of these worksheets is to introduce you to some advanced MATALB concepts. Note: I am not expecting you to answer every question in the work sheets, just have a good go at them and use them as a warm up exercise to this set of labs.
+>**Question 1.10:**  Please make sure you have done the preparation work "Self study prep material - lecture 1"/"Self study prep material - lecture 2". Please upload the answers to those work sheets with.  If you do not attempt the preparation material you will not be able to get any marks for the buggy labs.  The aim of these worksheets is to introduce you to some advanced MATALB concepts. Note: I am not expecting you to answer every question in the work sheets, just have a good go at them and use them as a warm up exercise to this set of labs.
 
 
 Navigation
