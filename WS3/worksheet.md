@@ -92,7 +92,9 @@ Advanced motor control (non virtual lab only)
 ----------------------
 
 
->Skip this section if you are doing the virtual lab.  The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code cannot do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
+>Skip this section if you are doing the virtual lab, for reasons which I will explain in the lab the emulator is not able to emulate the advanced motor commands.
+
+The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code cannot do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
 
 ```
 motors_adv(power,power)
