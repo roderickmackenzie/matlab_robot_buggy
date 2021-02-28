@@ -8,7 +8,7 @@ This lab was originally introduced to give 1st year mechanical engineering at st
 <p align="center">
 <img src="./images/buggy.jpg"  width=25% >
 
-Figure 1: The robot assembled my Mr. Penguin.
+Figure 1: The robot assembled with Mr. Penguin giving a helping hand.
 </p>
 
 Emulators in the real world
