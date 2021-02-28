@@ -1,7 +1,7 @@
 Lab 2
 ===========
 
-1: MATLAB and the Raspberry PI
+MATLAB and the Raspberry PI
 --------------------------------------------
 
 > Virtual lab: If you are doing the virtual you can just use MATLAB on your PC instead of octave or access MATLAB via the virtual Engineering Desktop.
@@ -59,7 +59,7 @@ Click, File→Save as and then save the file as 'q1.m' under /home/pi/ .  On the
 Figure 1.3: The resize icon.
 </p>
 
-A MATLAB test to get things going..
+A mini MATLAB test to get things going..
 -----------------
 
 The following exercise refreshes/tests your knowledge of MATLAB, especially functions and files.  You can view the rest of this work sheet as an assessment on how much you have learnt from lectures 1-10 of the MATLAB course.  If you struggle with these, go and revise MATLAB a bit more.  Myself and the demonstrators are also happy to help you with your questions in the lab.
@@ -67,11 +67,11 @@ The following exercise refreshes/tests your knowledge of MATLAB, especially func
 ### Exercise 1
 
 
-**Question 2.1:** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.  Write the answer in your report, under section 2 question 2.1.
+**Question 2.1:** Make a new script called q2_1.m, now edit your script so that it will sum the numbers from 1 to 1000, using a for loop.
 
 **Question 2.2:** Make a new script q2_2.m, using a *while* loop make it count from -10.0 to 0.0, in steps of 0.5.
 
-**Question 2.3:** Write a script which sorts an array of 10 random numbers.  Hint: The answer’s in the lecture notes, then save it in file q2_3.m.  In your report demonstrate it works.
+**Question 2.3:** Write a script which sorts an array of 10 random numbers.  Hint: The answer’s in the lecture notes, then save it in file q2_3.m.
 
 **Question 2.4:** Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it as q2_4.m.
 
@@ -85,7 +85,7 @@ From now on all scripts should be saved as q[Worksheet number]_[question number]
 
 **Question 2.7:** Write a function called add_me to add two numbers together and return the answer.
 
-**Question 2.8:** Plot a graph of x*x*x+x*x+2x, between -pi and pi, save the results in your report.
+**Question 2.8:** Plot a graph of x<sup>3/sup>+x<sup>2</sup>+2x, between -pi and pi, save the results in your report.
 
 
 ### Exercises 2
