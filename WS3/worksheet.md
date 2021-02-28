@@ -6,7 +6,7 @@ Motor control - basic output
 
 The buggy has two motors.  These can be used to drive the buggy forwards, backwards or to turn it, by running one motor forwards and one backwards.  By the end of this section you will be able to move the buggy in any direction.
 
-To control the hardware of the buggy, we are going to have to use functions which know how to talk to the hardware.  These functions are stored in the directory ‘/home/pi/lib’ on the pi.  If you are using the virtual buggy they are stored in the directory to wihich you downloaded the buggy emulator.  Make a new script called q3_1.m and add the line of code 
+To control the hardware of the buggy, we are going to have to use functions which know how to talk to the hardware.  These functions are stored in the directory ‘/home/pi/lib’ on the pi.  If you are using the virtual buggy they are stored in the directory to which you downloaded the buggy emulator (i.e. c:\users\fred\Desktop\buggy_emulator).  Make a new script called q3_1.m and add the line of code 
 
 ```
 addpath(‘/home/pi/lib’)
@@ -24,7 +24,7 @@ This assigns a copy of the class *buggy_control* to the new variable my_buggy.  
 
 Within this class are all the methods need to access the buggy hardware.
 
-Try adding the command
+Try adding the command to your script.
 
 ```
 my_buggy=my_buggy.motors(100,100,1)
@@ -65,6 +65,7 @@ motors(0,0,1)
 
 **Question 3.1:**   We are going to write a script to drive the buggy forward two meters then drive it backwards for two meters, then repeat these actions forever.  Edit the script q3_1.m, so that it contains a while loop, which will run for ever (hint: while(1) .... end).  In the while loop, add the motor commands to drive the buggy forward and backwards initially set the time the motors run to be 5 seconds.
 
+> If you are doing the virtual buggy lab drive it forwards and backwards as far as you can without hitting any walls of the enclosure.
 ```
 Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before these commands will work though.
 
