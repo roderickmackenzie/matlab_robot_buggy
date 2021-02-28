@@ -72,20 +72,18 @@ Hint 1: You will need to use the addpath(‘/home/pi/lib/’) command before the
 Hint 2: Position your buggy so the wheels are off the ground, you can use the box your PI came in to do this. If you don’t do this your buggy will fly off the table.
 ```
 
-**Step 3.1:** The code to control the buggy is stored in a class called *buggy*, you will have learnt about classes during the introduction videos.  Firstly in your file initialize a new instance of the class buggy like this:
+**Step 3.1:** Place your buggy on the tool box or some other object so it's wheels are off the ground and not touching anything.  Now click run, and the motors should start to drive forward and then backwards.
 
-**Step 3.2:** Place your buggy on the tool box or some other object so it's wheels are off the ground and not touching anything.  Now click run, and the motors should start to drive forward and then backwards.
-
-**Step 3.3:**  Try not to let your buggy run the motors for too long as it will run down the batteries.  Press ctr+c to stop the scrip running *This will work in the virtual buggy lab too*, then type:
+**Step 3.2:**  Try not to let your buggy run the motors for too long as it will run down the batteries.  Press ctr+c to stop the scrip running *This will work in the virtual buggy lab too*, then type:
 
 
-**Step 3.4:**  Now, assuming your script works, re-save you script as /home/pi/autorun.m. Unplug all the cables from the buggy turn it off and place it on the floor.  Turn the buggy on with the power switch, and it should run of batteries. It will take about 30 seconds to boot, but when it does it will run the file autorun.m and your buggy should start going forwards and backwards.
+**Step 3.3:**  Now, assuming your script works, re-save you script as /home/pi/autorun.m. Unplug all the cables from the buggy turn it off and place it on the floor.  Turn the buggy on with the power switch, and it should run of batteries. It will take about 30 seconds to boot, but when it does it will run the file autorun.m and your buggy should start going forwards and backwards.
 
 ```
 Note 1: autorun.m will only be executed, when no keyboard or mouse are present.  If you want to test autorun.m, while the screen is still connected to you PC, just unplug the keyboard and mouse, and /home/pi/autorun.m will be executed.
 ```
 
-**Step 3.5:**  Tune the timings in your motor commands so that the buggy goes exactly 2 meters forwards and two meters backwards, save your finished script as q3_1.m.  (If you are doing the virtual lab tune the timings so that it covers as much ground in the arena as possible.)
+**Step 3.4:**  Tune the timings in your motor commands so that the buggy goes exactly 2 meters forwards and two meters backwards, save your finished script as q3_1.m.  (If you are doing the virtual lab tune the timings so that it covers as much ground in the arena as possible.)
 
 **Question 3.2:**  We are now going to experiment with making the buggy turn, after this exercise the buggy will be able to drive in a square, to make the buggy turn you will have to stop one wheel and drive the other forward, you will be able to turn faster by running one motor forward and running one in reverse.  Edit your script so that the buggy drives forward, turns right, moves forward, turns right, moves forward.... etc.... until it has reached it's starting position.  The buggy should move in a square, save this as q3_2.m.
 
@@ -94,7 +92,7 @@ Advanced motor control (non virtual lab only)
 ----------------------
 
 
-Skip this section if you are doing the virtual lab.  The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code cannot do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
+>Skip this section if you are doing the virtual lab.  The commands you just used to control the motor are simple, and work effectively.  The drawback of these commands is that while the commands are running, your code cannot do anything else.  There is another more advanced motor control command that enables you to do other things while the motors are running.  This command is
 
 ```
 motors_adv(power,power)
