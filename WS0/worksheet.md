@@ -1,14 +1,14 @@
-Lab 0 - The buggy emulator
+Lab 0 - The MATLAB robot buggy
 ===========
 
 Introduction
 ----------
-This lab was originally introduced to give 1st year students a taste of how to use computers to control hardware and how to make computers interact with the real world (See figure 1).  Unfortunately, between March 2019 and now, there was a global pandemic, this makes it hard to run large group labs with 300+ students in them.  Added to this the robots are fairly complicated devices (see below) with lots of wires which would be very hard to clean between labs.  I therefore had to come up with a virtual lab which gives you most of the experience of the real lab but in a safe (and hopefully fun!) way.  The answer is the virtual buggy lab:  I have written a buggy simulator and a virtual environment which which enables you to simulate the actions of the buggy in matlab.  The only thing you will miss out on is the actual screwing together of the buggy, which is a real shame but it was more a fun exercise rather than anything where you learnt a great deal. 
+This lab was originally introduced to give 1st year mechanical engineering at students Nottingham a taste of how to use computers to control hardware and how to make computers interact with the real world (See figure 1).  Unfortunately, between March 2019 and now, there was a global pandemic, this makes it hard to run large group labs with 300+ students in them.  Added to this the robots are fairly complicated devices (see below) with lots of wires which would be very hard to clean between labs.  I therefore had to come up with a virtual lab which gives you most of the experience of the real lab but in a safe (and hopefully fun!) way.  I have written a buggy simulator and a virtual environment which which enables you to simulate the actions of the buggy in matlab.  The only thing you will miss out on is the actual screwing together of the buggy, which is a real shame but it was more a fun exercise rather than anything where you learnt a great deal.  The virtual lab will enable all other objectives to be met.
 
 <p align="center">
 <img src="./images/buggy.jpg"  width=25% >
 
-Figure 1: The robot assembled.
+Figure 1: The robot assembled my Mr. Penguin.
 </p>
 
 Emulators in the real world
