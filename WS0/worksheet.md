@@ -23,7 +23,7 @@ You can download the buggy emulator from [here](https://github.com/roderickmacke
 <p align="center">
 <img src="./images/emulator.jpg"  width=35% >
 
-Figure 2: The buggy emulator.
+Figure 2: The buggy emulator. The objects can be configured to build any obstacle course. The buggy is sat at the bottom left of the course waiting for instructions. 
 </p>
 
 Doing this lab with the emulator
