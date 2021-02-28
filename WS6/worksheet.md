@@ -3,15 +3,16 @@ Lab 6
 
 The Easter Rabbit Buggy challenge - virtual lab
 ---------------------------------
+**Question v6.1:**  By editing the file buggy_control.m build the virtual course which is depicted in figure 6.1. Place your buggy at a *random* position on the left of the course then, write code to enable the buggy to escape the maze using it's echo sensors alone.  The buggy can not take a pre-programmed course out of the maze.
 
 <center>
 <img src="./images/pen2.png" width="700">
 </center>
 <center>
-Figure 6.2: An example of the virtual buggy course
+Figure 6.1: An example of the virtual buggy course
 </center>
 
-**Question r6.1:**  By editing the file buggy_control.m build the virtual course which is depicted in figure 6.2. Place your buggy at a *random* position on the left of the course then, write code to enable the buggy to escape the maze using it's echo sensors alone.  The buggy can not take a pre-programmed course out of the maze.
+
 
 
 The Easter Rabbit Buggy challenge - real lab
@@ -23,7 +24,7 @@ The Easter Rabbit Buggy challenge - real lab
 <img src="./images/pen.png"  width="700">
 </center>
 <center>
-Figure 6.1: An example of the buggy course.
+Figure 6.2: An example of the buggy course.
 </center>
 
 The rabbit lives in an area surrounded by Easter eggs, if the buggy detects Easter eggs on the floor it should reverse and then turn around and continue trying to find the exit to the valley.  The exit to the course is denoted by a white piece of paper on the floor - detect this with your camera.  If your buggy bumps into Rudolf, he has to sit out the buggy challenge for 10 min to be repaired.
