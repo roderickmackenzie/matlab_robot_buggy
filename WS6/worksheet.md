@@ -5,7 +5,7 @@ The Easter Rabbit Buggy challenge - virtual lab
 ---------------------------------
 
 <center>
-<img src="./images/pen2.png">
+<img src="./images/pen2.png" width="200">
 </center>
 <center>
 Figure 6.2: An example of the virtual buggy course
