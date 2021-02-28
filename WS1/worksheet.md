@@ -343,7 +343,7 @@ Take a picture of your group with the completed buggy (you can't take the photo 
 
 >**Question 1.9:**  Name five languages you can program the PI in.
 
->**Question 1.10:**  Please make sure you have done the preparation work "Self study prep material - lecture 1"/"Self study prep material - lecture 2". Please upload the answers to those work sheets with.  If you do not attempt the preparation material you will not be able to get any marks for the buggy labs.  The aim of these worksheets is to introduce you to some advanced MATALB concepts. Note: I am not expecting you to answer every question in the work sheets, just have a good go at them and use them as a warm up exercise to this set of labs.
+>**Question 1.10:**  Please make sure you have done the preparation work "Self study prep material - lecture 1"/"Self study prep material - lecture 2". Please upload the answers to those work sheets to the correct upload box on moodle.  If you do not attempt the preparation material you will not be able to get any marks for the buggy labs.  The aim of these worksheets is to introduce you to some advanced MATALB concepts. Note: I am not expecting you to answer every question in the work sheets, just have a good go at them and use them as a warm up exercise to this set of labs.
 
 
 Navigation
