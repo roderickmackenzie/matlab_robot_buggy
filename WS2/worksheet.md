@@ -85,7 +85,7 @@ From now on all scripts should be saved as q[Worksheet number]_[question number]
 
 **Question 2.7:** Write a function called add_me to add two numbers together and return the answer.
 
-**Question 2.8:** Plot a graph of x<sup>3/sup>+x<sup>2</sup>+2x, between -pi and pi, save the results in your report.
+**Question 2.8:** Plot a graph of x<sup>3</sup>+x<sup>2</sup>+2x, between -pi and pi, save the results in your report.
 
 
 ### Exercises 2
