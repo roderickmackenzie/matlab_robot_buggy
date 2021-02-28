@@ -1,4 +1,4 @@
-Worksheet 6
+Lab 6
 ===========
 
 The Easter Rabbit Buggy challenge - virtual lab
