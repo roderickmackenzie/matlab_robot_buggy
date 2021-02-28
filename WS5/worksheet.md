@@ -1,4 +1,4 @@
-Worksheet 5 - The camera
+Lab 5 - The camera
 ========================
 
 The camera

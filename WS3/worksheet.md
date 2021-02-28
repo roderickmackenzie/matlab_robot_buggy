@@ -161,7 +161,6 @@ In the real world you would be able to move chairs around the room to make an ob
 Make a new script called q3_5.m and try to make your buggy drive in a figure of 8.  Try to make it as curvy as possible and as big as possible.  Now place two obstacles in the centre of the figure of 8s. (note you will also have to upload your edited buggy_control.m file to get the marks)
 
 
-
 Controlling output pins on the PI
 ---------------------------------
 
@@ -185,7 +184,7 @@ Figure 2: The pin out of the PI.
 
 **Question 3.11:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed?  Save this as a comment in a script called q3_10.m.
 
- **Question 3.12:** Draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.  Save this as q3_12.m
+ **Question 3.12:** Draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.  Save this as q3_12.jpg
 
 **Question 3.13:** Using the web/youtube learn how the color codes printed on resistors can tell you what value they are.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the color codes you would expect for a 1k Ohm and a 1 Mega Ohm resistor, save these values in the script q3_12.m.
 

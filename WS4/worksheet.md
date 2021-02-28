@@ -1,7 +1,7 @@
-Worksheet 4 - Getting input from the world
+Lab 4 - Getting input from the world
 ==========================================
 
-So far we have spent time getting the buggy to move by using the computer to control external lights and motors, in this worksheet we will focus on getting the computer to get input from the real world so it can understand what is happening around it. Input and output are the core building blocks of robotics.
+So far we have spent time getting the buggy to move by using the computer to control external lights and motors, in this lab we will focus on getting the computer to get input from the real world so it can understand what is happening around it. Input and output are the core building blocks of robotics.
 
 The echo sensor
 ---------------
