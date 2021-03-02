@@ -4,11 +4,14 @@ objs.pol0=1.0;
 objs.pol1=1.0;
 objs=objs.motors(100,80,2);
 objs=objs.motors(80,100,2);
+objs=objs.motors(100,-100,7);
+objs=objs.motors(100,80,2);
+objs=objs.motors(80,100,2);
 objs.echo_sensor();
 objs.pin_in()
 objs.camera()
 
-
+dsdad
 while(1)
 	objs.gpio_write(26,1);
 	objs.gpio_write(19,1);
