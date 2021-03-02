@@ -1,13 +1,14 @@
 clear all
-objs=buggy_control();
+objs=buggy_control;
 objs.pol0=1.0;
 objs.pol1=1.0;
-%objs=objs.motors(100,80,2);
+objs=objs.motors(100,80,2);
+objs=objs.motors(80,100,2);
 objs.echo_sensor();
 objs.pin_in()
 objs.camera()
 
-ads
+
 while(1)
 	objs.gpio_write(26,1);
 	objs.gpio_write(19,1);
@@ -21,7 +22,7 @@ while(1)
 	pause(1e-3)
 	objs.poweroff();
 end
-adds
+
 objs=objs.gpio_write(26,1)
 objs=objs.motors(100,100,2);
 for n=1:2

@@ -7,7 +7,7 @@ classdef objects
 
    methods
       function obj = objects(self)
-			objs(1:1) = object();
+			objs = [bobject];
 			obj.pol0=1.0;
 			obj.pol1=-1.0;
 			obj.objs=objs;
@@ -147,7 +147,7 @@ classdef objects
 
 	function ret=camera(self)
 		file_name=sprintf("%d.jpg",randi([0 15] ,1,1));
-		full_path=fullfile(fileparts(mfilename('fullpath')),"images",file_name)
+		full_path=fullfile(fileparts(mfilename('fullpath')),"images",file_name);
 		a=imread(full_path);
 		imwrite(a,'image.jpg','jpg');
 	end

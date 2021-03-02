@@ -1,4 +1,4 @@
-classdef object
+classdef bobject
    properties
 	x0;
 	y0;
@@ -25,40 +25,41 @@ classdef object
       function ret = buggy(self,x0,y0)
 			x1=[0.0 5.0 5.0 0.0   ; -1.0 0.0 0.0 -1.0 ; -1.0 0.0 0.0 -1.0  ; 5.0 6.0 6.0 5.0 ; 5.0 6.0 6.0 5.0 ];
 			y1=[0.0 0.0 10.0 10.0 ;  0.0 0.0 1.0 1.0  ;  9.0 9.0 10.0 10.0 ; 0.0 0.0 1.0 1.0 ; 9.0 9.0 10.0 10.0 ];
-			self.colors=['b','r','r','r','r' ];
+            
+            self.colors=['b','r','r','r','r' ];
 
 			if self.gpio_pins(26)==1
-				self.leds(1)='1'
+				self.leds(1)='1';
 			else
-				self.leds(1)='0'
+				self.leds(1)='0';
 			end
 
 			if self.gpio_pins(19)==1
-				self.leds(2)='1'
+				self.leds(2)='1';
 			else
-				self.leds(2)='0'
+				self.leds(2)='0';
 			end
 
 			if self.gpio_pins(13)==1
-				self.leds(3)='1'
+				self.leds(3)='1';
 			else
-				self.leds(3)='0'
+				self.leds(3)='0';
 			end
 
 			if self.gpio_pins(6)==1
-				self.leds(4)='1'
+				self.leds(4)='1';
 			else
-				self.leds(4)='0'
+				self.leds(4)='0';
 			end
-			self.leds
-			for i=1:8
+			
+			for i=1:max(size(self.leds))
 				x1=[x1 ; 1.0 4.0 4.0 1.0  ];
 				y1=[y1 ; 0.5+i 0.5+i 1.5+i 1.5+i  ];
 
 				if self.leds(i)=='1'
-					self.colors=[self.colors 'r'];
+					self.colors=[self.colors , 'r'];
 				else
-					self.colors=[self.colors 'g'];
+					self.colors=[self.colors , 'g'];
 				end
 			end
 
@@ -100,7 +101,9 @@ classdef object
 
       function ret=draw(self)
 			hold on
-			for section =1:size(self.x_lines)(1)
+            len=size(self.x_lines);
+            len=len(1);
+			for section =1:len
 				fill(self.x_lines(section,:),self.y_lines(section,:),self.colors(section));
 			end
       end
