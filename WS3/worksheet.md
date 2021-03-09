@@ -20,7 +20,7 @@ to the top of your script, this will tell Octave/MATLAB where the functions to a
 addpath(‘C:\users\rod\Desktop\emulator’)
 ```
 
-[I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticity in every script we write from now on]. If you struggle to do this ask a demonstrator to help you.
+[I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticity in every script we write from now on]. If you struggle to do this ask a demonstrator to help you. If you have not downloaded the emulator yet and you are running virtual lab, you can download it (here) [https://github.com/roderickmackenzie/matlab_robot_buggy/blob/master/buggy_simulator/emulator.zip].
 
 If you don't know what a class is go and review the material now.  To control the buggy we first need to initialize an instance of the buggy class like this:
 
