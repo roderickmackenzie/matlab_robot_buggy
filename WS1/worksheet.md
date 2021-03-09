@@ -325,7 +325,7 @@ Section 9: Getting ready to upload work
 -------------------------------------------
 For each lab you will generate a zip file which will contain all your answers to the questions in the lab. There is a submission box for this on moodle.
 
-Take a picture of your group with the completed buggy (you can't take the photo if you are doing the virtual lab), save this ready to be uploaded in the zip file.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100), *save the answers as comments in the file q1_1-10.m*:
+Take a picture of your group with the completed buggy (you can't take the photo if you are doing the virtual lab), save this ready to be uploaded in the zip file.  Then answer the following questions in as few words as possible (I'm thinking closer to 10 words rather than  100), *save the answers as comments in the file q1_1to10.m*:
 
 >**Question 1.2:**  Describe in as few words as possible why we use a motor driver board.
 
