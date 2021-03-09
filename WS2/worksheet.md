@@ -75,7 +75,7 @@ The following exercise refreshes/tests your knowledge of MATLAB, especially func
 
 **Question 2.4:** Write a script to integrate, the function sin(x)+0.1*sin(x) between -pi and pi.  and save it as q2_4.m.
 
-**Question 2.5:** Write a script to plot a graph of sin(x)+cos(x) between -pi and pi, label the axes using code, and save it as..  Include a copy of the plot in your report.
+**Question 2.5:** Write a script to plot a graph of sin(x)+cos(x) between -pi and pi, label the axes using code, and save it as...
 
 ```
 From now on all scripts should be saved as q[Worksheet number]_[question number].m.  If we can't identify the question to which your code relates you will get no marks for it.
