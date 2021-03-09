@@ -14,7 +14,7 @@ addpath(‘/home/pi/lib’)
 
 to the top of your script, this will tell Octave/MATLAB where the functions to access the buggy are stored.   The functions to access the buggy are stored in a class, you learnt about classes in the preparation material.
 
-*If you are using the emulator on a PC, make sure the path (/home/pi/lib) points to the directory where the emulator code is stored on your computer rather than /home/pi/lib. So for example if the emulator were stored on your desktop the command should read:
+*If you are using the emulator on a PC, make sure the path (/home/pi/lib) points to the directory where the emulator code is stored on your computer rather than /home/pi/lib.* So for example if the emulator were stored on your desktop the command should read:
 
 ```
 addpath(‘C:\users\rod\Desktop\emulator’)
