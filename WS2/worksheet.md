@@ -26,7 +26,7 @@ Figure 1.1: Octave running on the PI. Personally, I really like Octave and prefe
 
 Just to make you feel at home with Octave, we will now use it to write some basic computer code, just as we did when we first started learning MATLAB.
 
-> Virtual lab: If you are doing the virtual lab you can skip questions q-e because you will be using MATLAB on a PC.
+> Virtual lab: If you are doing the virtual lab you can skip questions a-e because you will be using MATLAB on a PC.
 
 a) Generate a 10x10 random array of numbers.
 
