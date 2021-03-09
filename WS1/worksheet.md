@@ -30,7 +30,7 @@ Your box should contain:
 |  Yellow motors 	 |  x4      	| Amazon |  |
 |  Black USB wire 	 |  x1      	| Amazon |  |
 |  Pre-made motor wire |  x1    	| UoN |  |
-|  Raspberry PI |  x1           	| RS |  |
+|  Raspberry PI 3 Model B+ |  x1           	| RS |  |
 |  Acoustic sensor   |  x1      	| Amazon |  |
 |  Wires             |  lots    	| Amazon |  |
 |  Acoustic sensor holder | x1  	| UoN |  |
