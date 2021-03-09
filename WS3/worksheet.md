@@ -6,15 +6,23 @@ Motor control - basic output
 
 The buggy has two motors.  These can be used to drive the buggy forwards, backwards or to turn it, by running one motor forwards and one backwards.  By the end of this section you will be able to move the buggy in any direction.
 
-To control the hardware of the buggy, we are going to have to use functions which know how to talk to the hardware.  These functions are stored in the directory ‘/home/pi/lib’ on the pi.  If you are using the virtual buggy they are stored in the directory to which you downloaded the buggy emulator (i.e. c:\users\fred\Desktop\buggy_emulator).  Make a new script called q3_1.m and add the line of code 
+To control the hardware of the buggy, we are going to have to use functions which know how to talk to the hardware.  These functions are stored in the directory ‘/home/pi/lib’ on the pi.  Make a new script called q3_1.m and add the line of code 
 
 ```
 addpath(‘/home/pi/lib’)
 ```
 
-to the top of your script, this will tell Octave/MATLAB where the functions to access the buggy are stored.   If you are using the emulator, make sure the path (/home/pi/lib) points to the directory where the emulator code is stored on your computer rather than /home/pi/lib. [I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticly in every script we write from now on]. If you struggle to do this ask a demonstrator to help you.
+to the top of your script, this will tell Octave/MATLAB where the functions to access the buggy are stored.   The functions to access the buggy are stored in a class, you learnt about classes in the preparation material.
 
-The functions to access the buggy are stored in a class, you learnt about classes in the preparation material.  If you don't know what a class is go and review the material now.  To control the buggy we first need to initialize an instance of the buggy class like this:
+*If you are using the emulator on a PC, make sure the path (/home/pi/lib) points to the directory where the emulator code is stored on your computer rather than /home/pi/lib. So for example if the emulator were stored on your desktop the command should read:
+
+```
+addpath(‘C:\users\rod\Desktop\emulator’)
+```
+
+[I’m not going to tell you to do this again, I’m going to assume you know this has to be done by you automaticity in every script we write from now on]. If you struggle to do this ask a demonstrator to help you.
+
+If you don't know what a class is go and review the material now.  To control the buggy we first need to initialize an instance of the buggy class like this:
 
 ```
 my_buggy=buggy_control()
