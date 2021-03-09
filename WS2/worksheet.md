@@ -115,7 +115,7 @@ b=dat(:,2)
 s=size(a)
 s=s(1)
 out=zeros(s,1)
-for n=1:s
+for n=1:s-1
 	out(n)=(b(n+1)-b(n-1))/(a(n+1)-a(n-1))
 end
 c=[a out]
