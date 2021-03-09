@@ -197,12 +197,12 @@ Figure 3: Examples of resistors.
 **Step 2:** Now the LEDs have been connected, the pins can be turned on with the command
 
 ```
-my_buggy.gpio_write(GPIO_PIN_NUMBER,1)
+my_buggy=my_buggy.gpio_write(GPIO_PIN_NUMBER,1)
 ```
 
 and can be turned off with the command
 ```
-my_buggy.gpio_write(GPIO_PIN_NUMBER,0)
+my_buggy=my_buggy.gpio_write(GPIO_PIN_NUMBER,0)
 ```
 
 **Question 3.14:** Make a short script called q3_14.m to turn all four LEDs on then wait one second then turn all the LEDs off.  If it does not work, you have probably connected your LED block the wrong way around, just lift it off the board rotate it through 180 degrees and plug it back in. [LEDs only work one way around, I did not tell you this before, because there was a 50% chance of you plugging it in the right way :)].
