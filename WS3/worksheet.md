@@ -223,10 +223,10 @@ my_buggy=my_buggy.gpio_write(GPIO_PIN_NUMBER,0)
 Hint, first pick a random number between 1 and 4, then use an if-elseif-end statement, to turn the on a given pattern of LEDs depending on which random number was chosen.
 ```
 
-**Question 3.14:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program... you’ve missed nothing. :) ]
+**Question 3.17:** Make a new script called knight_rider.m and make the active LED bounce backwards and forwards along the display, as shown in this [video](https://www.youtube.com/watch?v=hG44lIO_bss) :).  This can be done with a while loop,  the set_pin command and the wait command. [If you’ve not seen the TV program... you’ve missed nothing. :) ]
 
 
-**Question 3.15:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move the buggy forward about 10 meters while displaying the knight rider effect on the LEDs, then stop the buggy. (If you are doing the virtual lab edit make your buggy move in a square and every time it turns get it to do the night rider effect.)
+**Question 3.18:** Finally today, we are going to combine moving the buggy with flashing the LEDs, so we will be combining two types out output.  Write a script to move the buggy forward about 10 meters while displaying the knight rider effect on the LEDs, then stop the buggy. (If you are doing the virtual lab edit make your buggy move in a square and every time it turns get it to do the night rider effect.)
 
 
 Controlling the PI it's self - and power management
