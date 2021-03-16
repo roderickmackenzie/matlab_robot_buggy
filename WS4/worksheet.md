@@ -92,7 +92,7 @@ function in octave, this returns a 1D array containing the position of the switc
 * **number 3 on** The buggy should behave as in question 4.5 except be limited to a speed of 80.
 * **number 4 on** The buggy should behave as in question 4.5 except be limited to a speed of 100, and every so often randomly stop and rotate through 270 degrees.
 
-**Question 4.7:**  Using the *fprintf*, *fopen* and *fclose* commands edit your answer to question, 4.6 so that the buggy records the speed of each motor as a function of time in a file, and the distance the echo sensor records as a function of time.  This is called a log file and is akin to a black box on an aircraft.  Plot these graphs in your report.
+**Question 4.7:**  Using the *fprintf*, *fopen* and *fclose* commands edit your answer to question, 4.6 so that the buggy records the speed of each motor as a function of time in a file, and the distance the echo sensor records as a function of time.  This is called a log file and is akin to a black box on an aircraft.  Plot these graphs in your report. [Skip this question if you are ding the virtual buggy lab]
 
 Navagaion
 -----------------
