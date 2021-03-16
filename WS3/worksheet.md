@@ -176,7 +176,7 @@ So far you have used relatively high level commands to control the motors, hidde
 
 **Step 1:**  Find in your tool box, the LED bar graph component and wire it into your circuit board as shown below. The resistors should go into the black/blue strip.  Then connect the other side of the LEDs to the PI using the jumper cables, refer to Figure 2 to understand which pins on the PI the LEDs should be connected to, these pins on the PI are called GPIO pins or general-purpose input/output pins.
 
-**Question 3.10:**  Which GPIO pins are the motors connected to?  Save this as a comment in a script called q3_10.m.
+**Question 3.10:**  Which GPIO pins are the LEDS connected to?  Save this as a comment in a script called q3_10.m. (Hint look at the picture below.)
 
 <p align="center">
 <img src="./images/drawing.png" width=40%>
