@@ -190,11 +190,11 @@ Figure 1: The LED bar graph wired into the bread board.
 Figure 2: The pin out of the PI.
 </p>
 
-**Question 3.11:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed?  Save this as a comment in a script called q3_10.m.
+**Question 3.11:** The resistors are used to limit the current flowing thought the LED, so that it does not burn out.  If you don't use the resistors, then the LEDs will glow very bright for a few moments before getting dim and permanently breaking (don't do this!).  If the PI supplies 3.3V from it's output pins and the resistors have a value of 330 Ohms pins, how much current will flow through the LED when turned on?  Does it matter which way around the LED is placed?  Save this as a comment in a script called q3_11.m.
 
  **Question 3.12:** Draw a circuit diagram of the LED, raspberry PI (you should represent this as a 3.3 V battery), the resistor label all the voltages and currents in the circuit.  Save this as q3_12.jpg
 
-**Question 3.13:** Using the web/youtube learn how the color codes printed on resistors can tell you what value they are.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the color codes you would expect for a 1k Ohm and a 1 Mega Ohm resistor, save these values in the script q3_12.m.
+**Question 3.13:** Using the web/youtube learn how the color codes printed on resistors can tell you what value they are.  Use [this](http://www.resistorguide.com/resistor-color-code/) guide to write down the color codes you would expect for a 1k Ohm and a 1 Mega Ohm resistor, save these values in the script q3_13.m.
 
 <p align="center">
 <img src="./images/resistors.jpg" width=40%>
