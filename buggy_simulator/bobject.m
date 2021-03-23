@@ -92,8 +92,8 @@ classdef bobject
 				dtheta=(m0-m1)*0.001;
 				dx=(m0+m1)*0.01/2.0;
 				self.ang=self.ang+dtheta;
-				self.x0=self.x0+sin(self.ang)*dx
-				self.y0=self.y0+cos(self.ang)*dx
+				self.x0=self.x0+sin(self.ang)*dx;
+				self.y0=self.y0+cos(self.ang)*dx;
 			end
 			self=self.buggy(self.x0,self.y0);
 			ret=self;
