@@ -70,13 +70,13 @@ classdef objects
 	function ret=motors(self,m0,m1,time)
 		hit=true;
 		ib=self.find_buggy();
-		n=0
+		n=0;
 
 		while n<time
 			obj=self.objs(ib);
 			x2=obj.x0;
 			y2=obj.y0;
-			self.objs(ib)=obj.move(m0*self.pol0,self.pol1*m1)
+			self.objs(ib)=obj.move(m0*self.pol0,self.pol1*m1);
 			self.draw();
 
 			x3=x2+sin(obj.ang)*110.0;
