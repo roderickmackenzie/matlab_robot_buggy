@@ -84,7 +84,7 @@ my_buggy.pin_in()
 
 function in octave, this returns a 1D array containing the position of the switches.  Try playing with the switches and see what my_buggy.pin_in() returns.
 
->Virtual lab: In the virtual lab you clearly won't have access to the switches.  Instead make file in your script directory called switches.txt open it with notepad or matlab and save the text '1 0' into the file.  Then call the pin in command to see what it returns, edit the file to '0 1' then call it again.
+>Virtual lab: In the virtual lab you clearly won't have access to the switches.  Instead make file in your script directory called switches.txt with a text editor such as notepad.  Then open it with notepad and save the text '1 0' into the file.  Then call the pin in command within matlab to see what it returns, edit the file again using notepad or any text editor to '0 1' then call the pin_in command again.
 
 **Question 4.6:**  We are now going to edit the script in question 4.5 to use the switches to select the speed of the buggy.  If the script is run with switch:
 * **number 1 on** The buggy should flash all it's lights on and off forever at a rate of once per second, and not move.
