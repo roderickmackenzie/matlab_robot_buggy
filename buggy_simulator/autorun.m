@@ -2,13 +2,13 @@ clear all
 objs=buggy_control;
 objs.pol0=1.0;
 objs.pol1=1.0;
-objs=objs.motors(100,80,2);
-objs=objs.motors(80,100,2);
-objs=objs.motors(100,-100,7);
-objs=objs.motors(100,80,2);
-objs=objs.motors(80,100,2);
-objs.echo_sensor();
-objs.pin_in()
+%objs=objs.motors(100,80,2);
+%objs=objs.motors(80,100,2);
+%objs=objs.motors(100,-100,7);
+%objs=objs.motors(100,80,2);
+%objs=objs.motors(80,100,2);
+%objs.echo_sensor();
+%objs.pin_in()
 objs.camera()
 
 dsdad
